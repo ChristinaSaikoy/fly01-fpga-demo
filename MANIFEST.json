@@ -2,6 +2,11 @@
   "snapshot": "fly01_public_20261104_r13",
   "files": [
     {
+      "path": ".gitattributes",
+      "bytes": 9,
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+    },
+    {
       "path": ".gitignore",
       "bytes": 99,
       "sha256": "c6673719b1c5eebf59757fb53bc4dbbc6602b97be33f81be11ec5f7867d5986c"
