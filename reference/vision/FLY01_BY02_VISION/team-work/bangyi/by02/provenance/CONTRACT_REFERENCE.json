@@ -1,0 +1,25 @@
+{
+  "repository": "ChristinaSaikoy/fly01-neurofpga",
+  "commit": "edebc9768346023ba02fa9cdf285472724ebf87d",
+  "files": [
+    {
+      "repository_path": "src/common/interfaces/visual_encoder/ENGINEERING_VIRTUAL_VISUAL_ENCODER_V1_0.py",
+      "git_blob_sha1": "bab4090ba05c94b1d8684f784c351ed8f4b4f6d7",
+      "sha256": "4389b2d82c64f9f93ce22c124f33c231021822137fc12c827ae2a911c52301d7",
+      "url": "https://github.com/ChristinaSaikoy/fly01-neurofpga/blob/edebc9768346023ba02fa9cdf285472724ebf87d/src/common/interfaces/visual_encoder/ENGINEERING_VIRTUAL_VISUAL_ENCODER_V1_0.py"
+    },
+    {
+      "repository_path": "src/common/interfaces/visual_encoder/DEMO-1_SENSORY_ENCODER_V1_0.json",
+      "git_blob_sha1": "3ac77d89f236c42d247fc3c4a0e601a09187a492",
+      "sha256": "7f9247b524d2d310cecf3a0a2bef4f1b021810df1264d2bd6732254f24f5246a",
+      "url": "https://github.com/ChristinaSaikoy/fly01-neurofpga/blob/edebc9768346023ba02fa9cdf285472724ebf87d/src/common/interfaces/visual_encoder/DEMO-1_SENSORY_ENCODER_V1_0.json"
+    },
+    {
+      "repository_path": "src/common/interfaces/visual_encoder/SENSORY_INPUT_POPULATION_311.csv",
+      "git_blob_sha1": "13014216c9e8080c970eba0c1faf2ce815cebba3",
+      "sha256": "c22bedd9848bce0e04ee48ee7d6f4ed91942f2491c225efb10102117ddb1222f",
+      "url": "https://github.com/ChristinaSaikoy/fly01-neurofpga/blob/edebc9768346023ba02fa9cdf285472724ebf87d/src/common/interfaces/visual_encoder/SENSORY_INPUT_POPULATION_311.csv"
+    }
+  ],
+  "scope": "Reference identities only. Frozen source unchanged and not copied into runtime."
+}

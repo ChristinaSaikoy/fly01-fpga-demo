@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "hardware_accessed": false,
+  "checks": [
+    "explicit power inspection only",
+    "fixed pulse request forwards selected level",
+    "neural control blocked during pulse",
+    "physical feedback separate from ACK",
+    "stop remains available"
+  ],
+  "errors": []
+}

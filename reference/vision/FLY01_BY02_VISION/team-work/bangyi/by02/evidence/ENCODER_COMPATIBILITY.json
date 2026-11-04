@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "origin": "SYNTHETIC_GEOMETRY_ENCODER_FIELD_COMPATIBILITY_ONLY",
+  "neural_runtime_executed": false,
+  "hardware_executed": false,
+  "cases": [
+    {
+      "case": "LEFT",
+      "active_inputs": 165,
+      "status": "PASS"
+    },
+    {
+      "case": "RIGHT",
+      "active_inputs": 146,
+      "status": "PASS"
+    },
+    {
+      "case": "CENTER",
+      "active_inputs": 311,
+      "status": "PASS"
+    }
+  ],
+  "scope": "Encoder field subset, side sign and k+1 identity; not full BODY contract validation"
+}

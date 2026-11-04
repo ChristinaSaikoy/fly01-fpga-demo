@@ -1,0 +1,26 @@
+{
+  "status": "PANEL_CHASSIS_PULSE_PHYSICALLY_CONFIRMED",
+  "fpga": "R13 SRAM; Flash remains R11",
+  "command_source": "FPGA UART selector 3 + B, FPGA I2C fixed pulse",
+  "pwm": [
+    -1800,
+    1800
+  ],
+  "duration_ms": 750,
+  "user_confirmed": "both wheels moved and stopped",
+  "automatic_neural_motion_verified": false,
+  "log": "D:\\FPGA-AUTO\\tasks\\WORK-20-HOST-PANEL-20261103\\runs\\20261104_091532\\events_1793754932017890900.jsonl",
+  "host_tests": 78,
+  "browser_check": "PASS isolated mock API",
+  "files": {
+    "control_bridge.mjs": "0a501574194d6645d9b4ce1d542c1b970202fecee2c3d6796fe224cbe9768f17",
+    "control_worker.py": "4050018cac615d18af4c8565cafda608cb38da0d646b1b13da6fafbcce46cbce",
+    "server.mjs": "8fb72d9867fd2a41debfa307997269668117a02593f3cdc641b96cee54b564d4",
+    "app/host.css": "c40a3b760b84a6928ca3f9e6b5b3ad061e7b0d6a8eb364ae539dcc803e236f3a",
+    "app/host.js": "b3c340b7015cb85c15d0000db28d7d1f66e43daa516f8bf38250b9f50e179ea7",
+    "app/index.html": "0a58c961518435c98a6bf1d3532af76fa33e9d9dcf391fb6e3d618715d1ef101",
+    "control_vendor/operator_core.py": "850680f1562879a5089866c90b494e1b07d9d037cffdf8db3c9081563fbdcbe0"
+  },
+  "running_pid": 39288,
+  "managed_exec_session": 58009
+}

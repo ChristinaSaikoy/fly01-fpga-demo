@@ -1,0 +1,24 @@
+{
+  "source": "WORK06 O8 accepted production / Vivado 2025.2 native build02, NOT WORK11 observer",
+  "tool": "Vivado 2025.2",
+  "part": "xc7a35tfgg484-2",
+  "clock_mhz": 50,
+  "uart_baud": 2000000,
+  "historical_bit_sha256": "93399a70892ece88300af96cd2dd27566b683f9eeecc41f394465182b5786eb4",
+  "native_manifest_sha256": "e6148eda1510c658de1ed362bf3408377eb21ad123b97016b7e7b1ad9b0d1056",
+  "historical_metrics": {
+    "WNS": 0.149,
+    "WHS": 0.06,
+    "LUT": 8370,
+    "FF": 8014,
+    "BRAM": 40,
+    "DSP": 1
+  },
+  "repo_head_local": "edebc9768346023ba02fa9cdf285472724ebf87d",
+  "remote": "NOT_QUERIED",
+  "source_copies_byte_identical": true,
+  "new_build": "NOT_RUN_BY_WORK12",
+  "hardware_authority": "NONE",
+  "rom_note": "35 frozen ROM .mem inputs included; raw database and generator lineage not required for synthesis; no scientific regeneration claimed",
+  "edits": "Relative build paths, explicit locked-IP stop instead of unconditional upgrade, candidate output name; no RTL/XDC/IP param changes"
+}

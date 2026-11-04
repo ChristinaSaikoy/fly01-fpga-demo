@@ -1,0 +1,33 @@
+{
+  "mapping_id": "FINAL_DN_MOTOR_MAPPING_V1_0",
+  "status": "PASS_FROZEN",
+  "FILTER_TAU": 0.04,
+  "g_p03": 56.59375,
+  "g_p06R": 463.59375,
+  "slot12": {
+    "canonical_label": "DNp03",
+    "laterality": "L",
+    "role": "p03_left"
+  },
+  "slot22": {
+    "canonical_label": "DNp06",
+    "laterality": "R",
+    "role": "p06R"
+  },
+  "slot23": {
+    "canonical_label": "DNp03",
+    "laterality": "R",
+    "role": "p03_right"
+  },
+  "h_p03": "a23 - a12",
+  "h_p06R": "a22",
+  "yaw_pre": "56.59375*h_p03 + 463.59375*a22",
+  "yaw_rate_ref": "clamp(yaw_pre,-20,+20)",
+  "other_five_MotorDrive_references": {
+    "v_forward_ref": 0.0,
+    "v_lateral_ref": 0.0,
+    "v_vertical_ref": 0.0,
+    "roll_rate_ref": 0.0,
+    "pitch_rate_ref": 0.0
+  }
+}

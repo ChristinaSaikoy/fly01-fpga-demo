@@ -1,0 +1,269 @@
+{
+  "version": "MVP-DEMO-V1",
+  "reuse": [
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\packed10.py",
+      "path": "vendor/packed10.py",
+      "sha256": "f6aebf8cd08984ec031c77b421cc99064c13c0631d3848f68582518c5792b12f"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science_bridge.py",
+      "path": "vendor/science_bridge.py",
+      "sha256": "78d2159535000cac7eb6f06f9fac1dba44d2aa18770954573a8ea846348ddd8a"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science_loader.py",
+      "path": "vendor/science_loader.py",
+      "sha256": "6f307c051352f77e0cf421d11b517ea4fedab16665d4b34511530819189e4dd4"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\fly01_vision\\detector.py",
+      "path": "vendor/fly01_vision/detector.py",
+      "sha256": "df59cc92aef432836c23d1b6e1348a463c6bf6808d862b289a773eaa80db90fd"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\fly01_vision\\pipeline.py",
+      "path": "vendor/fly01_vision/pipeline.py",
+      "sha256": "31e2825e0effde2c6ff93dd6a58523070747004e2e8841f93272f831b3d4bcd1"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\fly01_vision\\settings.py",
+      "path": "vendor/fly01_vision/settings.py",
+      "sha256": "ac31a1e259ee25baa6bb4432d3781b8bc94e607bff9613e2f21ffd30f3fa6638"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\fly01_vision\\__init__.py",
+      "path": "vendor/fly01_vision/__init__.py",
+      "sha256": "13bfa4b75c68050288a0fbd76e8700d13fe702a43ab182ef1866f94fe3204bdc"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\BUNDLE.json",
+      "path": "vendor/science/BUNDLE.json",
+      "sha256": "dbb52e96197438d613de63472dcaba58e982c417960b4ed379b6c25d090733f8"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\BUNDLE_02.json",
+      "path": "vendor/science/BUNDLE_02.json",
+      "sha256": "73fe0aa50e0e45ec1e198fdd33f142fe61d83ee894566286343f94890da69b59"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\BUNDLE_03.json",
+      "path": "vendor/science/BUNDLE_03.json",
+      "sha256": "bf818eefac62a759b0d7d0aa048457d1e217cdc2c6c4d8194752d4cb8f717cc6"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\BODY-0A2D\\BODY-0A2D_BODY_FEEDBACK_CONTRACT.json",
+      "path": "vendor/science/tasks/BODY-0A2D/BODY-0A2D_BODY_FEEDBACK_CONTRACT.json",
+      "sha256": "515ce7d41df4849e930efa1b6a9b7990ed56ed2d0d6194f467b1ac4ecc208ccc"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\BODY-0A2D\\validate_body_0a2d.py",
+      "path": "vendor/science/tasks/BODY-0A2D/validate_body_0a2d.py",
+      "sha256": "c85dde4c1d156522583646c86ef3c8f15342aab0d5e80ccf0ca42346d38be5c8"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\DEMO-0\\FINAL_DN_MOTOR_MAPPING_V1_0.json",
+      "path": "vendor/science/tasks/DEMO-0/FINAL_DN_MOTOR_MAPPING_V1_0.json",
+      "sha256": "6ebe682548634e4fb2563336059f8563430df201f1954ae3ef1fa34806c4275f"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\DEMO-0\\FINAL_DN_MOTOR_MAPPING_V1_0_SHA256.txt",
+      "path": "vendor/science/tasks/DEMO-0/FINAL_DN_MOTOR_MAPPING_V1_0_SHA256.txt",
+      "sha256": "6358db658114ba08de6ec4548a47e050ffcd88bd24b31fb6360f660e77268524"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\DEMO-0\\FROZEN_PIPELINE_DEPENDENCIES_V1_0.json",
+      "path": "vendor/science/tasks/DEMO-0/FROZEN_PIPELINE_DEPENDENCIES_V1_0.json",
+      "sha256": "5839878ed7a6ae85cc444ae83cb93cb34c8c2e846501a59a54c0db00d30221ee"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\DEMO-0\\scientific_host.py",
+      "path": "vendor/science/tasks/DEMO-0/scientific_host.py",
+      "sha256": "d7287ea155ed1b0579dd800c2fb9efd54ffc7641990b77befabb09bd99cf3a69"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\DEMO-1-IMPLEMENTATION\\closed_loop_execute.py",
+      "path": "vendor/science/tasks/DEMO-1-IMPLEMENTATION/closed_loop_execute.py",
+      "sha256": "b3ac21c928001136bdcc89b95120b8e4885004d397b81dd432a1dfd405ac5d23"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\DEMO-1-IMPLEMENTATION\\DEMO-1_EXECUTION_MANIFEST_v1_0.json",
+      "path": "vendor/science/tasks/DEMO-1-IMPLEMENTATION/DEMO-1_EXECUTION_MANIFEST_v1_0.json",
+      "sha256": "88a0aee045a599e5ec05694d19bca3f9ebd129931a5d40bc9caaef68678dbaa9"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\DEMO-1-IMPLEMENTATION\\DEMO-1_EXECUTION_MANIFEST_v1_0_SHA256.txt",
+      "path": "vendor/science/tasks/DEMO-1-IMPLEMENTATION/DEMO-1_EXECUTION_MANIFEST_v1_0_SHA256.txt",
+      "sha256": "23b137879a704296e835f7114bf553170e6399a6242d0e3e926b119a5b42b7ba"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\DEMO-1-SENSORY-ENCODER-0\\DEMO-1_SENSORY_ENCODER_V1_0.json",
+      "path": "vendor/science/tasks/DEMO-1-SENSORY-ENCODER-0/DEMO-1_SENSORY_ENCODER_V1_0.json",
+      "sha256": "345112574af3b9ff48df4c0623069cad890721c64978aeb99c0ca8ce41eff003"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\DEMO-1-SENSORY-ENCODER-0\\sensory_encoder_v1_0.py",
+      "path": "vendor/science/tasks/DEMO-1-SENSORY-ENCODER-0/sensory_encoder_v1_0.py",
+      "sha256": "c867518076b18a048e7db3211aba1872179f67a64866698baa6f46e3db0e2d92"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\DEMO-1-SENSORY-ENCODER-0\\SENSORY_INPUT_POPULATION_311.csv",
+      "path": "vendor/science/tasks/DEMO-1-SENSORY-ENCODER-0/SENSORY_INPUT_POPULATION_311.csv",
+      "sha256": "f78c69ffb005b9a4e1d8771fa8fa60d9d68a578cd8d997583ac9b5613220fcc7"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\S4-S5-DN-ID-0\\FROZEN_32_DN_IDENTITY_AND_SLOT_ORDER.json",
+      "path": "vendor/science/tasks/S4-S5-DN-ID-0/FROZEN_32_DN_IDENTITY_AND_SLOT_ORDER.json",
+      "sha256": "e0e46d029a1da57de58de4c7293b5fcd267a4626bd816094d18d02f8ba4f313e"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\WORK-04\\o7_transport\\host\\adapter.py",
+      "path": "vendor/science/tasks/WORK-04/o7_transport/host/adapter.py",
+      "sha256": "6061d3e91901861292fe96a9e08c5cb7c94dd34f6580a5164fcab2d2dbc74be6"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\WORK-04\\o7_transport\\host\\run_candidate.py",
+      "path": "vendor/science/tasks/WORK-04/o7_transport/host/run_candidate.py",
+      "sha256": "cc6b908f98fb445c5eb0b1266a40f6b19d577e69a1a564e9a44f3b158da6bd09"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\WORK-01\\edge_live\\runtime.py",
+      "path": "vendor/science/tasks/WORK-01/edge_live/runtime.py",
+      "sha256": "3bcb7d320f6d6bc2dcdc1cc3f94d1e693ce3db7f7fca1a219d41c1cae471dca2"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\S5-FPGA-0\\golden\\brain.npz",
+      "path": "vendor/science/tasks/S5-FPGA-0/golden/brain.npz",
+      "sha256": "cc9bd1ecd00bd703a6fa648bc6ad145c93c7c1ee53debdcc9ce0d1f4305e6aca"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\S5-FPGA-0\\golden\\s4_candidate_graphs.npz",
+      "path": "vendor/science/tasks/S5-FPGA-0/golden/s4_candidate_graphs.npz",
+      "sha256": "5dd46c3adafd128a67c407c82e0f2636d5bfc640286b6234879e681c7336e9a6"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\S5-FPGA-0\\golden\\s4_scope1_integer_model.py",
+      "path": "vendor/science/tasks/S5-FPGA-0/golden/s4_scope1_integer_model.py",
+      "sha256": "6d68f34c963fbe79de38403a2a0203c2e7afa11f2e82385cd2c815baa6493ca0"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\S5-FPGA-0\\golden\\s4_scope1_integer_spec.json",
+      "path": "vendor/science/tasks/S5-FPGA-0/golden/s4_scope1_integer_spec.json",
+      "sha256": "61c9f53e64a2e5fc878c55f533da46955eb5f36ce2e36f9d537cf4c1d57ee1e9"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\BODY-0C2\\frozen\\body_controller_params_v0_1.json",
+      "path": "vendor/science/tasks/BODY-0C2/frozen/body_controller_params_v0_1.json",
+      "sha256": "b99079ec2c53e84511a974d80c4affd36af5dd68e9c8c598fcadf6e04eb79f8c"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\BODY-0C2\\frozen\\body_runtime_v0_1.py",
+      "path": "vendor/science/tasks/BODY-0C2/frozen/body_runtime_v0_1.py",
+      "sha256": "570076d8e6633b27147047b7947d03e6087efedb93c70b769c9937380ffa2882"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\BODY-0A2F-R1-RERUN-A3\\results\\STAGE2_A3_TEMPORAL.json",
+      "path": "vendor/science/tasks/BODY-0A2F-R1-RERUN-A3/results/STAGE2_A3_TEMPORAL.json",
+      "sha256": "321c2a9f8c1e736892ba4bef5f8c887edf9a0a415601e8f2ea066abec07e48ac"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\BODY-0A2F-R1-RERUN-A1\\results\\STAGE1_INFORMATIVENESS.json",
+      "path": "vendor/science/tasks/BODY-0A2F-R1-RERUN-A1/results/STAGE1_INFORMATIVENESS.json",
+      "sha256": "dc6791fa439487627ba533bb29c95ac994f2a2b102cddd7726b7e0a81ba2f0cd"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\BODY-0A2F-DATA-1\\raw\\D1_TRAIN_L_ONOFF_seed16\\dn32_per_step.csv",
+      "path": "vendor/science/tasks/BODY-0A2F-DATA-1/raw/D1_TRAIN_L_ONOFF_seed16/dn32_per_step.csv",
+      "sha256": "923ca6e89b99caf4612de27df799eb37f97bd5fb15d4fe7c95d8b08ab79e9d43"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-08\\direction_adapter\\vendor\\science\\tasks\\BODY-0A2F-DATA-1\\raw\\D1_TRAIN_R_ONOFF_seed17\\dn32_per_step.csv",
+      "path": "vendor/science/tasks/BODY-0A2F-DATA-1/raw/D1_TRAIN_R_ONOFF_seed17/dn32_per_step.csv",
+      "sha256": "a98e90ba5ea85b8db2b195633892748bd620657beb4a6412c384011a7606b0a0"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-07\\o8_host_hardening\\candidate\\host\\uart_wire.py",
+      "path": "vendor/uart_wire.py",
+      "sha256": "89e5f20d238539a6ab7199c5c2ceabddf7385191c41b59adb856fc665ddf069c"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-07\\o8_host_hardening\\candidate\\host\\uart_host.py",
+      "path": "vendor/uart_host.py",
+      "sha256": "2e5cc5f3bf4a254057148df135bd575c89ba1cc0284120b76a8bcade4872a8d9"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-07\\o8_host_hardening\\candidate\\host\\uart_windows.py",
+      "path": "vendor/uart_windows.py",
+      "sha256": "5e96695fbb3a73b8838123f88dec68a250773b35a269c12583d125e5a110a363"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-07\\o8_host_hardening\\candidate\\host\\host_diagnostics.py",
+      "path": "vendor/host_diagnostics.py",
+      "sha256": "ec4f0c9c1e02a5dd4355fae08a9188c87b951fbf4dce29664e4f7c95b2f01755"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-07\\o8_host_hardening\\candidate\\host\\test_host.py",
+      "path": "vendor/test_host.py",
+      "sha256": "820853dc9e0ed4d0c0166be7ae9ce3aa80a2a42f561eb7e30a0945e0070d68f5"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-07\\o8_host_hardening\\candidate\\host\\verify_wire_log.py",
+      "path": "vendor/verify_wire_log.py",
+      "sha256": "eb42bc1d5b9bd380aa230d2ef1c8c83ce5c7390dd4907b60f33a4338c668076b"
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-06\\o8_uart_r1\\windows_20261015\\runtime_candidate\\BUILD_READY.json",
+      "path": "BUILD_READY.json",
+      "sha256": "ea003f0b3821b206e535a75480459434d09bac423b06b7fa8ee12691118db684"
+    },
+    {
+      "source": "D:\\Study\\participant\\嵌赛\\果蝇\\归档文件\\TEAM_DELIVERY_REVIEW_2026-10-15\\by\\FLY01_BY02_VISION\\team-work\\bangyi\\by02\\samples\\images\\01_left.png",
+      "path": "assets/images/01_left.png",
+      "sha256": "d8bd681b99623510989f080fa83278a205f12d6beb6cd5650d64a5239f1f46c2"
+    },
+    {
+      "source": "D:\\Study\\participant\\嵌赛\\果蝇\\归档文件\\TEAM_DELIVERY_REVIEW_2026-10-15\\by\\FLY01_BY02_VISION\\team-work\\bangyi\\by02\\samples\\images\\02_right.png",
+      "path": "assets/images/02_right.png",
+      "sha256": "61f671b5a2157e4dfab764033b512df45309776978ec5f87bf67272618af93f5"
+    },
+    {
+      "source": "D:\\Study\\participant\\嵌赛\\果蝇\\归档文件\\TEAM_DELIVERY_REVIEW_2026-10-15\\by\\FLY01_BY02_VISION\\team-work\\bangyi\\by02\\samples\\images\\03_center.png",
+      "path": "assets/images/03_center.png",
+      "sha256": "c21f0a05df0b6fb24017f32712d8a2fdcf459baf2ecc15a09c4081fbf68e7d8b"
+    },
+    {
+      "source": "D:\\Study\\participant\\嵌赛\\果蝇\\归档文件\\TEAM_DELIVERY_REVIEW_2026-10-15\\by\\FLY01_BY02_VISION\\team-work\\bangyi\\by02\\samples\\images\\04_none.png",
+      "path": "assets/images/04_none.png",
+      "sha256": "276c334406e1d6aab51397543003df2c4a88199d31e95ab92a2cc9cbaa159705"
+    },
+    {
+      "source": "D:\\Study\\participant\\嵌赛\\果蝇\\归档文件\\TEAM_DELIVERY_REVIEW_2026-10-15\\by\\FLY01_BY02_VISION\\team-work\\bangyi\\by02\\samples\\images\\05_before_loss.png",
+      "path": "assets/images/05_before_loss.png",
+      "sha256": "d8bd681b99623510989f080fa83278a205f12d6beb6cd5650d64a5239f1f46c2"
+    },
+    {
+      "source": "D:\\Study\\participant\\嵌赛\\果蝇\\归档文件\\TEAM_DELIVERY_REVIEW_2026-10-15\\by\\FLY01_BY02_VISION\\team-work\\bangyi\\by02\\samples\\images\\06_lost.png",
+      "path": "assets/images/06_lost.png",
+      "sha256": "276c334406e1d6aab51397543003df2c4a88199d31e95ab92a2cc9cbaa159705"
+    },
+    {
+      "source": "D:\\Study\\participant\\嵌赛\\果蝇\\归档文件\\TEAM_DELIVERY_REVIEW_2026-10-15\\by\\FLY01_BY02_VISION\\team-work\\bangyi\\by02\\samples\\images\\07_reappear.png",
+      "path": "assets/images/07_reappear.png",
+      "sha256": "61f671b5a2157e4dfab764033b512df45309776978ec5f87bf67272618af93f5"
+    },
+    {
+      "source": "D:\\Study\\participant\\嵌赛\\果蝇\\归档文件\\TEAM_DELIVERY_REVIEW_2026-10-15\\by\\FLY01_BY02_VISION\\team-work\\bangyi\\by02\\samples\\images\\08_multiple.png",
+      "path": "assets/images/08_multiple.png",
+      "sha256": "bddd623d6628d62b86372e337a0c7ae07deecce937591a8170447611b4021f85"
+    },
+    {
+      "source": "D:\\Study\\participant\\嵌赛\\果蝇\\归档文件\\TEAM_DELIVERY_REVIEW_2026-10-15\\by\\FLY01_BY02_VISION\\team-work\\bangyi\\by02\\samples\\sequence.gif",
+      "path": "assets/sequence.gif",
+      "sha256": "33387cf4cc7074c73d30a6b394a77e4cd354102876a90ed16536e5481a0d2ff6"
+    }
+  ],
+  "production_bit_sha256": "93399a70892ece88300af96cd2dd27566b683f9eeecc41f394465182b5786eb4",
+  "BY03": "NOT_FOUND_USING_ACCEPTED_BY02",
+  "WORK10": "Strict packet FAIL; initial-middle 16 bytes / two truncated tails; no attribution",
+  "hardware": "NOT_ACCESSED"
+}

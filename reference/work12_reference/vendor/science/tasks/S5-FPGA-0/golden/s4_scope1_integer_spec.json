@@ -1,0 +1,59 @@
+{
+  "stage": "S4-SCOPE-1B",
+  "FPGA_GOLDEN_REFERENCE": "AUTHORITATIVE_INTEGER_MODEL",
+  "status": "FROZEN_CANDIDATE_PENDING_SCOPE1C",
+  "source_file": "s4_scope1_integer_model.py",
+  "candidate_graph": "B_VISUAL_RELAY128_TOP32",
+  "candidate_graph_file": "s4_candidate_graphs.npz",
+  "numeric": {
+    "weight": {"bits": 16, "fraction_bits": 14, "signed": true},
+    "state": {"bits": 18, "fraction_bits": 13, "signed": true},
+    "accumulator": {"bits": 24, "fraction_bits": 18, "signed": true},
+    "decay_coefficient": {"bits": 18, "fraction_bits": 17, "signed": false}
+  },
+  "quantized_constants": {
+    "decay_q": 107313,
+    "decay_float": 0.8187332153320312,
+    "tonic_q": 1147,
+    "tonic_float": 0.1400146484375,
+    "stimulus_q": 2458,
+    "stimulus_float": 0.300048828125,
+    "noise_q": 1802,
+    "noise_float": 0.219970703125,
+    "threshold_q": 8192,
+    "threshold_float": 1.0,
+    "gain": 3
+  },
+  "rounding": "round-to-nearest, ties away from zero",
+  "weight_quantization": "nearest signed integer in W16/F14, saturating to representable range",
+  "accumulator_semantics": "source-indexed CSR; previous-step fired sources traversed in local source order; each weight shifted from F14 to F18 and saturating-added after each edge",
+  "state_semantics": "signed saturating S18/F13, no wraparound",
+  "operation_order": [
+    "add source stimulus to state before the timestep",
+    "accumulate previous-step synaptic events",
+    "multiply state by quantized decay and requantize to S18/F13",
+    "multiply synaptic accumulator by exact gain=3 and requantize to state domain",
+    "add quantized tonic",
+    "add externally supplied deterministic noise amplitude where the frozen event stream marks an event",
+    "compare widened updated state against exact threshold=1.0",
+    "emit spike for state >= threshold",
+    "reset fired neuron state to zero",
+    "saturate/store non-fired state"
+  ],
+  "propagation_delay": "one model timestep",
+  "initial_state": "all zero",
+  "noise_mode": "DETERMINISTIC_EXTERNAL_NOISE_STREAM",
+  "noise_stream_semantics": "Externally supplied per-neuron/timestep Bernoulli-event stream. Python and future FPGA consume the exact same frozen stream; on-FPGA PRNG is not part of first hard Gate.",
+  "future_rtl_hard_gate": {
+    "same_subgraph": true,
+    "same_quantized_weights": true,
+    "same_initial_state": true,
+    "same_input_events": true,
+    "same_timestep": true,
+    "same_noise_stream": true,
+    "spike_events": "bit-exact",
+    "observable_state": "bit-exact",
+    "DN_event_counters": "exact",
+    "overflow_drop_counters": "exact"
+  }
+}

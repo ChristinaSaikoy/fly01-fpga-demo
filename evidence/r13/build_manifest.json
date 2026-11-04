@@ -1,0 +1,431 @@
+{
+  "schema_version": 1,
+  "run_id": "20261104T005254_041593Z",
+  "run_dir": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\build_r13\\20261104T005254_041593Z",
+  "name": "WORK28_R13_SENSITIVE_CANDIDATE",
+  "started_at_utc": "2026-11-04T00:52:54.085799+00:00",
+  "part": "xc7a35tfgg484-2",
+  "top": "fly01_integration_top",
+  "tb_top": "tb_neural_i2c",
+  "pass_marker": "WORK28_R13_SENSITIVE_PASS",
+  "sources": [
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\production_baseline\\src\\core\\fly01_accum_add.sv",
+      "sha256": "17bb7fc38d38b334afb4e8dddd4609f45935064acb5992edf21f34c72aeab2d5"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\production_baseline\\src\\core\\fly01_engine_core.sv",
+      "sha256": "f8be13938a2b0ff566682ccd9a042c8a8905dc8b6176f1dfa5e08b44f500bbf2"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\production_baseline\\src\\core\\fly01_event_fifo.sv",
+      "sha256": "99a90fd033b69c35cd6a69669d42e38fab18eb8945385d6287e8fbe26eda81d6"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\production_baseline\\src\\core\\fly01_formal_top.sv",
+      "sha256": "e31e8369444adbb1f9ea256354a33cda99d0d449947c6ed9eea86e160364ac0b"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\production_baseline\\src\\core\\fly01_neuron_update.sv",
+      "sha256": "ffd0b012af3e9578ebc05c45279b296d838c3be7095075fc1bb27b65ddc5b8ed"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\production_baseline\\src\\core\\fly01_round_shift.sv",
+      "sha256": "72bdc07148485f99d645d45387be2b3072ee15853eb5fed6378857d264389654"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\production_baseline\\src\\core\\fly01_source_drive.sv",
+      "sha256": "35ef11bc4ca0a232f0c63880ec092f099165f7e9c55af3dc2168d04b5d1736c4"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\production_baseline\\src\\core\\fly01_synapse_banks.sv",
+      "sha256": "b335cbd8f5509dea9f50ffed05ef267bed0145e06d39f07170d5b5af35a4450b"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\production_baseline\\src\\uart\\fly01_uart_rx.sv",
+      "sha256": "4d46259bf9ab47886333e986270a878b7b8e93b6eaac4cf914a92f5d041f2b21"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\production_baseline\\src\\uart\\fly01_uart_tx.sv",
+      "sha256": "bee1652b982ee758183757a832938d739f48e55f1f241e64d49c4275215bf68a"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\rtl\\fly01_autonomous_scheduler.sv",
+      "sha256": "2d50139135bb40d5a9a6c7ad4e31dd82ab947a129cb67eafa15a5a3a0e51a2e8"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\rtl\\fly01_i2c_write10.sv",
+      "sha256": "7b8dea79f0ee035792139333ce1005a85b2c13b27ce6d231185e1196a1211544"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\rtl\\fly01_integration_top.sv",
+      "sha256": "f297fae13e09b753c5d141f25c068bcd333c6ea6e8aadc70203ee085b1aad524"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\rtl\\fly01_motor_ascii.sv",
+      "sha256": "6908d71556288b2e56d18f13c498142f2ef7ce5fea742f2ddfd17c8c95c71be2"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\rtl\\fly01_motor_i2c.sv",
+      "sha256": "99dc87520556df45cfca264fa360838f3a90d814e2931a6d7e6721e395e84aa8"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\rtl\\fly01_packet_rx.sv",
+      "sha256": "3101130f636958ccc3420fa61060f9b6b5c9f502e02787cf5cb7e4223bc00db6"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\rtl\\fly01_packet_tx.sv",
+      "sha256": "a79fa1322a1486d633059cf9e67959c5dcb2132bead70bb590425a923a76fd11"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\rtl\\fly01_postprocess.sv",
+      "sha256": "f2991ea070fbc8e7f10938abbf0ef70bfb59677716e294c40b4c1c5937130a96"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\rtl\\fly01_spin_pwm.sv",
+      "sha256": "6624ba3032b135286a9ad5d22edcb9e0fec473120806734c851bdc19bfb165ee"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\rtl\\fly01_motor_envelope.sv",
+      "sha256": "222feb390fb46b0ccb59ef09ce7f4bfb5307c2a07d217d331b590736d8b38eda"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\sim\\tb_neural_i2c.sv",
+      "sha256": "b60ab4acd7d6cd651ad8cb3c660b2ac764d5a9b8ed6ded9712c2275e02b56db0"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\sim\\tb_i2c_recovery.sv",
+      "sha256": "9ad121f2b7683d3a6ab94e037128ecfb6e9d7a4e91f62fa10eca9f28393e720c"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\sim\\tb_sensitive_scaling.sv",
+      "sha256": "739c3f4a81f91238cad8a70321f11a74ca5efa7e59dc17731da9c930f168826a"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\candidate\\constraints.xdc",
+      "sha256": "3eea72968f64b7cb355dccfcac6cfa926c79b81987c697e93d19838fc05c0ee1"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\postprocess_constants.vh",
+      "sha256": "9b380a585efdc880651d2d30ddeca4d78096782d19c7cc5ebbe63858566cee8c"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\dst_b00.mem",
+      "sha256": "44978f58dcc369eaf3ed37d71b0e898f965421fa054c1830b3422739aa23daa7"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\dst_b01.mem",
+      "sha256": "2d1cdfb113bd356a00a9be27c488d2273fe578bf61cb8786ee9b266b0430586c"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\dst_b02.mem",
+      "sha256": "cbe0e66555555fbf831f2f987e3dd63704ed54f9af009850b27c1900b16e35ae"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\dst_b03.mem",
+      "sha256": "f42e840bb3ae3b0f35a3795f99098bd9c1314824fb406a0333787e790174addd"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\dst_b04.mem",
+      "sha256": "d97f6e7556fb40346f550dc78bcbb6ade233db774c59803b6f941a6b44b5405b"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\dst_b05.mem",
+      "sha256": "9ab1130e55069bfb3cd6b7787e8775962c853db7b3ed81139e4cb4e1f6790688"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\dst_b06.mem",
+      "sha256": "44c041338930042f579ea00bb18159e39fd1d9c586cdcf3300d71be57be5f852"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\dst_b07.mem",
+      "sha256": "d9d917da3ab16312a21b0155194587fb3faf48971a153d1c1c0a3985afc14671"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\dst_b08.mem",
+      "sha256": "97da7f67a191d12f2dc675cbe2b154421ffca338768beaf9567aa3c388f3c936"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\dst_b09.mem",
+      "sha256": "9234b306ec0d78dd628a78f96bb5291d6f1959ab147ea42aa1be6b93f11298f5"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\dst_b10.mem",
+      "sha256": "3d7c43b4d61ae72a8cbe1eaac13c87a092ee1121744dc120020407620dd69f74"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b00.mem",
+      "sha256": "15ec39ed6826e3e0df2dcdfb15cedbce53c7da48646bcf48af779aaadf95be1b"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b01.mem",
+      "sha256": "980bd397e5f4bdd2cf8b89b0540a284151e5cd9ab5b9e101c339e1b087195e12"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b02.mem",
+      "sha256": "328ae2a80d8e79847cad1667af820edfb5ab37f544147862f7d844edb435f9e2"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b03.mem",
+      "sha256": "062773d82a1ecdb5452578d1cb9dbd4ad92305a8eb06afdbcc1da387263d8fcd"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b04.mem",
+      "sha256": "7399e65bbc9be9b9521a0c788fad24a3ce324014f364e6a3039a866cc400351e"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b05.mem",
+      "sha256": "9cb900be4f59ae732d2b065d20a53deccf65480777dcc71be29d526f89c69931"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b06.mem",
+      "sha256": "a51dc20121c47b1b8827bd0cbc8c54bf8f0963dfe71339f3d03da9e27c609301"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b07.mem",
+      "sha256": "a7338ff71ba60552175152868d874c9488583efe3ca363a48c81e97617e4570a"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b08.mem",
+      "sha256": "6236b74d7a5bf4623472a6012fce9319791424be82142121094ccd6e8c858763"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b09.mem",
+      "sha256": "07bd1df60acf2f5fd7c3bf5421c2b5d2c27edc1fec6b11feb66ae7128fbcc433"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b10.mem",
+      "sha256": "fb13c1ad6394e4d1ebbb8fb64a7a4521009730f6e69e5a8444e38a877ec7035d"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b11.mem",
+      "sha256": "d1abb35cab6ce04668b70593b6144e165d8529d898de8262159b656d904a64b0"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b12.mem",
+      "sha256": "3c4093b9ed4020a0cbbd4174dd2e07ccd5cf2e81b2873035129f93e78d3bcaee"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b13.mem",
+      "sha256": "6135581cef51165a1f8aaf3443b5f8ac5c6600d33595c7910292fedeb3bd80ba"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b14.mem",
+      "sha256": "7ba066cf63f20c9208e3af3ba2b6ba655c0443c8c9e170b10ca069bc5f460b6f"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b15.mem",
+      "sha256": "9e9859b4f4feedb7723b94baf718799616d873d1d215d83b67d9f046a102317c"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b16.mem",
+      "sha256": "597cde844733a9befbb250163159e6e256929a96752b557748fc4700f7466235"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b17.mem",
+      "sha256": "435755fefa536460b7b0dd9e0b9fc817930b2f370f36670df43b0509dae4e06c"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b18.mem",
+      "sha256": "73a43e1cc6e35caa0a2b8e130cc24050edf73073dbea3ce92a0fbd8e4de3097c"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b19.mem",
+      "sha256": "fa27f69e04da04b73a590fb778d0108e6b9136bc636d09fa1e29b83c132b03bc"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b20.mem",
+      "sha256": "20e6801f325136cb1cac4c20f21f8d2acf0af1e0e010b37535a7070bfa4725f5"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\banked\\weight_b21.mem",
+      "sha256": "a09e5436ec7a50e5a4bcdd535fb6990a7b5db087217c33d254d862a39a0d15ac"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\csr_row_ptr.mem",
+      "sha256": "0434053c02958bcf713f043ad32348f3ab2e4e3bfe76ade7ad97d4431614b598"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\generated\\dn_local.mem",
+      "sha256": "113fba5de99c962f4d2a4b52b1c098b3048f56ebc341d549da7c7bd306a5da91"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\FROZEN_INPUTS.json",
+      "sha256": "6f19d2a808d207c5ad256d0b5c7ca400c0dd2b502aae96e2cd5cba8ca1b162a3"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\noise_packet_0.mem",
+      "sha256": "383afbdd329ec46f937ef5e0a037f3662cc646aeae598c459d5bfe0a32421c58"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\noise_packet_1.mem",
+      "sha256": "55bf18df2e9237943a89c1469f9dd7425c35561783a1cdbda95d0a82e2bd77c2"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\noise_packet_2.mem",
+      "sha256": "6de153c255de7394ba8b4f33737a52a404f40ec2ee2f2a85da79e9cb1dbb4bc1"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\noise_packet_3.mem",
+      "sha256": "186b8ccc4422075de70db44ae30adde884413b3c4eb9cc8e466384cab89564bc"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\noise_packet_4.mem",
+      "sha256": "863e9d6f44807476ffa9fe515f64622b9f7791b5f2eb8464a1804de5af4b13aa"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\noise_packet_5.mem",
+      "sha256": "497d766ffc394769f294b3660c83641544e09d8b25cff7faa91427f3feed9905"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\noise_packet_6.mem",
+      "sha256": "b9977b7d755e9b4a53bb4d81dd638c15dbc801a78ebcf13f415d06dea8c62900"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\noise_packet_7.mem",
+      "sha256": "7a4874d4e1605e6610562d1cce52a737da58bd9e6cd1be79ba081c3e9e30b122"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\noise_short_471.bin",
+      "sha256": "e2414914c5fed1d06301b5089355cbe618aee84878ab504bbff8f3b0c064c437"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\noise_short_471.mem",
+      "sha256": "506f404cc0a3672ce2dedf6d7afe4677ead2489b89ef6c811d6b75164b3e7a8e"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\observations.mem",
+      "sha256": "bc2a7d3cb56138048dc2c75a9e0d4531d5e8685e364d316ae7c6e0b8d5745b48"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\packet_sizes.vh",
+      "sha256": "622f84cc9f96f7d7ea46b12fc68c4a53943ec8ccc53faeab7c978d07cb11d827"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\post_expected.mem",
+      "sha256": "cce930f26236d438bcaad0539c97dc519b75fc83549ed6efaa5849beb028648e"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\post_input.mem",
+      "sha256": "e17be156018224f73fc61281f7371d3c6140bfdee58cc51efbb34cc38b16c753"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\rx_stream.mem",
+      "sha256": "a136dc7e7225bb534b8d4b0f2d546b33c43b82def91e32ce8f38ae21c6a2c368"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\stimulus_masks_471.bin",
+      "sha256": "8f0bcc971152cc3ca50b2bc0135343ce934547a20d293764b88e3ee7f3b62f5f"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\stimulus_masks_471.mem",
+      "sha256": "7d7cd9289f378a1fa9a1085d777aa816024cd5433ed7382eabe4832e43faf1f0"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\assets\\tx_expected.mem",
+      "sha256": "5fa7b3bb1854315591e3819e16107ee3453aaee9c9c1d91047f41ba0f56de7a1"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\run_zero_local.py",
+      "sha256": "dde51ca2c0da3b78424fe26bd80323c77789bfba2c0441c9663f7c8771bf59fe"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\run_motion_local.py",
+      "sha256": "36d09e570241f0b476b4f196ae24cbf0d70b624f4de8b01ebf6f8a1b0a622fda"
+    },
+    {
+      "path": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\ZERO_ACK_ACCEPTANCE.json",
+      "sha256": "ac373aed5f7592754f9fc278210fc26b5bfaaeafa57fa9c0c21c4fcd863c9d7d"
+    }
+  ],
+  "extra_files": [
+    "postprocess_constants.vh",
+    "generated/banked/dst_b00.mem",
+    "generated/banked/dst_b01.mem",
+    "generated/banked/dst_b02.mem",
+    "generated/banked/dst_b03.mem",
+    "generated/banked/dst_b04.mem",
+    "generated/banked/dst_b05.mem",
+    "generated/banked/dst_b06.mem",
+    "generated/banked/dst_b07.mem",
+    "generated/banked/dst_b08.mem",
+    "generated/banked/dst_b09.mem",
+    "generated/banked/dst_b10.mem",
+    "generated/banked/weight_b00.mem",
+    "generated/banked/weight_b01.mem",
+    "generated/banked/weight_b02.mem",
+    "generated/banked/weight_b03.mem",
+    "generated/banked/weight_b04.mem",
+    "generated/banked/weight_b05.mem",
+    "generated/banked/weight_b06.mem",
+    "generated/banked/weight_b07.mem",
+    "generated/banked/weight_b08.mem",
+    "generated/banked/weight_b09.mem",
+    "generated/banked/weight_b10.mem",
+    "generated/banked/weight_b11.mem",
+    "generated/banked/weight_b12.mem",
+    "generated/banked/weight_b13.mem",
+    "generated/banked/weight_b14.mem",
+    "generated/banked/weight_b15.mem",
+    "generated/banked/weight_b16.mem",
+    "generated/banked/weight_b17.mem",
+    "generated/banked/weight_b18.mem",
+    "generated/banked/weight_b19.mem",
+    "generated/banked/weight_b20.mem",
+    "generated/banked/weight_b21.mem",
+    "generated/csr_row_ptr.mem",
+    "generated/dn_local.mem",
+    "assets/FROZEN_INPUTS.json",
+    "assets/noise_packet_0.mem",
+    "assets/noise_packet_1.mem",
+    "assets/noise_packet_2.mem",
+    "assets/noise_packet_3.mem",
+    "assets/noise_packet_4.mem",
+    "assets/noise_packet_5.mem",
+    "assets/noise_packet_6.mem",
+    "assets/noise_packet_7.mem",
+    "assets/noise_short_471.bin",
+    "assets/noise_short_471.mem",
+    "assets/observations.mem",
+    "assets/packet_sizes.vh",
+    "assets/post_expected.mem",
+    "assets/post_input.mem",
+    "assets/rx_stream.mem",
+    "assets/stimulus_masks_471.bin",
+    "assets/stimulus_masks_471.mem",
+    "assets/tx_expected.mem",
+    "run_zero_local.py",
+    "run_motion_local.py",
+    "ZERO_ACK_ACCEPTANCE.json"
+  ],
+  "stages": {
+    "icarus": {
+      "status": "PASS",
+      "marker": "WORK28_R13_SENSITIVE_PASS"
+    },
+    "xsim": {
+      "status": "PASS",
+      "marker": "WORK28_R13_SENSITIVE_PASS"
+    },
+    "vivado": {
+      "status": "PASS",
+      "wns_ns": 0.226,
+      "whs_ns": 0.08,
+      "bitstream": "D:\\FPGA-AUTO\\tasks\\WORK-28-R13-SENSITIVE-20261104\\build_r13\\20261104T005254_041593Z\\WORK28_R13_SENSITIVE_CANDIDATE.bit",
+      "bitstream_sha256": "f91052eaa8bb00110f858593f9d4d8b0ec462cda8ad801375a416831a86bc7b1",
+      "bitstream_bytes": 2192145,
+      "vivado_version": "2025.2",
+      "drc_blockers": [],
+      "drc_warnings": [
+        "| DPIP-1  | Warning  | Input pipelining            | 8      |",
+        "| DPOP-1  | Warning  | PREG Output pipelining      | 9      |",
+        "| DPOP-2  | Warning  | MREG Output pipelining      | 8      |",
+        "| DPREG-4 | Warning  | DSP48E1_PregDynOpmodeZmuxP: | 1      |"
+      ],
+      "physical_policy": "canonical flow + post-route phys_opt_design -directive Explore",
+      "error_log_gate": "PASS"
+    }
+  },
+  "status": "PASS",
+  "finished_at_utc": "2026-11-04T00:59:03.357979+00:00"
+}

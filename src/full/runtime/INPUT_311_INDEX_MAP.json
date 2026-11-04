@@ -1,0 +1,2494 @@
+{
+  "count": 311,
+  "exact_match": "311/311",
+  "entries": [
+    {
+      "input_slot": 0,
+      "legacy_brain_index": 1398,
+      "body_id": 11498,
+      "runtime_index": 1398,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 1,
+      "legacy_brain_index": 1899,
+      "body_id": 12032,
+      "runtime_index": 1899,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 2,
+      "legacy_brain_index": 2195,
+      "body_id": 12349,
+      "runtime_index": 2195,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 3,
+      "legacy_brain_index": 2228,
+      "body_id": 12384,
+      "runtime_index": 2228,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 4,
+      "legacy_brain_index": 2642,
+      "body_id": 12824,
+      "runtime_index": 2642,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 5,
+      "legacy_brain_index": 2932,
+      "body_id": 13132,
+      "runtime_index": 2932,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 6,
+      "legacy_brain_index": 3475,
+      "body_id": 13726,
+      "runtime_index": 3475,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 7,
+      "legacy_brain_index": 3509,
+      "body_id": 13764,
+      "runtime_index": 3509,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 8,
+      "legacy_brain_index": 3755,
+      "body_id": 14030,
+      "runtime_index": 3755,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 9,
+      "legacy_brain_index": 3817,
+      "body_id": 14102,
+      "runtime_index": 3817,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 10,
+      "legacy_brain_index": 4134,
+      "body_id": 14465,
+      "runtime_index": 4134,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 11,
+      "legacy_brain_index": 4517,
+      "body_id": 14888,
+      "runtime_index": 4517,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 12,
+      "legacy_brain_index": 4635,
+      "body_id": 15018,
+      "runtime_index": 4635,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 13,
+      "legacy_brain_index": 5341,
+      "body_id": 15804,
+      "runtime_index": 5341,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 14,
+      "legacy_brain_index": 5623,
+      "body_id": 16128,
+      "runtime_index": 5623,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 15,
+      "legacy_brain_index": 5631,
+      "body_id": 16138,
+      "runtime_index": 5631,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 16,
+      "legacy_brain_index": 6080,
+      "body_id": 16628,
+      "runtime_index": 6080,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 17,
+      "legacy_brain_index": 6241,
+      "body_id": 16809,
+      "runtime_index": 6241,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 18,
+      "legacy_brain_index": 6336,
+      "body_id": 16917,
+      "runtime_index": 6336,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 19,
+      "legacy_brain_index": 6457,
+      "body_id": 17054,
+      "runtime_index": 6457,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 20,
+      "legacy_brain_index": 6462,
+      "body_id": 17059,
+      "runtime_index": 6462,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 21,
+      "legacy_brain_index": 6647,
+      "body_id": 17266,
+      "runtime_index": 6647,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 22,
+      "legacy_brain_index": 6650,
+      "body_id": 17270,
+      "runtime_index": 6650,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 23,
+      "legacy_brain_index": 6711,
+      "body_id": 17340,
+      "runtime_index": 6711,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 24,
+      "legacy_brain_index": 6735,
+      "body_id": 17364,
+      "runtime_index": 6735,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 25,
+      "legacy_brain_index": 6837,
+      "body_id": 17478,
+      "runtime_index": 6837,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 26,
+      "legacy_brain_index": 6896,
+      "body_id": 17544,
+      "runtime_index": 6896,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 27,
+      "legacy_brain_index": 6899,
+      "body_id": 17548,
+      "runtime_index": 6899,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 28,
+      "legacy_brain_index": 6902,
+      "body_id": 17551,
+      "runtime_index": 6902,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 29,
+      "legacy_brain_index": 6955,
+      "body_id": 17608,
+      "runtime_index": 6955,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 30,
+      "legacy_brain_index": 6997,
+      "body_id": 17653,
+      "runtime_index": 6997,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 31,
+      "legacy_brain_index": 7010,
+      "body_id": 17668,
+      "runtime_index": 7010,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 32,
+      "legacy_brain_index": 7107,
+      "body_id": 17774,
+      "runtime_index": 7107,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 33,
+      "legacy_brain_index": 7108,
+      "body_id": 17775,
+      "runtime_index": 7108,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 34,
+      "legacy_brain_index": 7186,
+      "body_id": 17860,
+      "runtime_index": 7186,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 35,
+      "legacy_brain_index": 7205,
+      "body_id": 17880,
+      "runtime_index": 7205,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 36,
+      "legacy_brain_index": 7245,
+      "body_id": 17926,
+      "runtime_index": 7245,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 37,
+      "legacy_brain_index": 7296,
+      "body_id": 17987,
+      "runtime_index": 7296,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 38,
+      "legacy_brain_index": 7299,
+      "body_id": 17990,
+      "runtime_index": 7299,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 39,
+      "legacy_brain_index": 7421,
+      "body_id": 18127,
+      "runtime_index": 7421,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 40,
+      "legacy_brain_index": 7476,
+      "body_id": 18189,
+      "runtime_index": 7476,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 41,
+      "legacy_brain_index": 7663,
+      "body_id": 18396,
+      "runtime_index": 7663,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 42,
+      "legacy_brain_index": 7695,
+      "body_id": 18432,
+      "runtime_index": 7695,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 43,
+      "legacy_brain_index": 7734,
+      "body_id": 18478,
+      "runtime_index": 7734,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 44,
+      "legacy_brain_index": 7907,
+      "body_id": 18672,
+      "runtime_index": 7907,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 45,
+      "legacy_brain_index": 8115,
+      "body_id": 18900,
+      "runtime_index": 8115,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 46,
+      "legacy_brain_index": 8143,
+      "body_id": 18929,
+      "runtime_index": 8143,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 47,
+      "legacy_brain_index": 8150,
+      "body_id": 18936,
+      "runtime_index": 8150,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 48,
+      "legacy_brain_index": 8240,
+      "body_id": 19034,
+      "runtime_index": 8240,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 49,
+      "legacy_brain_index": 8341,
+      "body_id": 19146,
+      "runtime_index": 8341,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 50,
+      "legacy_brain_index": 8410,
+      "body_id": 19229,
+      "runtime_index": 8410,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 51,
+      "legacy_brain_index": 8427,
+      "body_id": 19249,
+      "runtime_index": 8427,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 52,
+      "legacy_brain_index": 8438,
+      "body_id": 19260,
+      "runtime_index": 8438,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 53,
+      "legacy_brain_index": 8575,
+      "body_id": 19420,
+      "runtime_index": 8575,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 54,
+      "legacy_brain_index": 8685,
+      "body_id": 19543,
+      "runtime_index": 8685,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 55,
+      "legacy_brain_index": 8690,
+      "body_id": 19549,
+      "runtime_index": 8690,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 56,
+      "legacy_brain_index": 8691,
+      "body_id": 19550,
+      "runtime_index": 8691,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 57,
+      "legacy_brain_index": 8726,
+      "body_id": 19589,
+      "runtime_index": 8726,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 58,
+      "legacy_brain_index": 8745,
+      "body_id": 19608,
+      "runtime_index": 8745,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 59,
+      "legacy_brain_index": 8767,
+      "body_id": 19634,
+      "runtime_index": 8767,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 60,
+      "legacy_brain_index": 8903,
+      "body_id": 19787,
+      "runtime_index": 8903,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 61,
+      "legacy_brain_index": 8908,
+      "body_id": 19794,
+      "runtime_index": 8908,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 62,
+      "legacy_brain_index": 8942,
+      "body_id": 19830,
+      "runtime_index": 8942,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 63,
+      "legacy_brain_index": 8953,
+      "body_id": 19842,
+      "runtime_index": 8953,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 64,
+      "legacy_brain_index": 9015,
+      "body_id": 19911,
+      "runtime_index": 9015,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 65,
+      "legacy_brain_index": 9053,
+      "body_id": 19954,
+      "runtime_index": 9053,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 66,
+      "legacy_brain_index": 9107,
+      "body_id": 20016,
+      "runtime_index": 9107,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 67,
+      "legacy_brain_index": 9135,
+      "body_id": 20047,
+      "runtime_index": 9135,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 68,
+      "legacy_brain_index": 9186,
+      "body_id": 20103,
+      "runtime_index": 9186,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 69,
+      "legacy_brain_index": 9235,
+      "body_id": 20162,
+      "runtime_index": 9235,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 70,
+      "legacy_brain_index": 9253,
+      "body_id": 20182,
+      "runtime_index": 9253,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 71,
+      "legacy_brain_index": 9307,
+      "body_id": 20240,
+      "runtime_index": 9307,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 72,
+      "legacy_brain_index": 9331,
+      "body_id": 20269,
+      "runtime_index": 9331,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 73,
+      "legacy_brain_index": 9344,
+      "body_id": 20282,
+      "runtime_index": 9344,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 74,
+      "legacy_brain_index": 9384,
+      "body_id": 20329,
+      "runtime_index": 9384,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 75,
+      "legacy_brain_index": 9388,
+      "body_id": 20334,
+      "runtime_index": 9388,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 76,
+      "legacy_brain_index": 9444,
+      "body_id": 20399,
+      "runtime_index": 9444,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 77,
+      "legacy_brain_index": 9479,
+      "body_id": 20440,
+      "runtime_index": 9479,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 78,
+      "legacy_brain_index": 9507,
+      "body_id": 20471,
+      "runtime_index": 9507,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 79,
+      "legacy_brain_index": 9564,
+      "body_id": 20535,
+      "runtime_index": 9564,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 80,
+      "legacy_brain_index": 9570,
+      "body_id": 20542,
+      "runtime_index": 9570,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 81,
+      "legacy_brain_index": 9598,
+      "body_id": 20572,
+      "runtime_index": 9598,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 82,
+      "legacy_brain_index": 9610,
+      "body_id": 20584,
+      "runtime_index": 9610,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 83,
+      "legacy_brain_index": 9614,
+      "body_id": 20588,
+      "runtime_index": 9614,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 84,
+      "legacy_brain_index": 9694,
+      "body_id": 20673,
+      "runtime_index": 9694,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 85,
+      "legacy_brain_index": 9711,
+      "body_id": 20694,
+      "runtime_index": 9711,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 86,
+      "legacy_brain_index": 9761,
+      "body_id": 20749,
+      "runtime_index": 9761,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 87,
+      "legacy_brain_index": 9805,
+      "body_id": 20799,
+      "runtime_index": 9805,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 88,
+      "legacy_brain_index": 9813,
+      "body_id": 20808,
+      "runtime_index": 9813,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 89,
+      "legacy_brain_index": 9859,
+      "body_id": 20859,
+      "runtime_index": 9859,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 90,
+      "legacy_brain_index": 9911,
+      "body_id": 20917,
+      "runtime_index": 9911,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 91,
+      "legacy_brain_index": 9951,
+      "body_id": 20967,
+      "runtime_index": 9951,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 92,
+      "legacy_brain_index": 9958,
+      "body_id": 20976,
+      "runtime_index": 9958,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 93,
+      "legacy_brain_index": 10021,
+      "body_id": 21045,
+      "runtime_index": 10021,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 94,
+      "legacy_brain_index": 10115,
+      "body_id": 21151,
+      "runtime_index": 10115,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 95,
+      "legacy_brain_index": 10126,
+      "body_id": 21165,
+      "runtime_index": 10126,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 96,
+      "legacy_brain_index": 10184,
+      "body_id": 21225,
+      "runtime_index": 10184,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 97,
+      "legacy_brain_index": 10242,
+      "body_id": 21287,
+      "runtime_index": 10242,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 98,
+      "legacy_brain_index": 10254,
+      "body_id": 21299,
+      "runtime_index": 10254,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 99,
+      "legacy_brain_index": 10264,
+      "body_id": 21313,
+      "runtime_index": 10264,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 100,
+      "legacy_brain_index": 10268,
+      "body_id": 21318,
+      "runtime_index": 10268,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 101,
+      "legacy_brain_index": 10284,
+      "body_id": 21336,
+      "runtime_index": 10284,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 102,
+      "legacy_brain_index": 10307,
+      "body_id": 21361,
+      "runtime_index": 10307,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 103,
+      "legacy_brain_index": 10483,
+      "body_id": 21562,
+      "runtime_index": 10483,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 104,
+      "legacy_brain_index": 10608,
+      "body_id": 21703,
+      "runtime_index": 10608,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 105,
+      "legacy_brain_index": 10625,
+      "body_id": 21721,
+      "runtime_index": 10625,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 106,
+      "legacy_brain_index": 10670,
+      "body_id": 21769,
+      "runtime_index": 10670,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 107,
+      "legacy_brain_index": 10704,
+      "body_id": 21804,
+      "runtime_index": 10704,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 108,
+      "legacy_brain_index": 10708,
+      "body_id": 21808,
+      "runtime_index": 10708,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 109,
+      "legacy_brain_index": 10757,
+      "body_id": 21862,
+      "runtime_index": 10757,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 110,
+      "legacy_brain_index": 10789,
+      "body_id": 21899,
+      "runtime_index": 10789,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 111,
+      "legacy_brain_index": 10912,
+      "body_id": 22034,
+      "runtime_index": 10912,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 112,
+      "legacy_brain_index": 11061,
+      "body_id": 22194,
+      "runtime_index": 11061,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 113,
+      "legacy_brain_index": 11084,
+      "body_id": 22218,
+      "runtime_index": 11084,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 114,
+      "legacy_brain_index": 11115,
+      "body_id": 22253,
+      "runtime_index": 11115,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 115,
+      "legacy_brain_index": 11122,
+      "body_id": 22261,
+      "runtime_index": 11122,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 116,
+      "legacy_brain_index": 11185,
+      "body_id": 22328,
+      "runtime_index": 11185,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 117,
+      "legacy_brain_index": 11387,
+      "body_id": 22557,
+      "runtime_index": 11387,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 118,
+      "legacy_brain_index": 11495,
+      "body_id": 22677,
+      "runtime_index": 11495,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 119,
+      "legacy_brain_index": 11583,
+      "body_id": 22772,
+      "runtime_index": 11583,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 120,
+      "legacy_brain_index": 11655,
+      "body_id": 22847,
+      "runtime_index": 11655,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 121,
+      "legacy_brain_index": 11722,
+      "body_id": 22922,
+      "runtime_index": 11722,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 122,
+      "legacy_brain_index": 11759,
+      "body_id": 22966,
+      "runtime_index": 11759,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 123,
+      "legacy_brain_index": 11768,
+      "body_id": 22975,
+      "runtime_index": 11768,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 124,
+      "legacy_brain_index": 11876,
+      "body_id": 23098,
+      "runtime_index": 11876,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 125,
+      "legacy_brain_index": 11963,
+      "body_id": 23202,
+      "runtime_index": 11963,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 126,
+      "legacy_brain_index": 11986,
+      "body_id": 23226,
+      "runtime_index": 11986,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 127,
+      "legacy_brain_index": 12004,
+      "body_id": 23247,
+      "runtime_index": 12004,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 128,
+      "legacy_brain_index": 12097,
+      "body_id": 23349,
+      "runtime_index": 12097,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 129,
+      "legacy_brain_index": 12137,
+      "body_id": 23392,
+      "runtime_index": 12137,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 130,
+      "legacy_brain_index": 12224,
+      "body_id": 23497,
+      "runtime_index": 12224,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 131,
+      "legacy_brain_index": 12270,
+      "body_id": 23550,
+      "runtime_index": 12270,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 132,
+      "legacy_brain_index": 12306,
+      "body_id": 23590,
+      "runtime_index": 12306,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 133,
+      "legacy_brain_index": 12375,
+      "body_id": 23665,
+      "runtime_index": 12375,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 134,
+      "legacy_brain_index": 12493,
+      "body_id": 23792,
+      "runtime_index": 12493,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 135,
+      "legacy_brain_index": 12572,
+      "body_id": 23878,
+      "runtime_index": 12572,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 136,
+      "legacy_brain_index": 12611,
+      "body_id": 23919,
+      "runtime_index": 12611,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 137,
+      "legacy_brain_index": 12620,
+      "body_id": 23929,
+      "runtime_index": 12620,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 138,
+      "legacy_brain_index": 12783,
+      "body_id": 24118,
+      "runtime_index": 12783,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 139,
+      "legacy_brain_index": 12846,
+      "body_id": 24187,
+      "runtime_index": 12846,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 140,
+      "legacy_brain_index": 12919,
+      "body_id": 24268,
+      "runtime_index": 12919,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 141,
+      "legacy_brain_index": 12957,
+      "body_id": 24308,
+      "runtime_index": 12957,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 142,
+      "legacy_brain_index": 12985,
+      "body_id": 24338,
+      "runtime_index": 12985,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 143,
+      "legacy_brain_index": 13045,
+      "body_id": 24401,
+      "runtime_index": 13045,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 144,
+      "legacy_brain_index": 13146,
+      "body_id": 24523,
+      "runtime_index": 13146,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 145,
+      "legacy_brain_index": 13178,
+      "body_id": 24568,
+      "runtime_index": 13178,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 146,
+      "legacy_brain_index": 13210,
+      "body_id": 24605,
+      "runtime_index": 13210,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 147,
+      "legacy_brain_index": 13387,
+      "body_id": 24800,
+      "runtime_index": 13387,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 148,
+      "legacy_brain_index": 13422,
+      "body_id": 24840,
+      "runtime_index": 13422,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 149,
+      "legacy_brain_index": 13591,
+      "body_id": 25027,
+      "runtime_index": 13591,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 150,
+      "legacy_brain_index": 13688,
+      "body_id": 25136,
+      "runtime_index": 13688,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 151,
+      "legacy_brain_index": 13753,
+      "body_id": 25209,
+      "runtime_index": 13753,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 152,
+      "legacy_brain_index": 13792,
+      "body_id": 25253,
+      "runtime_index": 13792,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 153,
+      "legacy_brain_index": 13804,
+      "body_id": 25267,
+      "runtime_index": 13804,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 154,
+      "legacy_brain_index": 13821,
+      "body_id": 25286,
+      "runtime_index": 13821,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 155,
+      "legacy_brain_index": 13846,
+      "body_id": 25316,
+      "runtime_index": 13846,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 156,
+      "legacy_brain_index": 14014,
+      "body_id": 25497,
+      "runtime_index": 14014,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 157,
+      "legacy_brain_index": 14027,
+      "body_id": 25511,
+      "runtime_index": 14027,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 158,
+      "legacy_brain_index": 14038,
+      "body_id": 25524,
+      "runtime_index": 14038,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 159,
+      "legacy_brain_index": 14082,
+      "body_id": 25572,
+      "runtime_index": 14082,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 160,
+      "legacy_brain_index": 14085,
+      "body_id": 25575,
+      "runtime_index": 14085,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 161,
+      "legacy_brain_index": 14093,
+      "body_id": 25584,
+      "runtime_index": 14093,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 162,
+      "legacy_brain_index": 14138,
+      "body_id": 25636,
+      "runtime_index": 14138,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 163,
+      "legacy_brain_index": 14335,
+      "body_id": 25854,
+      "runtime_index": 14335,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 164,
+      "legacy_brain_index": 14556,
+      "body_id": 26112,
+      "runtime_index": 14556,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 165,
+      "legacy_brain_index": 14587,
+      "body_id": 26147,
+      "runtime_index": 14587,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 166,
+      "legacy_brain_index": 14810,
+      "body_id": 26393,
+      "runtime_index": 14810,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 167,
+      "legacy_brain_index": 14832,
+      "body_id": 26416,
+      "runtime_index": 14832,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 168,
+      "legacy_brain_index": 14930,
+      "body_id": 26528,
+      "runtime_index": 14930,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 169,
+      "legacy_brain_index": 15112,
+      "body_id": 26730,
+      "runtime_index": 15112,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 170,
+      "legacy_brain_index": 15274,
+      "body_id": 26915,
+      "runtime_index": 15274,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 171,
+      "legacy_brain_index": 15368,
+      "body_id": 27023,
+      "runtime_index": 15368,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 172,
+      "legacy_brain_index": 15663,
+      "body_id": 27355,
+      "runtime_index": 15663,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 173,
+      "legacy_brain_index": 15705,
+      "body_id": 27399,
+      "runtime_index": 15705,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 174,
+      "legacy_brain_index": 15767,
+      "body_id": 27471,
+      "runtime_index": 15767,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 175,
+      "legacy_brain_index": 15855,
+      "body_id": 27566,
+      "runtime_index": 15855,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 176,
+      "legacy_brain_index": 15905,
+      "body_id": 27624,
+      "runtime_index": 15905,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 177,
+      "legacy_brain_index": 15988,
+      "body_id": 27716,
+      "runtime_index": 15988,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 178,
+      "legacy_brain_index": 16019,
+      "body_id": 27750,
+      "runtime_index": 16019,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 179,
+      "legacy_brain_index": 16063,
+      "body_id": 27796,
+      "runtime_index": 16063,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 180,
+      "legacy_brain_index": 16092,
+      "body_id": 27829,
+      "runtime_index": 16092,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 181,
+      "legacy_brain_index": 16248,
+      "body_id": 28003,
+      "runtime_index": 16248,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 182,
+      "legacy_brain_index": 16255,
+      "body_id": 28011,
+      "runtime_index": 16255,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 183,
+      "legacy_brain_index": 16283,
+      "body_id": 28044,
+      "runtime_index": 16283,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 184,
+      "legacy_brain_index": 16413,
+      "body_id": 28188,
+      "runtime_index": 16413,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 185,
+      "legacy_brain_index": 16903,
+      "body_id": 28741,
+      "runtime_index": 16903,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 186,
+      "legacy_brain_index": 17019,
+      "body_id": 28871,
+      "runtime_index": 17019,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 187,
+      "legacy_brain_index": 17081,
+      "body_id": 28945,
+      "runtime_index": 17081,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 188,
+      "legacy_brain_index": 17114,
+      "body_id": 28980,
+      "runtime_index": 17114,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 189,
+      "legacy_brain_index": 17145,
+      "body_id": 29014,
+      "runtime_index": 17145,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 190,
+      "legacy_brain_index": 17298,
+      "body_id": 29183,
+      "runtime_index": 17298,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 191,
+      "legacy_brain_index": 17326,
+      "body_id": 29216,
+      "runtime_index": 17326,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 192,
+      "legacy_brain_index": 17385,
+      "body_id": 29287,
+      "runtime_index": 17385,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 193,
+      "legacy_brain_index": 17414,
+      "body_id": 29319,
+      "runtime_index": 17414,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 194,
+      "legacy_brain_index": 17477,
+      "body_id": 29391,
+      "runtime_index": 17477,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 195,
+      "legacy_brain_index": 17499,
+      "body_id": 29417,
+      "runtime_index": 17499,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 196,
+      "legacy_brain_index": 17543,
+      "body_id": 29469,
+      "runtime_index": 17543,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 197,
+      "legacy_brain_index": 17586,
+      "body_id": 29514,
+      "runtime_index": 17586,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 198,
+      "legacy_brain_index": 17634,
+      "body_id": 29563,
+      "runtime_index": 17634,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 199,
+      "legacy_brain_index": 17664,
+      "body_id": 29598,
+      "runtime_index": 17664,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 200,
+      "legacy_brain_index": 17764,
+      "body_id": 29702,
+      "runtime_index": 17764,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 201,
+      "legacy_brain_index": 17812,
+      "body_id": 29753,
+      "runtime_index": 17812,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 202,
+      "legacy_brain_index": 17867,
+      "body_id": 29815,
+      "runtime_index": 17867,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 203,
+      "legacy_brain_index": 17917,
+      "body_id": 29873,
+      "runtime_index": 17917,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 204,
+      "legacy_brain_index": 17989,
+      "body_id": 29955,
+      "runtime_index": 17989,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 205,
+      "legacy_brain_index": 18018,
+      "body_id": 29986,
+      "runtime_index": 18018,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 206,
+      "legacy_brain_index": 18069,
+      "body_id": 30041,
+      "runtime_index": 18069,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 207,
+      "legacy_brain_index": 18106,
+      "body_id": 30087,
+      "runtime_index": 18106,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 208,
+      "legacy_brain_index": 18206,
+      "body_id": 30207,
+      "runtime_index": 18206,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 209,
+      "legacy_brain_index": 18444,
+      "body_id": 30480,
+      "runtime_index": 18444,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 210,
+      "legacy_brain_index": 18472,
+      "body_id": 30512,
+      "runtime_index": 18472,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 211,
+      "legacy_brain_index": 18729,
+      "body_id": 30803,
+      "runtime_index": 18729,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 212,
+      "legacy_brain_index": 18808,
+      "body_id": 30893,
+      "runtime_index": 18808,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 213,
+      "legacy_brain_index": 18810,
+      "body_id": 30895,
+      "runtime_index": 18810,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 214,
+      "legacy_brain_index": 18844,
+      "body_id": 30938,
+      "runtime_index": 18844,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 215,
+      "legacy_brain_index": 18994,
+      "body_id": 31105,
+      "runtime_index": 18994,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 216,
+      "legacy_brain_index": 19116,
+      "body_id": 31257,
+      "runtime_index": 19116,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 217,
+      "legacy_brain_index": 19119,
+      "body_id": 31262,
+      "runtime_index": 19119,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 218,
+      "legacy_brain_index": 19155,
+      "body_id": 31301,
+      "runtime_index": 19155,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 219,
+      "legacy_brain_index": 19161,
+      "body_id": 31308,
+      "runtime_index": 19161,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 220,
+      "legacy_brain_index": 19266,
+      "body_id": 31429,
+      "runtime_index": 19266,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 221,
+      "legacy_brain_index": 19384,
+      "body_id": 31563,
+      "runtime_index": 19384,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 222,
+      "legacy_brain_index": 19735,
+      "body_id": 31964,
+      "runtime_index": 19735,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 223,
+      "legacy_brain_index": 19758,
+      "body_id": 31988,
+      "runtime_index": 19758,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 224,
+      "legacy_brain_index": 19968,
+      "body_id": 32223,
+      "runtime_index": 19968,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 225,
+      "legacy_brain_index": 19977,
+      "body_id": 32237,
+      "runtime_index": 19977,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 226,
+      "legacy_brain_index": 20221,
+      "body_id": 32507,
+      "runtime_index": 20221,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 227,
+      "legacy_brain_index": 20300,
+      "body_id": 32597,
+      "runtime_index": 20300,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 228,
+      "legacy_brain_index": 20419,
+      "body_id": 32737,
+      "runtime_index": 20419,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 229,
+      "legacy_brain_index": 20766,
+      "body_id": 33137,
+      "runtime_index": 20766,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 230,
+      "legacy_brain_index": 20808,
+      "body_id": 33185,
+      "runtime_index": 20808,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 231,
+      "legacy_brain_index": 20915,
+      "body_id": 33303,
+      "runtime_index": 20915,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 232,
+      "legacy_brain_index": 21001,
+      "body_id": 33396,
+      "runtime_index": 21001,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 233,
+      "legacy_brain_index": 21010,
+      "body_id": 33406,
+      "runtime_index": 21010,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 234,
+      "legacy_brain_index": 21040,
+      "body_id": 33439,
+      "runtime_index": 21040,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 235,
+      "legacy_brain_index": 21263,
+      "body_id": 33694,
+      "runtime_index": 21263,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 236,
+      "legacy_brain_index": 21503,
+      "body_id": 33965,
+      "runtime_index": 21503,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 237,
+      "legacy_brain_index": 21580,
+      "body_id": 34051,
+      "runtime_index": 21580,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 238,
+      "legacy_brain_index": 21630,
+      "body_id": 34110,
+      "runtime_index": 21630,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 239,
+      "legacy_brain_index": 21864,
+      "body_id": 34372,
+      "runtime_index": 21864,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 240,
+      "legacy_brain_index": 21893,
+      "body_id": 34407,
+      "runtime_index": 21893,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 241,
+      "legacy_brain_index": 22110,
+      "body_id": 34655,
+      "runtime_index": 22110,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 242,
+      "legacy_brain_index": 22133,
+      "body_id": 34681,
+      "runtime_index": 22133,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 243,
+      "legacy_brain_index": 22276,
+      "body_id": 34845,
+      "runtime_index": 22276,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 244,
+      "legacy_brain_index": 22649,
+      "body_id": 35262,
+      "runtime_index": 22649,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 245,
+      "legacy_brain_index": 22677,
+      "body_id": 35294,
+      "runtime_index": 22677,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 246,
+      "legacy_brain_index": 22964,
+      "body_id": 35616,
+      "runtime_index": 22964,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 247,
+      "legacy_brain_index": 22980,
+      "body_id": 35632,
+      "runtime_index": 22980,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 248,
+      "legacy_brain_index": 23023,
+      "body_id": 35680,
+      "runtime_index": 23023,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 249,
+      "legacy_brain_index": 23162,
+      "body_id": 35838,
+      "runtime_index": 23162,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 250,
+      "legacy_brain_index": 23206,
+      "body_id": 35889,
+      "runtime_index": 23206,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 251,
+      "legacy_brain_index": 24566,
+      "body_id": 37431,
+      "runtime_index": 24566,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 252,
+      "legacy_brain_index": 24704,
+      "body_id": 37587,
+      "runtime_index": 24704,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 253,
+      "legacy_brain_index": 24729,
+      "body_id": 37613,
+      "runtime_index": 24729,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 254,
+      "legacy_brain_index": 25003,
+      "body_id": 37925,
+      "runtime_index": 25003,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 255,
+      "legacy_brain_index": 25128,
+      "body_id": 38065,
+      "runtime_index": 25128,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 256,
+      "legacy_brain_index": 25546,
+      "body_id": 38542,
+      "runtime_index": 25546,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 257,
+      "legacy_brain_index": 26505,
+      "body_id": 39620,
+      "runtime_index": 26505,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 258,
+      "legacy_brain_index": 27556,
+      "body_id": 40811,
+      "runtime_index": 27556,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 259,
+      "legacy_brain_index": 27585,
+      "body_id": 40841,
+      "runtime_index": 27585,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 260,
+      "legacy_brain_index": 27813,
+      "body_id": 41097,
+      "runtime_index": 27813,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 261,
+      "legacy_brain_index": 35821,
+      "body_id": 50287,
+      "runtime_index": 35821,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 262,
+      "legacy_brain_index": 40408,
+      "body_id": 55627,
+      "runtime_index": 40408,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 263,
+      "legacy_brain_index": 58457,
+      "body_id": 77614,
+      "runtime_index": 58457,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 264,
+      "legacy_brain_index": 61225,
+      "body_id": 81112,
+      "runtime_index": 61225,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 265,
+      "legacy_brain_index": 72043,
+      "body_id": 95241,
+      "runtime_index": 72043,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 266,
+      "legacy_brain_index": 75609,
+      "body_id": 100103,
+      "runtime_index": 75609,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 267,
+      "legacy_brain_index": 75901,
+      "body_id": 100485,
+      "runtime_index": 75901,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 268,
+      "legacy_brain_index": 80999,
+      "body_id": 107513,
+      "runtime_index": 80999,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 269,
+      "legacy_brain_index": 84063,
+      "body_id": 111787,
+      "runtime_index": 84063,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 270,
+      "legacy_brain_index": 84153,
+      "body_id": 111903,
+      "runtime_index": 84153,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 271,
+      "legacy_brain_index": 84429,
+      "body_id": 112292,
+      "runtime_index": 84429,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 272,
+      "legacy_brain_index": 95909,
+      "body_id": 129687,
+      "runtime_index": 95909,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 273,
+      "legacy_brain_index": 98801,
+      "body_id": 134521,
+      "runtime_index": 98801,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 274,
+      "legacy_brain_index": 125827,
+      "body_id": 511914,
+      "runtime_index": 125827,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 275,
+      "legacy_brain_index": 126072,
+      "body_id": 512366,
+      "runtime_index": 126072,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 276,
+      "legacy_brain_index": 126264,
+      "body_id": 512705,
+      "runtime_index": 126264,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 277,
+      "legacy_brain_index": 127264,
+      "body_id": 514508,
+      "runtime_index": 127264,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 278,
+      "legacy_brain_index": 127361,
+      "body_id": 514670,
+      "runtime_index": 127361,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 279,
+      "legacy_brain_index": 127525,
+      "body_id": 514956,
+      "runtime_index": 127525,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 280,
+      "legacy_brain_index": 127807,
+      "body_id": 515476,
+      "runtime_index": 127807,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 281,
+      "legacy_brain_index": 128063,
+      "body_id": 515900,
+      "runtime_index": 128063,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 282,
+      "legacy_brain_index": 128100,
+      "body_id": 515971,
+      "runtime_index": 128100,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 283,
+      "legacy_brain_index": 128669,
+      "body_id": 516909,
+      "runtime_index": 128669,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 284,
+      "legacy_brain_index": 128773,
+      "body_id": 517078,
+      "runtime_index": 128773,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 285,
+      "legacy_brain_index": 128774,
+      "body_id": 517079,
+      "runtime_index": 128774,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 286,
+      "legacy_brain_index": 129156,
+      "body_id": 517752,
+      "runtime_index": 129156,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 287,
+      "legacy_brain_index": 129185,
+      "body_id": 517819,
+      "runtime_index": 129185,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 288,
+      "legacy_brain_index": 129319,
+      "body_id": 518016,
+      "runtime_index": 129319,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 289,
+      "legacy_brain_index": 129563,
+      "body_id": 518439,
+      "runtime_index": 129563,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 290,
+      "legacy_brain_index": 129627,
+      "body_id": 518544,
+      "runtime_index": 129627,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 291,
+      "legacy_brain_index": 129746,
+      "body_id": 518730,
+      "runtime_index": 129746,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 292,
+      "legacy_brain_index": 129747,
+      "body_id": 518731,
+      "runtime_index": 129747,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 293,
+      "legacy_brain_index": 129906,
+      "body_id": 518983,
+      "runtime_index": 129906,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 294,
+      "legacy_brain_index": 130298,
+      "body_id": 519650,
+      "runtime_index": 130298,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 295,
+      "legacy_brain_index": 130450,
+      "body_id": 519931,
+      "runtime_index": 130450,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 296,
+      "legacy_brain_index": 130739,
+      "body_id": 520449,
+      "runtime_index": 130739,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 297,
+      "legacy_brain_index": 130920,
+      "body_id": 520764,
+      "runtime_index": 130920,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 298,
+      "legacy_brain_index": 131061,
+      "body_id": 521115,
+      "runtime_index": 131061,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 299,
+      "legacy_brain_index": 132276,
+      "body_id": 524366,
+      "runtime_index": 132276,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 300,
+      "legacy_brain_index": 132556,
+      "body_id": 524899,
+      "runtime_index": 132556,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 301,
+      "legacy_brain_index": 132975,
+      "body_id": 525844,
+      "runtime_index": 132975,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 302,
+      "legacy_brain_index": 133176,
+      "body_id": 526286,
+      "runtime_index": 133176,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 303,
+      "legacy_brain_index": 133603,
+      "body_id": 527408,
+      "runtime_index": 133603,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 304,
+      "legacy_brain_index": 134283,
+      "body_id": 530029,
+      "runtime_index": 134283,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 305,
+      "legacy_brain_index": 134783,
+      "body_id": 531014,
+      "runtime_index": 134783,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 306,
+      "legacy_brain_index": 135368,
+      "body_id": 532254,
+      "runtime_index": 135368,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 307,
+      "legacy_brain_index": 135787,
+      "body_id": 533129,
+      "runtime_index": 135787,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 308,
+      "legacy_brain_index": 136179,
+      "body_id": 533895,
+      "runtime_index": 136179,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 309,
+      "legacy_brain_index": 136845,
+      "body_id": 535341,
+      "runtime_index": 136845,
+      "cell_type": "LC4",
+      "superclass": "visual_projection"
+    },
+    {
+      "input_slot": 310,
+      "legacy_brain_index": 137274,
+      "body_id": 536444,
+      "runtime_index": 137274,
+      "cell_type": "LPLC2",
+      "superclass": "visual_projection"
+    }
+  ]
+}

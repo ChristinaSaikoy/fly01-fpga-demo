@@ -1,0 +1,22 @@
+{
+  "STAGE1": {
+    "path": "D:\\FPGA-AUTO\\tasks\\BODY-0A2F-R1-RERUN-A1\\results\\STAGE1_INFORMATIVENESS.json",
+    "sha256": "dc6791fa439487627ba533bb29c95ac994f2a2b102cddd7726b7e0a81ba2f0cd"
+  },
+  "STAGE2": {
+    "path": "D:\\FPGA-AUTO\\tasks\\BODY-0A2F-R1-RERUN-A3\\results\\STAGE2_A3_TEMPORAL.json",
+    "sha256": "321c2a9f8c1e736892ba4bef5f8c887edf9a0a415601e8f2ea066abec07e48ac"
+  },
+  "BODY_RUNTIME": {
+    "path": "D:\\FPGA-AUTO\\tasks\\BODY-0C2\\frozen\\body_runtime_v0_1.py",
+    "sha256": "570076d8e6633b27147047b7947d03e6087efedb93c70b769c9937380ffa2882"
+  },
+  "BODY_CONFIG": {
+    "path": "D:\\FPGA-AUTO\\tasks\\BODY-0C2\\frozen\\body_controller_params_v0_1.json",
+    "sha256": "b99079ec2c53e84511a974d80c4affd36af5dd68e9c8c598fcadf6e04eb79f8c"
+  },
+  "DN_IDENTITY": {
+    "path": "D:\\FPGA-AUTO\\tasks\\S4-S5-DN-ID-0\\FROZEN_32_DN_IDENTITY_AND_SLOT_ORDER.json",
+    "sha256": "e0e46d029a1da57de58de4c7293b5fcd267a4626bd816094d18d02f8ba4f313e"
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "tool": "trace",
+      "case": "matching_complete_integer_traces",
+      "expected_accept": true,
+      "actual_exit": 0,
+      "passed": true,
+      "output": "{\"status\": \"EXACT_MATCH\", \"steps\": 2, \"model\": \"synthetic_integer_v1\", \"inputs_sha256\": \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\", \"state_words\": 3, \"dn_slots\": 2, \"hardware\": \"NONE\"}"
+    },
+    {
+      "tool": "trace",
+      "case": "changed_internal_state",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Mismatch step=1 field=state index=1\"}"
+    },
+    {
+      "tool": "trace",
+      "case": "changed_dn",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Mismatch step=1 field=dn index=0\"}"
+    },
+    {
+      "tool": "trace",
+      "case": "identity_mismatch",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Model/input/dimension identity mismatch\"}"
+    },
+    {
+      "tool": "trace",
+      "case": "dimension_short",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Incomplete or non-integer state at step 0\"}"
+    },
+    {
+      "tool": "trace",
+      "case": "bool_is_not_integer",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Incomplete or non-integer state at step 0\"}"
+    },
+    {
+      "tool": "trace",
+      "case": "float_is_not_integer",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Incomplete or non-integer state at step 0\"}"
+    },
+    {
+      "tool": "trace",
+      "case": "repeated_step",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Missing, repeated or out-of-order step: 1\"}"
+    },
+    {
+      "tool": "trace",
+      "case": "skipped_step",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Missing, repeated or out-of-order step: 1\"}"
+    },
+    {
+      "tool": "trace",
+      "case": "missing_last_step",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Trace length mismatch at step 1\"}"
+    },
+    {
+      "tool": "trace",
+      "case": "empty_trace",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Trace length mismatch at step 0\"}"
+    },
+    {
+      "tool": "trace",
+      "case": "empty_file",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Expecting value: line 1 column 1 (char 0)\"}"
+    },
+    {
+      "tool": "trace",
+      "case": "duplicate_json_key",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Duplicate JSON key: step\"}"
+    },
+    {
+      "tool": "manifest",
+      "case": "retained_manifest_matches",
+      "expected_accept": true,
+      "actual_exit": 0,
+      "passed": true,
+      "output": "{\"status\": \"MANIFEST_MATCH\", \"files\": 1, \"hardware\": \"NONE\", \"authenticity\": \"NOT_PROVEN\"}"
+    },
+    {
+      "tool": "manifest",
+      "case": "modified_payload",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Size/hash mismatch: a.txt\"}"
+    },
+    {
+      "tool": "manifest",
+      "case": "unexpected_file",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"File set differs: missing=0, extra=1\"}"
+    },
+    {
+      "tool": "manifest",
+      "case": "missing_payload",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"[WinError 2] \\u7cfb\\u7edf\\u627e\\u4e0d\\u5230\\u6307\\u5b9a\\u7684\\u6587\\u4ef6\\u3002: 'D:\\\\\\\\Codex\\\\\\\\tmp\\\\\\\\fly01-skill-reuse-obq_bxy9\\\\\\\\bundle\\\\\\\\missing.txt'\"}"
+    },
+    {
+      "tool": "manifest",
+      "case": "path_traversal",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Escaping or non-canonical path: ../outside.txt\"}"
+    },
+    {
+      "tool": "manifest",
+      "case": "absolute_windows_path",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Invalid manifest path\"}"
+    },
+    {
+      "tool": "manifest",
+      "case": "repeated_path",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Repeated path: a.txt\"}"
+    },
+    {
+      "tool": "manifest",
+      "case": "empty_manifest",
+      "expected_accept": false,
+      "actual_exit": 1,
+      "passed": true,
+      "output": "{\"status\": \"REJECTED\", \"reason\": \"Empty or unsupported manifest\"}"
+    }
+  ],
+  "total_cases": 21,
+  "fixture": "SYNTHETIC_NOT_NEURAL_OR_HARDWARE",
+  "hardware": "NONE",
+  "temporary_copy_removed": true,
+  "script_source_hashes": {
+    "skills/readonly-handoff-audit/scripts/verify_manifest.py": "d4f11e4a3c73c490597707ef6c0b6cee23a76b56f9b2a4e2773367909f1488f9",
+    "skills/exact-state-check/scripts/compare_trace.py": "eaa1b579f808d0fd641b2ea77a07d0f75ebc5ebaa0e428f182886ee701421757"
+  }
+}

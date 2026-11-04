@@ -1,0 +1,83 @@
+{
+  "DT_MS": {
+    "value": 0.1,
+    "hex": "0x1.999999999999ap-4",
+    "bits_le_hex": "9a9999999999b93f"
+  },
+  "V_REST_MV": {
+    "value": -52.0,
+    "hex": "-0x1.a000000000000p+5",
+    "bits_le_hex": "0000000000004ac0"
+  },
+  "V_RESET_MV": {
+    "value": -52.0,
+    "hex": "-0x1.a000000000000p+5",
+    "bits_le_hex": "0000000000004ac0"
+  },
+  "V_THRESHOLD_MV": {
+    "value": -45.0,
+    "hex": "-0x1.6800000000000p+5",
+    "bits_le_hex": "00000000008046c0"
+  },
+  "TAU_MEMBRANE_MS": {
+    "value": 20.0,
+    "hex": "0x1.4000000000000p+4",
+    "bits_le_hex": "0000000000003440"
+  },
+  "TAU_SYNAPTIC_MS": {
+    "value": 5.0,
+    "hex": "0x1.4000000000000p+2",
+    "bits_le_hex": "0000000000001440"
+  },
+  "REFRACTORY_MS": {
+    "value": 2.2,
+    "hex": "0x1.199999999999ap+1",
+    "bits_le_hex": "9a99999999990140"
+  },
+  "SYNAPTIC_DELAY_MS": {
+    "value": 1.8,
+    "hex": "0x1.ccccccccccccdp+0",
+    "bits_le_hex": "cdccccccccccfc3f"
+  },
+  "W_SYN_MV": {
+    "value": 0.275,
+    "hex": "0x1.199999999999ap-2",
+    "bits_le_hex": "9a9999999999d13f"
+  },
+  "F_POI": {
+    "value": 250.0,
+    "hex": "0x1.f400000000000p+7",
+    "bits_le_hex": "0000000000406f40"
+  },
+  "W_EXTERNAL_MV": {
+    "value": 68.75,
+    "hex": "0x1.1300000000000p+6",
+    "bits_le_hex": "0000000000305140"
+  },
+  "DECAY_V": {
+    "value": 0.9950124791926823,
+    "hex": "0x1.fd7246927d28bp-1",
+    "bits_le_hex": "8bd2276924d7ef3f"
+  },
+  "DECAY_G": {
+    "value": 0.9801986733067553,
+    "hex": "0x1.f5dc99badec5bp-1",
+    "bits_le_hex": "5becad9bc95def3f"
+  },
+  "V0_TERM": {
+    "value": -0.2593510819805189,
+    "hex": "-0x1.0993547d27780p-2",
+    "bits_le_hex": "8077d2473599d0bf"
+  },
+  "COUPLE_G": {
+    "value": 0.004937935295309026,
+    "hex": "0x1.439cce9a65d5ap-8",
+    "bits_le_hex": "5a5da6e9cc39743f"
+  },
+  "REFRACTORY_TICKS": {
+    "value": 22
+  },
+  "DELAY_TICKS": {
+    "value": 18
+  }
+}

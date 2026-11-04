@@ -1,0 +1,32 @@
+[
+  {
+    "id": "O7-1",
+    "label": "用户转交的工程指令",
+    "role": "user",
+    "timestamp_utc": "2026-10-13T12:50:31.353Z",
+    "text": "总控已独立核验：**O6 功能与完整测试正式分项接收，50 Hz 仍未通过。**\n\n- 全套测试 **272 秒**，完整读取和科学模型均未缩水。\n- 这次确实做了 FPGA 工程优化：每帧事务 **12→2**，新增原子接口与安全校验；代价是增加少量资源，不是资源占用下降。\n- 新发现：**高输入负载时，写入明显变慢**。下一步优先验证输入无损压缩、FPGA 按原顺序还原；不保证压缩就一定解决所有长尾。",
+    "public_selection_start_in_verified_excerpt": 0,
+    "public_selection_end_in_verified_excerpt": 204,
+    "sha256": "45b4f841cfb0b5800328db5ed058401a07750ebeda95f9535adc1d6fdb473cfd"
+  },
+  {
+    "id": "O7-2",
+    "label": "助手方案原文",
+    "role": "assistant",
+    "timestamp_utc": "2026-10-13T12:51:25.102Z",
+    "text": "我会先比较两种固定编码，优先选一种简单方案，减少切换模式的验证负担；无论选哪种，都必须按原刺激升序、再噪声升序还原事件，保留全部输出诊断。",
+    "public_selection_start_in_verified_excerpt": 65,
+    "public_selection_end_in_verified_excerpt": 134,
+    "sha256": "84973fa0b57555fac5761fb23d42057d372d6d1c7494e8e2475ad54c8374924c"
+  },
+  {
+    "id": "O7-4",
+    "label": "助手区分均值改善与长尾原文",
+    "role": "assistant",
+    "timestamp_utc": "2026-10-14T01:56:21.072Z",
+    "text": "完整真板套件已完成，总计约 3 分 26 秒，功能和新编码故障检查通过。平均整帧降到了约 10–11 ms，但三轮 P99 仍约 30–32 ms，50 Hz 仍未通过。我正在独立重算原始证据，并把高负载写入改善与剩余长尾分开报告。",
+    "public_selection_start_in_verified_excerpt": 0,
+    "public_selection_end_in_verified_excerpt": 116,
+    "sha256": "1bb646f98c0c19b73b0a325263c5bb03d105f7f840f143ecad0bf586e54911bc"
+  }
+]

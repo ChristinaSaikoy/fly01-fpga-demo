@@ -1,0 +1,128 @@
+{
+  "PACK_VERSION": "FLY01_FULL_CANONICAL_PACK_V1",
+  "SOURCE_RELEASE": "MaleCNS v1.0",
+  "NODE_RULE": "superclass != null; ascending bodyId",
+  "EDGE_RULE": "pre/post canonical; weight>0; presynaptic consensus_nt in acetylcholine/gaba/glutamate",
+  "SIGN_RULE": {
+    "acetylcholine": 1,
+    "gaba": -1,
+    "glutamate": -1
+  },
+  "UNKNOWN_NT_POLICY": "keep node; exclude outgoing fast-sign edges",
+  "DYNAMICS_REFERENCE": "philshiu/Drosophila_brain_model@91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+  "PARAMETER_SET": "Shiu-derived engineering LIF; MaleCNS refit NO",
+  "N": 166700,
+  "E": 24469412,
+  "CONTACT_WEIGHT_SUM": 120260398,
+  "SIGNED_CONTACT_SUM": 26721930,
+  "SELF_EDGES": 80,
+  "ROW_PTR_DTYPE": "int32",
+  "DST_DTYPE": "int32",
+  "SIGNED_COUNT_DTYPE": "int32",
+  "FILES": {
+    "body_ids.npy": {
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    "contact_count.npy": {
+      "bytes": 97877776,
+      "sha256": "13f9586e4863fe5817b34e40e033c2a6c1e5074bd25c8599b48eed804854248b"
+    },
+    "dst_index.npy": {
+      "bytes": 97877776,
+      "sha256": "cf34154377afd6382c5adb73c06bf0d9a5475d7428f488416a8478caa1efffd3"
+    },
+    "index_to_body_id.npy": {
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    "presynaptic_sign.npy": {
+      "bytes": 166828,
+      "sha256": "8761a283602b74d66bc7cbe910fbfbcc06da5810e58e306881533eb1fb23b3c4"
+    },
+    "row_ptr.npy": {
+      "bytes": 666932,
+      "sha256": "1bbf883f6b96a38b08149eea9944d3e223fddda0bb92d56e8f80cc331b37074e"
+    },
+    "signed_contact_count.npy": {
+      "bytes": 97877776,
+      "sha256": "be2c2e5678712061ee1e3d54aac4c4992ca57b473f3c5a0f4937c09cdbadff0d"
+    },
+    "STRUCTURAL_PROJECTION_MANIFEST.json": {
+      "bytes": 904,
+      "sha256": "4fe3c001ccff7f6a0cc36586c8ee0bb5c28b8fe4f035fbab12bb65978b35538e"
+    },
+    "../BODY_ID_INDEX_MAP.csv": {
+      "bytes": 2319555,
+      "sha256": "d333183b2420d7fb63866d52c580cfd4b8bc32e9f755b6f9579db6aeec2cfa22"
+    },
+    "../body_id_to_index.npz": {
+      "bytes": 490727,
+      "sha256": "961d43710512359f79f11426bcbdec36b76eb7b00db6ae661872658c66c526f1"
+    },
+    "../INPUT_311_INDEX_MAP.json": {
+      "bytes": 62774,
+      "sha256": "169b3d3ec0fdce31e0fac6eb950b50782e6f8927c7fa4085c889509a89d4c2a8"
+    },
+    "../DN_32_INDEX_MAP.json": {
+      "bytes": 22592,
+      "sha256": "bfc25005ca844c3a64c8141f28ae3f05f625b37e3e0133ccbf31bf9ce2b8df6e"
+    }
+  },
+  "PACK_SHA256": "b9a9168a653a90fd0c4405a78473a5f562ce55116361ca4f3e8781bef038e4a7",
+  "PACK_SHA256_DEFINITION": "SHA256 over UTF-8 sorted lines: filename<TAB>bytes<TAB>file_sha256<LF> for every file in canonical_pack_v1/",
+  "PACK_FILES": [
+    {
+      "name": "body_ids.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "name": "contact_count.npy",
+      "bytes": 97877776,
+      "sha256": "13f9586e4863fe5817b34e40e033c2a6c1e5074bd25c8599b48eed804854248b"
+    },
+    {
+      "name": "dst_index.npy",
+      "bytes": 97877776,
+      "sha256": "cf34154377afd6382c5adb73c06bf0d9a5475d7428f488416a8478caa1efffd3"
+    },
+    {
+      "name": "index_to_body_id.npy",
+      "bytes": 1333728,
+      "sha256": "ab90597b7b0ce07cbc22cb39a65b70bea2ac73cc7fd225951bd9d73f2fc8dd3f"
+    },
+    {
+      "name": "presynaptic_sign.npy",
+      "bytes": 166828,
+      "sha256": "8761a283602b74d66bc7cbe910fbfbcc06da5810e58e306881533eb1fb23b3c4"
+    },
+    {
+      "name": "row_ptr.npy",
+      "bytes": 666932,
+      "sha256": "1bbf883f6b96a38b08149eea9944d3e223fddda0bb92d56e8f80cc331b37074e"
+    },
+    {
+      "name": "signed_contact_count.npy",
+      "bytes": 97877776,
+      "sha256": "be2c2e5678712061ee1e3d54aac4c4992ca57b473f3c5a0f4937c09cdbadff0d"
+    },
+    {
+      "name": "STRUCTURAL_PROJECTION_MANIFEST.json",
+      "bytes": 904,
+      "sha256": "4fe3c001ccff7f6a0cc36586c8ee0bb5c28b8fe4f035fbab12bb65978b35538e"
+    }
+  ],
+  "BODY_ID_INDEX": "PASS",
+  "INPUT_311_MAP": "311/311",
+  "DN_32_MAP": "32/32",
+  "STRUCTURAL_PROJECTION": {
+    "edges": 25582938,
+    "contact_weight_sum": 124177617
+  },
+  "RUNTIME_SIGNED_SUBSET": {
+    "edges": 24469412,
+    "contact_weight_sum": 120260398,
+    "signed_contact_sum": 26721930
+  }
+}

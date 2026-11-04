@@ -1,0 +1,27 @@
+{
+  "schema": "BY02_VISION_RUN_V1",
+  "status": "PASS",
+  "scope": "VISION_OBSERVATIONS_ONLY_NOT_NEURAL_OR_HARDWARE_ACCEPTANCE",
+  "source_kind": "images",
+  "frames_processed": 8,
+  "status_counts": {
+    "VALID": 5,
+    "NO_TARGET": 2,
+    "AMBIGUOUS": 1
+  },
+  "session_id": "BY02-ebdba32ad6714f57ae09789a820affb7",
+  "clock_domain": "PC_MONOTONIC:BY02-ebdba32ad6714f57ae09789a820affb7",
+  "elapsed_wall_ms": 218.0659,
+  "environment": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "Pillow": "12.0.0"
+  },
+  "error": null,
+  "hardware_access": "NONE",
+  "fpga_access": false,
+  "motor_access": false,
+  "k230_board_tested": false,
+  "calibration": "UNCONFIRMED",
+  "settings_sha256": "8889f99819b754c82c521d9ed33187439be71b11284e808b808edda83b695ea0"
+}

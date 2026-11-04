@@ -1,0 +1,265 @@
+{
+  "kind": "SELF_BUILT_SYNTHETIC_FIXTURES",
+  "version": "DRAFT_1",
+  "rules": {
+    "target": "solid red square, RGB=(220,40,40), 80x80 pixels",
+    "background": "solid gray RGB=(238,238,238)",
+    "origin": "top-left; x right; y down; pixel centers have integer coordinates",
+    "bbox": "[x0,y0,x1,y1), upper bound exclusive",
+    "multiple": "AMBIGUOUS; select no target; do not silently choose one",
+    "absence": "NO_TARGET; center null; do not reuse old target",
+    "sequence": "05_before_loss -> 06_lost -> 07_reappear",
+    "scope": "Image coordinates only; no body-side, azimuth, depth, sensor calibration or real timing claim"
+  },
+  "frames": [
+    {
+      "frame_id": 0,
+      "file": "images/01_left.png",
+      "label": "左侧 / IMAGE_LEFT",
+      "source": "SYNTHETIC",
+      "timestamp_ms": 0,
+      "clock_domain": "SYNTHETIC_SEQUENCE_10HZ_NOT_MEASURED",
+      "width": 640,
+      "height": 480,
+      "expected": {
+        "status": "VALID",
+        "object_count": 1,
+        "bounding_boxes_xyxy_exclusive": [
+          [
+            110,
+            200,
+            190,
+            280
+          ]
+        ],
+        "centers_xy": [
+          [
+            149.5,
+            239.5
+          ]
+        ],
+        "selected_center_xy": [
+          149.5,
+          239.5
+        ],
+        "body_side": "NOT_CALIBRATED"
+      },
+      "sha256": "d8bd681b99623510989f080fa83278a205f12d6beb6cd5650d64a5239f1f46c2"
+    },
+    {
+      "frame_id": 1,
+      "file": "images/02_right.png",
+      "label": "右侧 / IMAGE_RIGHT",
+      "source": "SYNTHETIC",
+      "timestamp_ms": 100,
+      "clock_domain": "SYNTHETIC_SEQUENCE_10HZ_NOT_MEASURED",
+      "width": 640,
+      "height": 480,
+      "expected": {
+        "status": "VALID",
+        "object_count": 1,
+        "bounding_boxes_xyxy_exclusive": [
+          [
+            450,
+            200,
+            530,
+            280
+          ]
+        ],
+        "centers_xy": [
+          [
+            489.5,
+            239.5
+          ]
+        ],
+        "selected_center_xy": [
+          489.5,
+          239.5
+        ],
+        "body_side": "NOT_CALIBRATED"
+      },
+      "sha256": "61f671b5a2157e4dfab764033b512df45309776978ec5f87bf67272618af93f5"
+    },
+    {
+      "frame_id": 2,
+      "file": "images/03_center.png",
+      "label": "正中 / IMAGE_CENTER",
+      "source": "SYNTHETIC",
+      "timestamp_ms": 200,
+      "clock_domain": "SYNTHETIC_SEQUENCE_10HZ_NOT_MEASURED",
+      "width": 640,
+      "height": 480,
+      "expected": {
+        "status": "VALID",
+        "object_count": 1,
+        "bounding_boxes_xyxy_exclusive": [
+          [
+            280,
+            200,
+            360,
+            280
+          ]
+        ],
+        "centers_xy": [
+          [
+            319.5,
+            239.5
+          ]
+        ],
+        "selected_center_xy": [
+          319.5,
+          239.5
+        ],
+        "body_side": "NOT_CALIBRATED"
+      },
+      "sha256": "c21f0a05df0b6fb24017f32712d8a2fdcf459baf2ecc15a09c4081fbf68e7d8b"
+    },
+    {
+      "frame_id": 3,
+      "file": "images/04_none.png",
+      "label": "无目标 / NO_TARGET",
+      "source": "SYNTHETIC",
+      "timestamp_ms": 300,
+      "clock_domain": "SYNTHETIC_SEQUENCE_10HZ_NOT_MEASURED",
+      "width": 640,
+      "height": 480,
+      "expected": {
+        "status": "NO_TARGET",
+        "object_count": 0,
+        "bounding_boxes_xyxy_exclusive": [],
+        "centers_xy": [],
+        "selected_center_xy": null,
+        "body_side": "NOT_CALIBRATED"
+      },
+      "sha256": "276c334406e1d6aab51397543003df2c4a88199d31e95ab92a2cc9cbaa159705"
+    },
+    {
+      "frame_id": 4,
+      "file": "images/05_before_loss.png",
+      "label": "消失前 / VISIBLE",
+      "source": "SYNTHETIC",
+      "timestamp_ms": 400,
+      "clock_domain": "SYNTHETIC_SEQUENCE_10HZ_NOT_MEASURED",
+      "width": 640,
+      "height": 480,
+      "expected": {
+        "status": "VALID",
+        "object_count": 1,
+        "bounding_boxes_xyxy_exclusive": [
+          [
+            110,
+            200,
+            190,
+            280
+          ]
+        ],
+        "centers_xy": [
+          [
+            149.5,
+            239.5
+          ]
+        ],
+        "selected_center_xy": [
+          149.5,
+          239.5
+        ],
+        "body_side": "NOT_CALIBRATED"
+      },
+      "sha256": "d8bd681b99623510989f080fa83278a205f12d6beb6cd5650d64a5239f1f46c2"
+    },
+    {
+      "frame_id": 5,
+      "file": "images/06_lost.png",
+      "label": "消失 / NO_TARGET",
+      "source": "SYNTHETIC",
+      "timestamp_ms": 500,
+      "clock_domain": "SYNTHETIC_SEQUENCE_10HZ_NOT_MEASURED",
+      "width": 640,
+      "height": 480,
+      "expected": {
+        "status": "NO_TARGET",
+        "object_count": 0,
+        "bounding_boxes_xyxy_exclusive": [],
+        "centers_xy": [],
+        "selected_center_xy": null,
+        "body_side": "NOT_CALIBRATED"
+      },
+      "sha256": "276c334406e1d6aab51397543003df2c4a88199d31e95ab92a2cc9cbaa159705"
+    },
+    {
+      "frame_id": 6,
+      "file": "images/07_reappear.png",
+      "label": "重现 / IMAGE_RIGHT",
+      "source": "SYNTHETIC",
+      "timestamp_ms": 600,
+      "clock_domain": "SYNTHETIC_SEQUENCE_10HZ_NOT_MEASURED",
+      "width": 640,
+      "height": 480,
+      "expected": {
+        "status": "VALID",
+        "object_count": 1,
+        "bounding_boxes_xyxy_exclusive": [
+          [
+            450,
+            200,
+            530,
+            280
+          ]
+        ],
+        "centers_xy": [
+          [
+            489.5,
+            239.5
+          ]
+        ],
+        "selected_center_xy": [
+          489.5,
+          239.5
+        ],
+        "body_side": "NOT_CALIBRATED"
+      },
+      "sha256": "61f671b5a2157e4dfab764033b512df45309776978ec5f87bf67272618af93f5"
+    },
+    {
+      "frame_id": 7,
+      "file": "images/08_multiple.png",
+      "label": "多目标 / AMBIGUOUS",
+      "source": "SYNTHETIC",
+      "timestamp_ms": 700,
+      "clock_domain": "SYNTHETIC_SEQUENCE_10HZ_NOT_MEASURED",
+      "width": 640,
+      "height": 480,
+      "expected": {
+        "status": "AMBIGUOUS",
+        "object_count": 2,
+        "bounding_boxes_xyxy_exclusive": [
+          [
+            110,
+            200,
+            190,
+            280
+          ],
+          [
+            450,
+            200,
+            530,
+            280
+          ]
+        ],
+        "centers_xy": [
+          [
+            149.5,
+            239.5
+          ],
+          [
+            489.5,
+            239.5
+          ]
+        ],
+        "selected_center_xy": null,
+        "body_side": "NOT_CALIBRATED"
+      },
+      "sha256": "bddd623d6628d62b86372e337a0c7ae07deecce937591a8170447611b4021f85"
+    }
+  ]
+}

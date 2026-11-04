@@ -1,0 +1,10 @@
+{
+  "task_id": "S5-FPGA-1C",
+  "status": "FROZEN",
+  "canonical_mmio_spec": "s5_fpga1c_mmio_register_map.json",
+  "canonical_mmio_spec_sha256": "cbc7013debdebea203a724ff0312d52f16700ffbc6b728948089568c94269bfd",
+  "files": {
+    "s5_fpga1c_mmio_register_map.json": "cbc7013debdebea203a724ff0312d52f16700ffbc6b728948089568c94269bfd",
+    "s5_fpga1c_mmio_register_map.md": "64f40d4aa39107ccf1c4efded639c2d93c6f5178984581fe782a15ccb287f854"
+  }
+}

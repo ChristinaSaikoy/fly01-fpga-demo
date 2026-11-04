@@ -1,0 +1,161 @@
+{
+  "kind": "BYTE_IDENTICAL_FROZEN_COPY",
+  "files": [
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\BODY-0A2D\\BODY-0A2D_BODY_FEEDBACK_CONTRACT.json",
+      "path": "tasks/BODY-0A2D/BODY-0A2D_BODY_FEEDBACK_CONTRACT.json",
+      "sha256": "515ce7d41df4849e930efa1b6a9b7990ed56ed2d0d6194f467b1ac4ecc208ccc",
+      "bytes": 5845
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\BODY-0A2D\\validate_body_0a2d.py",
+      "path": "tasks/BODY-0A2D/validate_body_0a2d.py",
+      "sha256": "c85dde4c1d156522583646c86ef3c8f15342aab0d5e80ccf0ca42346d38be5c8",
+      "bytes": 4759
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\BODY-0A2F-DATA-1\\raw\\D1_TRAIN_L_ONOFF_seed16\\dn32_per_step.csv",
+      "path": "tasks/BODY-0A2F-DATA-1/raw/D1_TRAIN_L_ONOFF_seed16/dn32_per_step.csv",
+      "sha256": "923ca6e89b99caf4612de27df799eb37f97bd5fb15d4fe7c95d8b08ab79e9d43",
+      "bytes": 13917
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\BODY-0A2F-DATA-1\\raw\\D1_TRAIN_R_ONOFF_seed17\\dn32_per_step.csv",
+      "path": "tasks/BODY-0A2F-DATA-1/raw/D1_TRAIN_R_ONOFF_seed17/dn32_per_step.csv",
+      "sha256": "a98e90ba5ea85b8db2b195633892748bd620657beb4a6412c384011a7606b0a0",
+      "bytes": 13917
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\BODY-0A2F-R1-RERUN-A1\\results\\STAGE1_INFORMATIVENESS.json",
+      "path": "tasks/BODY-0A2F-R1-RERUN-A1/results/STAGE1_INFORMATIVENESS.json",
+      "sha256": "dc6791fa439487627ba533bb29c95ac994f2a2b102cddd7726b7e0a81ba2f0cd",
+      "bytes": 9583
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\BODY-0A2F-R1-RERUN-A3\\results\\STAGE2_A3_TEMPORAL.json",
+      "path": "tasks/BODY-0A2F-R1-RERUN-A3/results/STAGE2_A3_TEMPORAL.json",
+      "sha256": "321c2a9f8c1e736892ba4bef5f8c887edf9a0a415601e8f2ea066abec07e48ac",
+      "bytes": 11716
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\BODY-0C2\\frozen\\body_controller_params_v0_1.json",
+      "path": "tasks/BODY-0C2/frozen/body_controller_params_v0_1.json",
+      "sha256": "b99079ec2c53e84511a974d80c4affd36af5dd68e9c8c598fcadf6e04eb79f8c",
+      "bytes": 2396
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\BODY-0C2\\frozen\\body_runtime_v0_1.py",
+      "path": "tasks/BODY-0C2/frozen/body_runtime_v0_1.py",
+      "sha256": "570076d8e6633b27147047b7947d03e6087efedb93c70b769c9937380ffa2882",
+      "bytes": 7879
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\DEMO-0\\FINAL_DN_MOTOR_MAPPING_V1_0.json",
+      "path": "tasks/DEMO-0/FINAL_DN_MOTOR_MAPPING_V1_0.json",
+      "sha256": "6ebe682548634e4fb2563336059f8563430df201f1954ae3ef1fa34806c4275f",
+      "bytes": 774
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\DEMO-0\\FINAL_DN_MOTOR_MAPPING_V1_0_SHA256.txt",
+      "path": "tasks/DEMO-0/FINAL_DN_MOTOR_MAPPING_V1_0_SHA256.txt",
+      "sha256": "6358db658114ba08de6ec4548a47e050ffcd88bd24b31fb6360f660e77268524",
+      "bytes": 100
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\DEMO-0\\FROZEN_PIPELINE_DEPENDENCIES_V1_0.json",
+      "path": "tasks/DEMO-0/FROZEN_PIPELINE_DEPENDENCIES_V1_0.json",
+      "sha256": "5839878ed7a6ae85cc444ae83cb93cb34c8c2e846501a59a54c0db00d30221ee",
+      "bytes": 989
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\DEMO-0\\scientific_host.py",
+      "path": "tasks/DEMO-0/scientific_host.py",
+      "sha256": "d7287ea155ed1b0579dd800c2fb9efd54ffc7641990b77befabb09bd99cf3a69",
+      "bytes": 11422
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\DEMO-1-IMPLEMENTATION\\closed_loop_execute.py",
+      "path": "tasks/DEMO-1-IMPLEMENTATION/closed_loop_execute.py",
+      "sha256": "b3ac21c928001136bdcc89b95120b8e4885004d397b81dd432a1dfd405ac5d23",
+      "bytes": 10739
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\DEMO-1-IMPLEMENTATION\\DEMO-1_EXECUTION_MANIFEST_v1_0.json",
+      "path": "tasks/DEMO-1-IMPLEMENTATION/DEMO-1_EXECUTION_MANIFEST_v1_0.json",
+      "sha256": "88a0aee045a599e5ec05694d19bca3f9ebd129931a5d40bc9caaef68678dbaa9",
+      "bytes": 7592
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\DEMO-1-IMPLEMENTATION\\DEMO-1_EXECUTION_MANIFEST_v1_0_SHA256.txt",
+      "path": "tasks/DEMO-1-IMPLEMENTATION/DEMO-1_EXECUTION_MANIFEST_v1_0_SHA256.txt",
+      "sha256": "23b137879a704296e835f7114bf553170e6399a6242d0e3e926b119a5b42b7ba",
+      "bytes": 103
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\DEMO-1-SENSORY-ENCODER-0\\DEMO-1_SENSORY_ENCODER_V1_0.json",
+      "path": "tasks/DEMO-1-SENSORY-ENCODER-0/DEMO-1_SENSORY_ENCODER_V1_0.json",
+      "sha256": "345112574af3b9ff48df4c0623069cad890721c64978aeb99c0ca8ce41eff003",
+      "bytes": 6896
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\DEMO-1-SENSORY-ENCODER-0\\sensory_encoder_v1_0.py",
+      "path": "tasks/DEMO-1-SENSORY-ENCODER-0/sensory_encoder_v1_0.py",
+      "sha256": "c867518076b18a048e7db3211aba1872179f67a64866698baa6f46e3db0e2d92",
+      "bytes": 3151
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\DEMO-1-SENSORY-ENCODER-0\\SENSORY_INPUT_POPULATION_311.csv",
+      "path": "tasks/DEMO-1-SENSORY-ENCODER-0/SENSORY_INPUT_POPULATION_311.csv",
+      "sha256": "f78c69ffb005b9a4e1d8771fa8fa60d9d68a578cd8d997583ac9b5613220fcc7",
+      "bytes": 18909
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\S4-S5-DN-ID-0\\FROZEN_32_DN_IDENTITY_AND_SLOT_ORDER.json",
+      "path": "tasks/S4-S5-DN-ID-0/FROZEN_32_DN_IDENTITY_AND_SLOT_ORDER.json",
+      "sha256": "e0e46d029a1da57de58de4c7293b5fcd267a4626bd816094d18d02f8ba4f313e",
+      "bytes": 19170
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\S5-FPGA-0\\golden\\brain.npz",
+      "path": "tasks/S5-FPGA-0/golden/brain.npz",
+      "sha256": "cc9bd1ecd00bd703a6fa648bc6ad145c93c7c1ee53debdcc9ce0d1f4305e6aca",
+      "bytes": 53396978
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\S5-FPGA-0\\golden\\s4_candidate_graphs.npz",
+      "path": "tasks/S5-FPGA-0/golden/s4_candidate_graphs.npz",
+      "sha256": "5dd46c3adafd128a67c407c82e0f2636d5bfc640286b6234879e681c7336e9a6",
+      "bytes": 295950
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\S5-FPGA-0\\golden\\s4_scope1_integer_model.py",
+      "path": "tasks/S5-FPGA-0/golden/s4_scope1_integer_model.py",
+      "sha256": "6d68f34c963fbe79de38403a2a0203c2e7afa11f2e82385cd2c815baa6493ca0",
+      "bytes": 5027
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\S5-FPGA-0\\golden\\s4_scope1_integer_spec.json",
+      "path": "tasks/S5-FPGA-0/golden/s4_scope1_integer_spec.json",
+      "sha256": "61c9f53e64a2e5fc878c55f533da46955eb5f36ce2e36f9d537cf4c1d57ee1e9",
+      "bytes": 2605
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-01\\edge_live\\runtime.py",
+      "path": "tasks/WORK-01/edge_live/runtime.py",
+      "sha256": "3bcb7d320f6d6bc2dcdc1cc3f94d1e693ce3db7f7fca1a219d41c1cae471dca2",
+      "bytes": 8171
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-04\\o7_transport\\host\\adapter.py",
+      "path": "tasks/WORK-04/o7_transport/host/adapter.py",
+      "sha256": "6061d3e91901861292fe96a9e08c5cb7c94dd34f6580a5164fcab2d2dbc74be6",
+      "bytes": 19435
+    },
+    {
+      "source": "D:\\FPGA-AUTO\\tasks\\WORK-04\\o7_transport\\host\\run_candidate.py",
+      "path": "tasks/WORK-04/o7_transport/host/run_candidate.py",
+      "sha256": "cc6b908f98fb445c5eb0b1266a40f6b19d577e69a1a564e9a44f3b158da6bd09",
+      "bytes": 19168
+    }
+  ]
+}

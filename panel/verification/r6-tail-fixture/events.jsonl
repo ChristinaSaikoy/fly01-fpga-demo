@@ -1,0 +1,6 @@
+{"event":"NEURAL_I2C_STATUS","time":100,"session":15,"model_step":1,"source_seq":1,"flags":39,"yaw_q20":0,"acked_left":-1200,"acked_right":1200,"last_acks":10,"fault":false,"fault_code":0,"reserved_valid":true,"zero_ack":true}
+{"event":"NEURAL_I2C_STATUS","time":101,"session":15,"model_step":2,"source_seq":1,"flags":39,"yaw_q20":0,"acked_left":-1200,"acked_right":1200,"last_acks":10,"fault":false,"fault_code":0,"reserved_valid":true,"zero_ack":true}
+{"event":"NEURAL_I2C_STATUS","time":101,"session":15,"model_step":2,"source_seq":1,"flags":39,"yaw_q20":0,"acked_left":-1200,"acked_right":1200,"last_acks":10,"fault":false,"fault_code":0,"reserved_valid":true,"zero_ack":true}
+{"event":"NEURAL_I2C_STATUS","time":102,"session":16,"model_step":1,"source_seq":1,"flags":39,"yaw_q20":0,"acked_left":-1200,"acked_right":1200,"last_acks":10,"fault":false,"fault_code":0,"reserved_valid":true,"zero_ack":true}
+{"event":"NEURAL_I2C_STATUS","time":103,"session":15,"model_step":1,"source_seq":1,"flags":39,"yaw_q20":0,"acked_left":-1200,"acked_right":1200,"last_acks":10,"fault":false,"fault_code":0,"reserved_valid":true,"zero_ack":true}
+{"event":"NEURAL_I2C_STATUS","time":104,"session":16,"model_step":1,"source_seq":1,"flags":35,"yaw_q20":0,"acked_left":0,"acked_right":0,"last_acks":10,"fault":false,"fault_code":0,"reserved_valid":true,"zero_ack":true}

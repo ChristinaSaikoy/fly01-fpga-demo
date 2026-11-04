@@ -1,0 +1,123 @@
+{
+  "task": "FULL-0_SOURCE_ASSET_MANIFEST",
+  "provenance_root_policy": "official dataset/project sources; author paper repository for reference dynamics",
+  "assets": [
+    {
+      "file": "source\\body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "source_organization": "HHMI Janelia FlyEM / Cambridge Drosophila Connectomics Group / Google Research",
+      "release_name": "MaleCNS",
+      "release_version": "v1.0",
+      "download_date": "2026-09-28",
+      "license": "CC-BY 4.0",
+      "file_size": 14483314,
+      "sha256": "2177E246113E4CFBF1E7772EC37C6DA1955FF22E8063D0B1F833101F99A9A3B2"
+    },
+    {
+      "file": "source\\body-neurotransmitters-male-cns-v1.0.feather",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather",
+      "source_organization": "HHMI Janelia FlyEM / Cambridge Drosophila Connectomics Group / Google Research",
+      "release_name": "MaleCNS",
+      "release_version": "v1.0",
+      "download_date": "2026-09-28",
+      "license": "CC-BY 4.0",
+      "file_size": 43282834,
+      "sha256": "95C9289220663ABEB3409F3AD9E5A7F8A53F8093F5139D15502CD08DA8879621"
+    },
+    {
+      "file": "source\\connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "source_organization": "HHMI Janelia FlyEM / Cambridge Drosophila Connectomics Group / Google Research",
+      "release_name": "MaleCNS",
+      "release_version": "v1.0",
+      "download_date": "2026-09-28",
+      "license": "CC-BY 4.0",
+      "file_size": 1051241946,
+      "sha256": "E35DA783D1C686B2B58B3B87CD6A403AE43BFCFBA8BFF28E08EF752C1A56AFC1"
+    },
+    {
+      "file": "source\\body-annotations-male-cns-v0.9-minconf-0.5.feather",
+      "source_url": "https://storage.googleapis.com/flyem-male-cns/v0.9/connectome-data/flat-connectome/body-annotations-male-cns-v0.9-minconf-0.5.feather",
+      "source_organization": "HHMI Janelia FlyEM / Cambridge Drosophila Connectomics Group / Google Research",
+      "release_name": "MaleCNS",
+      "release_version": "v0.9",
+      "download_date": "2026-09-28",
+      "license": "CC-BY 4.0",
+      "file_size": 12900778,
+      "sha256": "03CCA8D1E667353F75F7674FB7D6B3A9E22E5B04B089865127407A5C38816CDA",
+      "role": "provenance comparison only"
+    },
+    {
+      "file": "source\\Shiu_Drosophila_brain_model\\environment.yml",
+      "source_url": "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/environment.yml",
+      "source_organization": "Philip K. Shiu et al. author repository",
+      "release_name": "Drosophila_brain_model",
+      "release_version": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+      "download_date": "2026-09-28",
+      "license": "MIT",
+      "file_size": 174,
+      "sha256": "52991BCC78EB5A18534C2C02E8240330F8AD376F31F63546756AD0724924A667",
+      "role": "reference dynamics code; NOT MaleCNS-v1.0 native runtime"
+    },
+    {
+      "file": "source\\Shiu_Drosophila_brain_model\\environment_full.yml",
+      "source_url": "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/environment_full.yml",
+      "source_organization": "Philip K. Shiu et al. author repository",
+      "release_name": "Drosophila_brain_model",
+      "release_version": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+      "download_date": "2026-09-28",
+      "license": "MIT",
+      "file_size": 3445,
+      "sha256": "402FCEF4968C99397B0E908B3323AB9E6EF86AF5583E46E6427F96F3D1091ADF",
+      "role": "reference dynamics code; NOT MaleCNS-v1.0 native runtime"
+    },
+    {
+      "file": "source\\Shiu_Drosophila_brain_model\\LICENSE",
+      "source_url": "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/LICENSE",
+      "source_organization": "Philip K. Shiu et al. author repository",
+      "release_name": "Drosophila_brain_model",
+      "release_version": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+      "download_date": "2026-09-28",
+      "license": "MIT",
+      "file_size": 1085,
+      "sha256": "3621F6D6476189190E2960FA43F11B275BA4ECA848FDAC50A1BA2925DE6223E8",
+      "role": "reference dynamics code; NOT MaleCNS-v1.0 native runtime"
+    },
+    {
+      "file": "source\\Shiu_Drosophila_brain_model\\model.py",
+      "source_url": "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/model.py",
+      "source_organization": "Philip K. Shiu et al. author repository",
+      "release_name": "Drosophila_brain_model",
+      "release_version": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+      "download_date": "2026-09-28",
+      "license": "MIT",
+      "file_size": 11900,
+      "sha256": "FC45837D7122C6CE2A7F3F2F23C515992E4B232AADB919EFABB72337FAC88E4E",
+      "role": "reference dynamics code; NOT MaleCNS-v1.0 native runtime"
+    },
+    {
+      "file": "source\\Shiu_Drosophila_brain_model\\Readme.md",
+      "source_url": "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/Readme.md",
+      "source_organization": "Philip K. Shiu et al. author repository",
+      "release_name": "Drosophila_brain_model",
+      "release_version": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+      "download_date": "2026-09-28",
+      "license": "MIT",
+      "file_size": 3617,
+      "sha256": "0654AC53F9AF85000B50F6A5D2297AADE8602C507A44E811F8AFF602629C2625",
+      "role": "reference dynamics code; NOT MaleCNS-v1.0 native runtime"
+    },
+    {
+      "file": "source\\Shiu_Drosophila_brain_model\\utils.py",
+      "source_url": "https://raw.githubusercontent.com/philshiu/Drosophila_brain_model/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/utils.py",
+      "source_organization": "Philip K. Shiu et al. author repository",
+      "release_name": "Drosophila_brain_model",
+      "release_version": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+      "download_date": "2026-09-28",
+      "license": "MIT",
+      "file_size": 2176,
+      "sha256": "F378CF0B464F2AC5E1DAF3609BA25FD51C7E34F294846281707FFE006C3E9EF1",
+      "role": "reference dynamics code; NOT MaleCNS-v1.0 native runtime"
+    }
+  ]
+}

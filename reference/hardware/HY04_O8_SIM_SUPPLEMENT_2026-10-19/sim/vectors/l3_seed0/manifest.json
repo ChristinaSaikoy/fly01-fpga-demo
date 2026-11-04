@@ -1,0 +1,53 @@
+{
+  "cases": [
+    {
+      "case": 0,
+      "condition": "BASELINE",
+      "seed": 0
+    },
+    {
+      "case": 1,
+      "condition": "V_L",
+      "seed": 0
+    },
+    {
+      "case": 2,
+      "condition": "V_R",
+      "seed": 0
+    }
+  ],
+  "files": {
+    "acc_sat_expected.mem": {
+      "bytes": 2700,
+      "sha256": "d79206ce308d48fbe1ba9fb4f95f2327aa03798f4a1e17a8c0c4cb782b8c79f9"
+    },
+    "dn_counts_expected.mem": {
+      "bytes": 864,
+      "sha256": "a58ac8d81cc095b587060117bc1d3426f4c33c86a8fe58d227e808b0fa6d5e64"
+    },
+    "drive_mask.mem": {
+      "bytes": 35700,
+      "sha256": "ebc3536a69a7b2e238f644fc1801e1be32595c2816eae4889660d061e317b95d"
+    },
+    "noise_mask.mem": {
+      "bytes": 35700,
+      "sha256": "b1309fb00c754f67bb25f9e676f236038957ca2c7bb10153f40c7c0d2ede5411"
+    },
+    "spike_mask_expected.mem": {
+      "bytes": 35700,
+      "sha256": "cd37202aa3277bf81071f687b28dd80dad10758a78e4455d272f748dbfd67f11"
+    },
+    "state_expected.mem": {
+      "bytes": 847800,
+      "sha256": "faa9848b980f38e682a713b7f13e53f4602fa9f0b2f4ebe6260fc92025c9dc09"
+    },
+    "state_sat_expected.mem": {
+      "bytes": 2700,
+      "sha256": "d79206ce308d48fbe1ba9fb4f95f2327aa03798f4a1e17a8c0c4cb782b8c79f9"
+    }
+  },
+  "profile": "L3_SEED0_TRIAD",
+  "source_full_l3_manifest_sha256": "404350c447150605287bcca4cf1be712deb55412dfc246ee96db714fa23adf51",
+  "task_id": "S5-FPGA-0",
+  "timesteps": 300
+}

@@ -1,0 +1,33 @@
+test_clock_and_mount_must_be_explicitly_verified (test_project_adapter.ProjectAdapterTests.test_clock_and_mount_must_be_explicitly_verified) ... ok
+test_default_is_blocked_without_inventing_geometry (test_project_adapter.ProjectAdapterTests.test_default_is_blocked_without_inventing_geometry) ... ok
+test_does_not_modify_input (test_project_adapter.ProjectAdapterTests.test_does_not_modify_input) ... ok
+test_invalid_status_count_center (test_project_adapter.ProjectAdapterTests.test_invalid_status_count_center) ... ok
+test_missing_or_invalid_timestep_is_not_inferred (test_project_adapter.ProjectAdapterTests.test_missing_or_invalid_timestep_is_not_inferred) ... ok
+test_nonfinite_and_inconsistent_geometry_blocked (test_project_adapter.ProjectAdapterTests.test_nonfinite_and_inconsistent_geometry_blocked) ... ok
+test_ready_is_only_review_and_does_not_use_visual_frame_id (test_project_adapter.ProjectAdapterTests.test_ready_is_only_review_and_does_not_use_visual_frame_id) ... ok
+test_replay_never_claims_live (test_project_adapter.ProjectAdapterTests.test_replay_never_claims_live) ... ok
+test_unconfirmed_range_not_replaced_by_unit_ray (test_project_adapter.ProjectAdapterTests.test_unconfirmed_range_not_replaced_by_unit_ray) ... ok
+test_bad_config_rejected (test_vision.VisionTests.test_bad_config_rejected) ... ok
+test_bad_rgb_or_k230_cannot_leave_previous_target_valid (test_vision.VisionTests.test_bad_rgb_or_k230_cannot_leave_previous_target_valid) ... ok
+test_calibration_angle_sign_is_left_positive_and_range_stays_null (test_vision.VisionTests.test_calibration_angle_sign_is_left_positive_and_range_stays_null) ... ok
+test_duplicate_invalidates_latest_and_does_not_restore (test_vision.VisionTests.test_duplicate_invalidates_latest_and_does_not_restore) ... ok
+test_eof_invalidation (test_vision.VisionTests.test_eof_invalidation) ... ok
+test_expiry_is_inclusive_and_cannot_revive_selection (test_vision.VisionTests.test_expiry_is_inclusive_and_cannot_revive_selection) ... ok
+test_foreign_poll_clock_invalidates (test_vision.VisionTests.test_foreign_poll_clock_invalidates) ... ok
+test_gif_is_replay_and_preserves_all_eight_scenes (test_vision.VisionTests.test_gif_is_replay_and_preserves_all_eight_scenes) ... ok
+test_k230_coordinate_transforms_match_rgb_for_all_orientations (test_vision.VisionTests.test_k230_coordinate_transforms_match_rgb_for_all_orientations) ... ok
+test_k230_invalid_bounds_nonfinite_and_duplicate_rejected (test_vision.VisionTests.test_k230_invalid_bounds_nonfinite_and_duplicate_rejected) ... ok
+test_k230_replay_does_not_verify_clock_or_live_transport (test_vision.VisionTests.test_k230_replay_does_not_verify_clock_or_live_transport) ... ok
+test_normalized_pixel_sign_and_no_fake_geometry (test_vision.VisionTests.test_normalized_pixel_sign_and_no_fake_geometry) ... ok
+test_preview_mirror_does_not_change_numeric_coordinate (test_vision.VisionTests.test_preview_mirror_does_not_change_numeric_coordinate) ... ok
+test_resolution_mismatch_blocks_angle (test_vision.VisionTests.test_resolution_mismatch_blocks_angle) ... ok
+test_rotation_clockwise (test_vision.VisionTests.test_rotation_clockwise) ... ok
+test_sensor_mirror_changes_coordinate (test_vision.VisionTests.test_sensor_mirror_changes_coordinate) ... ok
+test_single_target_then_absence_clears_old_target (test_vision.VisionTests.test_single_target_then_absence_clears_old_target) ... ok
+test_slow_detection_is_stale (test_vision.VisionTests.test_slow_detection_is_stale) ... ok
+test_unchanged_eight_fixture_truth (test_vision.VisionTests.test_unchanged_eight_fixture_truth) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.788s
+
+OK

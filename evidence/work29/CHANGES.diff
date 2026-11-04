@@ -1,0 +1,234 @@
+--- before/control_bridge.mjs
++++ after/control_bridge.mjs
+@@ -11,6 +11,6 @@
+   this.worker.on('exit',()=>this.failed('控制服务已退出'));
+  }
+  failed(message){this.state={connected:false,fresh:false,can_arm:false,message};for(const w of this.wait.values()){clearTimeout(w.timer);w.resolve({ok:false,error:message});}this.wait.clear();}
+- command(cmd,raised=false,options={}){if(!this.worker.stdin.writable)return Promise.resolve({ok:false,error:'控制服务不可用'});const id=++this.seq;return new Promise(resolve=>{const timer=setTimeout(()=>{this.wait.delete(id);resolve({ok:false,error:'控制服务响应超时；请检查现场状态'});},2000);this.wait.set(id,{resolve,timer});this.worker.stdin.write(JSON.stringify({id,cmd,raised,trim:options.trim,cap:options.cap})+'\n');});}
++ command(cmd,raised=false,options={}){if(!this.worker.stdin.writable)return Promise.resolve({ok:false,error:'控制服务不可用'});const id=++this.seq;return new Promise(resolve=>{const timer=setTimeout(()=>{this.wait.delete(id);resolve({ok:false,error:'控制服务响应超时；请检查现场状态'});},2000);this.wait.set(id,{resolve,timer});this.worker.stdin.write(JSON.stringify({id,cmd,raised,trim:options.trim,cap:options.cap,level:options.level,observation:options.observation})+'\n');});}
+  close(){this.worker.stdin.end();}
+ }
+--- before/control_worker.py
++++ after/control_worker.py
+@@ -15,7 +15,7 @@
+ 
+ 
+ class Controller:
+-    def __init__(self, emit, clock=time.monotonic, connect_factory=None, log_dir=None, usb_stop=None):
++    def __init__(self, emit, clock=time.monotonic, connect_factory=None, log_dir=None, usb_stop=None, driver_inspect=None):
+         self.emit, self.clock, self.factory = emit, clock, connect_factory
+         self.serial = None
+         self.control = None
+@@ -37,6 +37,9 @@
+         self.usb_stop = usb_stop
+         self.usb_stop_result = None
+         self.bus_fault_handled = False
++        self.driver_inspect = driver_inspect
++        self.chassis_check = None
++        self.chassis_test = None
+ 
+     def independent_stop(self, reason):
+         try:
+@@ -86,12 +89,13 @@
+     def safe_to_request(self):
+         r = self.latest
+         return bool(self.retry is None and self.pwm_request is None and self.serial and r and self.clock()-r['received'] < .3 and
++                    (self.control is None or self.control.bench_at is None) and
+                     self.lease is not None and self.clock()-self.lease < 1.5 and
+                     r['reserved_valid'] and r['zero_ack'] and r['last_acks'] == 10 and
+                     not r['fault'] and not r['fault_code'] and
+                     not r['flags'] & (4 | 16384) and not ((r['flags'] >> 6) & 255))
+ 
+-    def command(self, cmd, confirmed=False, trim=None, cap=None):
++    def command(self, cmd, confirmed=False, trim=None, cap=None, level=None, observation=None):
+         if cmd == 'connect':
+             if not confirmed:
+                 raise ValueError('请先确认双轮已架空')
+@@ -103,6 +107,46 @@
+             if not confirmed or not self.safe_to_request():
+                 raise ValueError('状态未就绪或已过期，请检查设备和架空状态')
+             self.control.request_enable()
++        elif cmd == 'inspect_chassis':
++            if not confirmed or not self.safe_to_request():
++                raise ValueError('先关闭动作并等待零指令应答，再检查底盘')
++            self.control.stop('before_chassis_inspection')
++            self.independent_stop('before_chassis_inspection')
++            if self.driver_inspect is None:
++                from chassis_inspect import inspect_driver
++                inspector = inspect_driver
++            else:
++                inspector = self.driver_inspect
++            try:
++                self.chassis_check = inspector()
++                self.event('CHASSIS_INSPECTION', **self.chassis_check)
++            except Exception as exc:
++                self.chassis_check = dict(ok=False, error=str(exc))
++                raise
++            finally:
++                self.lease = self.clock()
++            self.control.message = '底盘电压与配置已读取；未启动电机'
++        elif cmd == 'chassis_test':
++            if type(level) is not int or level not in (1200, 1600, 1800):
++                raise ValueError('点动档位只能为1200、1600或1800')
++            if not confirmed or not self.safe_to_request() or not self.latest.get('motion_build'):
++                raise ValueError('先关闭神经动作并确认架空，等待零指令应答后点动')
++            self.control.stop('before_explicit_chassis_test')
++            self.control.send({1200:b'1',1600:b'2',1800:b'3'}[level]+b'B',
++                              'explicit_fpga_750ms_chassis_test')
++            self.control.bench_at = self.clock()
++            self.control.bench_seen = False
++            self.control.stop_at = None
++            self.lease = self.clock()
++            self.chassis_test = dict(level=level, duration_ms=750, acked=False,
++                                     left=0, right=0, observation=None)
++            self.event('CHASSIS_TEST_REQUEST', level=level, duration_ms=750)
++            self.control.message = 'FPGA底盘点动中，0.75秒后停车；请观察双轮'
++        elif cmd == 'chassis_feedback':
++            if observation not in ('moved_stopped', 'no_motion') or self.chassis_test is None:
++                raise ValueError('请先执行一次底盘点动，再记录现场结果')
++            self.chassis_test['observation'] = observation
++            self.event('CHASSIS_OPERATOR_FEEDBACK', observation=observation)
+         elif cmd == 'retry':
+             r = self.latest
+             if (not confirmed or not self.serial or not r or self.clock()-r['received'] >= .3
+@@ -205,7 +249,7 @@
+         if not self.serial:
+             return
+         now = self.clock()
+-        was_enabled = self.control.enable_at is not None or self.control.pending_until is not None
++        was_enabled = self.control.enable_at is not None or self.control.pending_until is not None or self.control.bench_at is not None
+         if self.lease is not None and now-self.lease >= 1.5:
+             self.retry = None
+             self.pwm_request = None
+@@ -227,6 +271,8 @@
+             row = dict(zip(names, values), received=self.clock(), session=session,
+                        model_step=model_step, **motor)
+             self.latest = row
++            if self.chassis_test and row.get('bench_active') and row['last_acks'] == 10 and not row['fault'] and (row['acked_left'] or row['acked_right']):
++                self.chassis_test.update(acked=True, left=row['acked_left'], right=row['acked_right'])
+             self.event('NEURAL_I2C_STATUS', **row)
+             if (row['fault'] or row['fault_code'] or not row['reserved_valid'] or
+                     not row['zero_ack'] or row['last_acks'] != 10):
+@@ -246,7 +292,7 @@
+             self.update_pwm_request(row)
+             self.emit(dict(kind='row', row=dict(row, time=row['received'], event='NEURAL_I2C_STATUS')))
+         self.control.tick()
+-        if was_enabled and self.control.enable_at is None and self.control.pending_until is None and not self.bus_fault_handled:
++        if was_enabled and self.control.enable_at is None and self.control.pending_until is None and self.control.bench_at is None and not self.bus_fault_handled:
+             self.independent_stop('control_disarmed_or_stale')
+         if self.retry is not None and self.clock() >= self.retry['deadline']:
+             self.event('I2C_RETRY_FAILED', reason='timeout_or_old_firmware')
+@@ -276,6 +322,11 @@
+             suffix = 'USB备用零命令已发，仍须观察停稳' if self.usb_stop_result and self.usb_stop_result.get('ok') else '备用停车未确认，请关闭电机电池开关'
+             message = 'I²C故障锁定（%s）；%s' % (name, suffix)
+         return dict(kind='status', connected=self.serial is not None, port=self.port, retrying=self.retry is not None,
++                    chassis_check=self.chassis_check, chassis_test=self.chassis_test,
++                    chassis_testing=bool(c and c.bench_at is not None),
++                    fpga_armed=bool(r and r.get('neural_armed')),
++                    wheel_left=r.get('acked_left',0) if r else 0,
++                    wheel_right=r.get('acked_right',0) if r else 0,
+                     usb_stop_result=self.usb_stop_result,
+                     configuring_pwm=self.pwm_request is not None,
+                     right_trim=r.get('right_trim') if r else None, right_cap=r.get('right_cap') if r else None,
+@@ -319,9 +370,10 @@
+     stopping = any(x.get('cmd') in ('stop', 'disconnect') for x in batch)
+     for x in sorted(batch, key=lambda x: x.get('cmd') not in ('stop', 'disconnect')):
+         try:
+-            if stopping and x.get('cmd') in ('arm', 'connect', 'retry', 'configure_pwm'):
++            if stopping and x.get('cmd') in ('arm', 'connect', 'retry', 'configure_pwm', 'inspect_chassis', 'chassis_test'):
+                 raise ValueError('停车优先，请再次手动操作')
+-            controller.command(x.get('cmd'), x.get('raised') is True, trim=x.get('trim'), cap=x.get('cap'))
++            controller.command(x.get('cmd'), x.get('raised') is True, trim=x.get('trim'), cap=x.get('cap'),
++                               level=x.get('level'), observation=x.get('observation'))
+             emit(dict(kind='reply', id=x.get('id'), ok=True))
+         except Exception as exc:
+             emit(dict(kind='reply', id=x.get('id'), ok=False, error=str(exc)))
+--- before/server.mjs
++++ after/server.mjs
+@@ -40,8 +40,8 @@
+   if(![`http://127.0.0.1:${port}`,`http://localhost:${port}`].includes(req.headers.origin)){res.writeHead(403).end();return;}
+   let body='';try{for await(const chunk of req){body+=chunk;if(body.length>2048)throw Error('Request too large');}const data=JSON.parse(body);
+    if(data.token!==controlToken){res.writeHead(403).end();return;}
+-   if(!['connect','arm','stop','disconnect','heartbeat','retry','configure_pwm'].includes(data.cmd)){res.writeHead(400).end(JSON.stringify({ok:false,error:'Unsupported command'}));return;}
+-   const answer=await bridge.command(data.cmd,data.raised===true,{trim:data.trim,cap:data.cap});res.writeHead(answer.ok?200:409).end(JSON.stringify(answer));
++   if(!['connect','arm','stop','disconnect','heartbeat','retry','configure_pwm','inspect_chassis','chassis_test','chassis_feedback'].includes(data.cmd)){res.writeHead(400).end(JSON.stringify({ok:false,error:'Unsupported command'}));return;}
++   const answer=await bridge.command(data.cmd,data.raised===true,{trim:data.trim,cap:data.cap,level:data.level,observation:data.observation});res.writeHead(answer.ok?200:409).end(JSON.stringify(answer));
+   }catch{res.writeHead(400).end(JSON.stringify({ok:false,error:'Invalid request'}));}return;
+  }
+  if(req.method!=='GET'){res.writeHead(405).end();return;}
+--- before/app/host.css
++++ after/app/host.css
+@@ -3,3 +3,5 @@
+ #pwm{font-size:23px;white-space:nowrap}.metric:has(#pwm)>span{font-size:12px;max-width:85px;flex-shrink:0}.metric{gap:8px}
+ 
+ .pwmControls{border-top:1px solid #35444b;margin-top:12px;padding-top:12px}.pwmFields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.pwmFields label{font-size:11px;color:#a9bcc4}.pwmFields input{display:block;width:100%;box-sizing:border-box;margin-top:5px;border:1px solid #4a5e65;background:#13242c;color:#e2decf;border-radius:3px;padding:7px;font:14px 'Consolas',monospace}.pwmFields input:focus{outline:1px solid #d4c39e}.pwmControls button{width:100%;margin-top:9px;font-size:12px;border-radius:4px;padding:8px}#rightPwmReadback{font-size:11px;color:#9ebcad;line-height:1.5;margin:8px 0 0}body.film .pwmControls{display:none}#retryDevice{grid-column:1/-1}
++
++.chassisControl{margin-top:14px;padding:13px 0;border-top:1px solid #35444b;border-bottom:1px solid #35444b}.chassisPair{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:10px;color:#a9bcc4;font-size:11px}.chassisPair strong{font:17px Consolas,monospace;color:#e0d5b8}#chassisPower,#chassisResult{font-size:11px;line-height:1.6;color:#a9bcc4;margin:8px 0}#chassisPower[data-ready=true]{color:#a1d2b4}.chassisControl button{font-size:11px;border-radius:4px;padding:8px}.chassisControl>button{width:100%}.chassisTestRow{display:flex;align-items:end;gap:8px;margin-top:10px}.chassisTestRow label{font-size:10px;color:#a9bcc4}.chassisTestRow select{display:block;background:#13242c;color:#e0d5b8;padding:7px;border:1px solid #4a5e65;margin-top:5px;border-radius:3px}.chassisTestRow button{flex:1;background:#d9cba8;color:#19272b}.chassisFeedback{display:grid;grid-template-columns:1fr 1fr;gap:8px}body.film .chassisTestRow,body.film .chassisFeedback,body.film #inspectChassis,body.film #chassisResult{display:none}body.film .chassisControl{padding-bottom:6px}body.film #chassisPower{margin-bottom:0}
+--- before/app/host.js
++++ after/app/host.js
+@@ -1,16 +1,26 @@
+ const $=id=>document.getElementById(id);let token='',connected=false,busy=false,inFlight=false,statusFlight=false,mode='live';
+ async function state(){if(statusFlight)return;statusFlight=true;try{const r=await fetch('/api/control',{signal:AbortSignal.timeout(1800)});const s=await r.json();token=s.token;connected=s.connected;const allow=mode==='live'&&s.fresh&&s.can_arm&&$('raised').checked&&!busy&&!s.pending;
+- $('connectDevice').disabled=mode!=='live'||busy||connected||!$('raised').checked;$('armDevice').disabled=!allow;$('disconnectDevice').disabled=busy||!connected;
++ $('connectDevice').disabled=mode!=='live'||busy||connected||!$('raised').checked;$('armDevice').disabled=!allow||s.chassis_testing;$('disconnectDevice').disabled=busy||!connected;
++ const chassisReady=allow&&!s.enabled&&!s.chassis_testing;
++ $('inspectChassis').disabled=!chassisReady;$('testChassis').disabled=!chassisReady;
++ $('testChassis').textContent=s.chassis_testing?'正在点动…':'点动底盘 · 0.75秒';
++ $('chassisWheel').textContent=s.fresh?`${s.wheel_left??0} / ${s.wheel_right??0}`:'—';
++ const check=s.chassis_check;
++ $('chassisPower').textContent=check?.ok?`上次读取 ${check.battery_v.toFixed(1)} V · 电机类型 ${check.motor_type}`:check?.error||'电机电源未检查';
++ $('chassisPower').dataset.ready=String(!!check?.ok&&check.battery_v>=5&&check.motor_type===4);
++ const test=s.chassis_test;
++ $('chassisResult').textContent=test?.observation==='moved_stopped'?'现场确认：双轮转动并停下':test?.observation==='no_motion'?'现场反馈：没有转动，需继续查底盘':s.chassis_testing?'固定点动中，请观察双轮':test?.acked?`点动已应答 ${test.left} / ${test.right}，请确认是否转动`:'固定点动经 FPGA→I²C 发送；结束后自动停车';
++ for(const id of ['chassisMoved','chassisNoMotion'])$(id).disabled=!test||s.chassis_testing||busy;
+  $('retryDevice').disabled=mode!=='live'||busy||!connected||!s.fresh||!s.i2c_fault||!$('raised').checked||s.retrying||s.configuring_pwm||!s.manual_retry_supported;$('retryDevice').textContent=s.retrying?'正在重试…':'重试并解除故障';
+  $('applyRightPwm').disabled=mode!=='live'||busy||!connected||!s.fresh||!s.pwm_adjust_supported||s.i2c_fault||s.retrying||s.configuring_pwm||!$('raised').checked;
+  $('applyRightPwm').textContent=s.configuring_pwm?'正在等待参数确认…':'应用并关闭动作';
+  $('rightPwmReadback').textContent=s.pwm_adjust_supported?`当前参数：补偿 +${s.right_trim} · 上限 ${s.right_cap}`:connected?'当前版本不支持页面调参，需烧录新版':'当前参数：等待FPGA读回';
+  $('controlState').textContent=s.message;$('connectionState').textContent=connected?(s.fresh?'设备已连接':'等待设备数据'):'设备未连接';$('connectionState').dataset.ready=String(connected&&s.fresh);
+- $('windowTime').textContent=s.pending?'已开放 · 等待活动':s.enabled?'持续开放':'已关闭';
+- $('stopAck').textContent=s.i2c_fault?'I²C故障锁定 · 停车安全未确认':s.zero_confirmed?'停车命令已确认':connected?'等待停车确认':'未连接';
++ $('windowTime').textContent=s.chassis_testing?'底盘点动':s.pending?'已请求 · 等待神经输出':s.enabled&&s.fpga_armed?'FPGA 已开放':s.enabled?'等待 FPGA 使能':'已关闭';
++ $('stopAck').textContent=s.i2c_fault?'I²C故障锁定 · 停车安全未确认':s.zero_confirmed?'零指令已应答 · 车轮停稳需现场确认':connected?'等待零指令应答':'未连接';
+  $('logPath').textContent=s.log||'连接后自动记录';
+-}catch{$('connectionState').textContent='控制服务离线';$('stopAck').textContent='控制服务离线 · 停车状态未知';$('armDevice').disabled=true;$('retryDevice').disabled=true;$('applyRightPwm').disabled=true;connected=false;}finally{statusFlight=false;}}
+-async function command(cmd,quiet=false,options={}){if(!token)return;try{const r=await fetch('/api/control',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({token,cmd,raised:$('raised').checked,trim:options.trim,cap:options.cap}),signal:AbortSignal.timeout(2500)});const a=await r.json();if(!r.ok||!a.ok)throw Error(a.error||'请求失败');if(cmd==='connect'){window.flySnapshotURL='/api/live-snapshot';$('live').click();}if(!quiet)$('controlState').textContent=cmd==='arm'?'已请求持续开放神经动作':cmd==='stop'?'已请求关闭动作':'操作完成';}catch(e){if(!quiet)$('controlState').textContent=e.message;}finally{if(!quiet)await state();}}
++}catch{$('connectionState').textContent='控制服务离线';$('stopAck').textContent='控制服务离线 · 停车状态未知';for(const id of ['armDevice','retryDevice','applyRightPwm','inspectChassis','testChassis'])$(id).disabled=true;connected=false;}finally{statusFlight=false;}}
++async function command(cmd,quiet=false,options={}){if(!token)return;try{const r=await fetch('/api/control',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({token,cmd,raised:$('raised').checked,trim:options.trim,cap:options.cap,level:options.level,observation:options.observation}),signal:AbortSignal.timeout(2500)});const a=await r.json();if(!r.ok||!a.ok)throw Error(a.error||'请求失败');if(cmd==='connect'){window.flySnapshotURL='/api/live-snapshot';$('live').click();}if(!quiet)$('controlState').textContent=cmd==='arm'?'已请求持续开放神经动作':cmd==='stop'?'已请求关闭动作':'操作完成';}catch(e){if(!quiet)$('controlState').textContent=e.message;}finally{if(!quiet)await state();}}
+ for(const [id,cmd]of[['connectDevice','connect'],['armDevice','arm'],['stopDevice','stop'],['disconnectDevice','disconnect'],['retryDevice','retry']])$(id).onclick=async()=>{if(cmd==='stop'){await command(cmd);return;}busy=true;await command(cmd);busy=false;state();};
+ $('applyRightPwm').onclick=async()=>{
+  if(!$('rightTrim').reportValidity()||!$('rightCap').reportValidity())return;
+@@ -18,6 +28,9 @@
+  if(!Number.isInteger(trim)||!Number.isInteger(cap))return;
+  busy=true;await command('configure_pwm',false,{trim,cap});busy=false;state();
+ };
++$('inspectChassis').onclick=async()=>{busy=true;await command('inspect_chassis');busy=false;state();};
++$('testChassis').onclick=async()=>{busy=true;await command('chassis_test',false,{level:Number($('chassisLevel').value)});busy=false;state();};
++for(const [id,observation]of [['chassisMoved','moved_stopped'],['chassisNoMotion','no_motion']])$(id).onclick=async()=>{await command('chassis_feedback',false,{observation});state();};
+ $('raised').onchange=()=>{if(!$('raised').checked)command('stop');state();};
+ $('modeLive').onclick=()=>{mode='live';document.body.dataset.mode='live';window.flySnapshotURL='/api/live-snapshot';$('live').click();state();};
+ $('modeReplay').onclick=async()=>{await command('stop');mode='replay';document.body.dataset.mode='replay';$('r6').click();state();};
+--- before/app/index.html
++++ after/app/index.html
+@@ -2,7 +2,7 @@
+ <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FPGA连接组数字果蝇 · 实验控制台</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="host.css"><script type="importmap">{"imports":{"three":"/vendor/three.module.js"}}</script></head>
+ <body data-mode="live"><div id="scene" aria-label="三维关节转向场景"></div>
+ <header><span class="eyebrow">FLY01 / NEURAL SYSTEM</span><h1>连接组数字果蝇</h1><p>视觉输入 · FPGA 神经计算 · 实体转向</p><span id="phase" class="phase">准备载入</span></header>
+-<nav class="hostTabs"><button id="modeLive">实时控制</button><button id="modeReplay">历史回放</button><button id="filmMode">拍摄视图</button></nav><aside><section class="hostControl"><span class="smallTitle">R6 / OPERATOR CONSOLE</span><h2>实验控制</h2><span id="connectionState" class="connection">设备未连接</span><label class="raised"><input id="raised" type="checkbox">双轮已架空，线材远离车轮</label><div class="controlButtons"><button id="connectDevice" disabled>连接设备</button><button id="armDevice" disabled>开放动作</button><button id="stopDevice">关闭动作 · Esc</button><button id="disconnectDevice" disabled>断开设备</button><button id="retryDevice" disabled>重试并解除故障</button></div><div class="pwmControls"><div class="pwmFields"><label for="rightTrim">右轮补偿<input id="rightTrim" type="number" min="0" max="800" step="1" value="400"></label><label for="rightCap">右轮上限<input id="rightCap" type="number" min="1200" max="2000" step="1" value="1800"></label></div><button id="applyRightPwm" disabled>应用并关闭动作</button><p id="rightPwmReadback">当前参数：等待FPGA读回</p></div><p id="controlState" role="status">设备未连接</p><div class="windowLine"><span>动作状态</span><span id="windowTime">—</span></div><p id="stopAck">未连接</p><p class="controlHint">点击开放后持续响应神经输出，点击关闭停止；故障、断流或页面失联仍会停车。</p><details id="logDetails"><summary>本次记录</summary><p id="logPath" class="sub">连接后自动记录</p></details></section><span id="source" class="tag">合成回放</span><h2 id="state">等待数据</h2><p id="notice" role="status">加载中</p>
++<nav class="hostTabs"><button id="modeLive">实时控制</button><button id="modeReplay">历史回放</button><button id="filmMode">拍摄视图</button></nav><aside><section class="hostControl"><span class="smallTitle">R6 / OPERATOR CONSOLE</span><h2>设备与底盘控制</h2><span id="connectionState" class="connection">设备未连接</span><label class="raised"><input id="raised" type="checkbox">双轮已架空，线材远离车轮</label><div class="controlButtons"><button id="connectDevice" disabled>连接设备</button><button id="armDevice" disabled>开放神经底盘驱动</button><button id="stopDevice">关闭动作 · Esc</button><button id="disconnectDevice" disabled>断开设备</button><button id="retryDevice" disabled>重试并解除故障</button></div><section class="chassisControl"><span class="smallTitle">底盘驱动 · FPGA / I²C</span><div class="chassisPair"><span>轮指令 L / R</span><strong id="chassisWheel">—</strong></div><p id="chassisPower">电机电源未检查</p><button id="inspectChassis" disabled>检查底盘电源与配置</button><div class="chassisTestRow"><label>点动 PWM<select id="chassisLevel"><option value="1200">1200</option><option value="1600">1600</option><option value="1800" selected>1800</option></select></label><button id="testChassis" disabled>点动底盘 · 0.75秒</button></div><p id="chassisResult">固定点动经 FPGA→I²C 发送；结束后自动停车</p><div class="chassisFeedback"><button id="chassisMoved" disabled>转动并停下</button><button id="chassisNoMotion" disabled>没有转动</button></div></section><div class="pwmControls"><div class="pwmFields"><label for="rightTrim">右轮补偿<input id="rightTrim" type="number" min="0" max="800" step="1" value="400"></label><label for="rightCap">右轮上限<input id="rightCap" type="number" min="1200" max="2000" step="1" value="1800"></label></div><button id="applyRightPwm" disabled>应用并关闭动作</button><p id="rightPwmReadback">当前参数：等待FPGA读回</p></div><p id="controlState" role="status">设备未连接</p><div class="windowLine"><span>动作状态</span><span id="windowTime">—</span></div><p id="stopAck">未连接</p><p class="controlHint">点击开放后持续响应神经输出，点击关闭停止；故障、断流或页面失联仍会停车。</p><details id="logDetails"><summary>本次记录</summary><p id="logPath" class="sub">连接后自动记录</p></details></section><span id="source" class="tag">合成回放</span><h2 id="state">等待数据</h2><p id="notice" role="status">加载中</p>
+ <div class="metric"><span>神经偏航参考</span><strong id="yaw">—</strong></div><div class="yawTrack"><span id="yawBar"></span><i></i></div><div class="direction"><span>负向</span><span id="heading">示意转角 0°</span><span>正向</span></div><p class="sub">固定显示比例：最大 1 rad/s</p>
+ <div class="metric"><span>ACKed 轮指令</span><strong id="pwm">—</strong></div><p id="identity" class="sub">等待源身份</p><div class="vision"><p id="visionState">合成目标已隐藏</p><p id="visionDetail" class="sub"></p><div class="targetButtons"><button data-target="left">左侧物体</button><button data-target="front">前方物体</button><button data-target="right">右侧物体</button><button data-target="off">隐藏</button></div><label class="distance">目标距离 <input id="distance" type="range" min="1.5" max="8" step=".1" value="3"><output id="distanceValue">3.0</output></label><p class="sub">目标与视野为合成示意，不改变转向指令。</p></div>
+ <details><summary>来源与原始数据</summary><pre id="raw"></pre></details></aside>
+--- before/control_vendor/operator_core.py
++++ after/control_vendor/operator_core.py
+@@ -98,7 +98,9 @@
+                 safe=(f&63)==35 and row['session']>0 and row['model_step']>0 and row['source_seq']>0
+                 safe=safe and not f&16384
+                 safe=safe and max(row['result_age_cycles'],row['adopted_age_cycles'])<12500000
+-                if safe and projected_pwm(row['yaw_q20'])!=[0,0]:
++                # R13 preserves the sign of every nonzero Q20 sample before PWM truncation.
++                has_output = row['yaw_q20'] != 0 if self.continuous else projected_pwm(row['yaw_q20']) != [0,0]
++                if safe and has_output:
+                     self.send(b'E','manual_continuous' if self.continuous else 'manual_single_window')
+                     self.enable_at=now;self.pending_until=None;self.armed_seen=False;self.stop_at=None
+                     self.message='动作持续开放；点击关闭动作停止' if self.continuous else '控制窗口已开放，最多8秒；请观察轮子'

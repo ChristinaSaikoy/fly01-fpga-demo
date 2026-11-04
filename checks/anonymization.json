@@ -1,0 +1,35 @@
+{
+  "descriptive_files_redacted": [
+    {
+      "file": "reference/README.md",
+      "before_sha256": "ed0eab946bd7619ef40b8a28aeb5d174f6aeaab37c282f28d12009807c99fe08",
+      "after_sha256": "a0c3d9ec40ffb6eeab6f019e6e89aa34bb465ccda788784f3f44fbd29a7f80e1"
+    },
+    {
+      "file": "reference/work12_reference/DELIVERY.json",
+      "before_sha256": "0fff3eff29c918ebe25c5a78c0950c68529ed4f33b06046ab4ff1513be09fe74",
+      "after_sha256": "5438a0afc4faf7a400aff1c90e6d6fa037b6f032f00c990444ede95f879e01e5"
+    },
+    {
+      "file": "reference/work12_reference/HANDOFF.md",
+      "before_sha256": "9156c73786377dbcfb1fdadb5c35d1950c1c14319e5c001b1297857197173b57",
+      "after_sha256": "62d25d0e234fc738e5a640d164dda40a7fe5873c2db071a0c040ad51427199e0"
+    },
+    {
+      "file": "reference/work12_reference/PROVENANCE.json",
+      "before_sha256": "279c8a68afaf51ee6ffad6db04d951c8265e7073f327ad93904e4b2545009fae",
+      "after_sha256": "da921064e4453d774bd74c019ad9fbc59ecf75eead955a28964829198c2110cf"
+    },
+    {
+      "file": "reference/work12_reference/README.md",
+      "before_sha256": "4ff4a805fb82bc46c472b34f7ba04541974a3f611bc6a39e786c384c79d94dae",
+      "after_sha256": "a402f9b78476bded3615115767754dc6973a85ef8ca6814d49abd20e7b9b31eb"
+    },
+    {
+      "file": "reference/hardware/HY04_O8_PRODUCTION_BUILD_2026-10-19/README.md",
+      "before_sha256": "c8ce061c937030875fbf67da820de52b416808fdd2e0b373da1bd63ea567518e",
+      "after_sha256": "c8bf55df924998e685265b0b1fbfd1cd002f16e156812f242e37e916e11c3da9"
+    }
+  ],
+  "executable_and_scientific_inputs_modified": false
+}

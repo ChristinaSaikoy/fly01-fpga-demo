@@ -1,0 +1,148 @@
+{
+  "task_id": "DEMO-1-IMPLEMENTATION",
+  "protocol_version": "DEMO-1_CLOSED_LOOP_EXECUTION_V1_0",
+  "status": "FROZEN_BEFORE_FIRST_CLOSED_LOOP_RUN",
+  "mode": "SEALED_CLOSED_LOOP_IMPLEMENTATION",
+  "scientific_outcome_inspected_before_freeze": false,
+  "frozen_identities": {
+    "BODY_0A2D": {
+      "path": "D:\\FPGA-AUTO\\tasks\\BODY-0A2D\\BODY-0A2D_BODY_FEEDBACK_CONTRACT.json",
+      "sha256": "515ce7d41df4849e930efa1b6a9b7990ed56ed2d0d6194f467b1ac4ecc208ccc"
+    },
+    "SENSORY_ENCODER": {
+      "version": "DEMO-1_SENSORY_ENCODER_V1_0",
+      "path": "D:\\FPGA-AUTO\\tasks\\DEMO-1-SENSORY-ENCODER-0\\DEMO-1_SENSORY_ENCODER_V1_0.json",
+      "sha256": "345112574af3b9ff48df4c0623069cad890721c64978aeb99c0ca8ce41eff003"
+    },
+    "CANDIDATE_GRAPH": {
+      "id": "B_VISUAL_RELAY128_TOP32",
+      "path": "D:\\FPGA-AUTO\\tasks\\S5-FPGA-0\\golden\\s4_candidate_graphs.npz",
+      "sha256": "5dd46c3adafd128a67c407c82e0f2636d5bfc640286b6234879e681c7336e9a6"
+    },
+    "CANDIDATE_INTEGER_MODEL": {
+      "implementation": "CandidateBInteger",
+      "path": "D:\\FPGA-AUTO\\tasks\\S5-FPGA-0\\golden\\s4_scope1_integer_model.py",
+      "sha256": "6d68f34c963fbe79de38403a2a0203c2e7afa11f2e82385cd2c815baa6493ca0"
+    },
+    "CANDIDATE_INTEGER_SPEC": {
+      "path": "D:\\FPGA-AUTO\\tasks\\S5-FPGA-0\\golden\\s4_scope1_integer_spec.json",
+      "sha256": "61c9f53e64a2e5fc878c55f533da46955eb5f36ce2e36f9d537cf4c1d57ee1e9"
+    },
+    "BRAIN_METADATA": {
+      "path": "D:\\FPGA-AUTO\\tasks\\S5-FPGA-0\\golden\\brain.npz",
+      "sha256": "cc9bd1ecd00bd703a6fa648bc6ad145c93c7c1ee53debdcc9ce0d1f4305e6aca"
+    },
+    "FINAL_MAPPING": {
+      "id": "FINAL_DN_MOTOR_MAPPING_V1_0",
+      "path": "D:\\FPGA-AUTO\\tasks\\DEMO-0\\FINAL_DN_MOTOR_MAPPING_V1_0.json",
+      "sha256": "6ebe682548634e4fb2563336059f8563430df201f1954ae3ef1fa34806c4275f"
+    },
+    "BODY_RUNTIME": {
+      "path": "D:\\FPGA-AUTO\\tasks\\BODY-0C2\\frozen\\body_runtime_v0_1.py",
+      "sha256": "570076d8e6633b27147047b7947d03e6087efedb93c70b769c9937380ffa2882"
+    },
+    "BODY_CONFIG": {
+      "path": "D:\\FPGA-AUTO\\tasks\\BODY-0C2\\frozen\\body_controller_params_v0_1.json",
+      "sha256": "b99079ec2c53e84511a974d80c4affd36af5dd68e9c8c598fcadf6e04eb79f8c"
+    },
+    "DN_IDENTITY": {
+      "path": "D:\\FPGA-AUTO\\tasks\\S4-S5-DN-ID-0\\FROZEN_32_DN_IDENTITY_AND_SLOT_ORDER.json",
+      "sha256": "e0e46d029a1da57de58de4c7293b5fcd267a4626bd816094d18d02f8ba4f313e"
+    },
+    "PREPROCESSOR_STAGE1": {
+      "path": "D:\\FPGA-AUTO\\tasks\\BODY-0A2F-R1-RERUN-A1\\results\\STAGE1_INFORMATIVENESS.json",
+      "sha256": "dc6791fa439487627ba533bb29c95ac994f2a2b102cddd7726b7e0a81ba2f0cd"
+    },
+    "PREPROCESSOR_STAGE2": {
+      "path": "D:\\FPGA-AUTO\\tasks\\BODY-0A2F-R1-RERUN-A3\\results\\STAGE2_A3_TEMPORAL.json",
+      "sha256": "321c2a9f8c1e736892ba4bef5f8c887edf9a0a415601e8f2ea066abec07e48ac"
+    }
+  },
+  "timebase": {
+    "dt_s": 0.02,
+    "tick_count": 300,
+    "run_duration_s": 6.0
+  },
+  "external_noise": {
+    "common_seed": 20260923,
+    "same_stream_for_LEFT_and_RIGHT": true,
+    "probability_per_global_neuron_per_step": 0.024,
+    "generation_rule": "For each tick: numpy.default_rng(seed).random(166700) < 0.024; select Candidate-B node indices. Reinitialize RNG with identical seed at reset of each mirrored run.",
+    "outcome_selection": "NONE; seed is frozen from task calendar date 2026-09-23 before any closed-loop execution."
+  },
+  "initial_neural_state": {
+    "CandidateBInteger.reset": "all state zero; prev_fired empty; counters zero",
+    "SourceDrive_0": "all-zero 311 vector",
+    "preprocessor": "FrozenPreprocessorV1_0.reset -> y12=y22=y23=0",
+    "no_neural_warmup": true,
+    "warmup_ticks": 0
+  },
+  "initial_body_state": "BodyState.zero() exact frozen runtime",
+  "world": {
+    "object_id": "threat_0",
+    "velocity_world_mps": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "radius_m": 1.0,
+    "visibility": true,
+    "world_update": "STATIC for all 300 ticks"
+  },
+  "scenarios": {
+    "LEFT": {
+      "target_position_world_m": [
+        10.0,
+        2.0,
+        0.0
+      ],
+      "expected_initial_azimuth_rad": 0.19739555984988075,
+      "expected_initial_relation": "LEFT"
+    },
+    "RIGHT": {
+      "target_position_world_m": [
+        10.0,
+        -2.0,
+        0.0
+      ],
+      "expected_initial_azimuth_rad": -0.19739555984988075,
+      "expected_initial_relation": "RIGHT"
+    }
+  },
+  "causal_contract": [
+    "At tick k, snapshot BodyState[k] and static WorldState[k].",
+    "Compute BODY-0A2D FeedbackFrame[k] from B[k],W[k].",
+    "Encode FeedbackFrame[k] -> SourceDrive[k+1]; do not apply it during tick k.",
+    "Apply already queued SourceDrive[k] to Candidate-B source states.",
+    "Generate common deterministic external-noise mask eta[k] and execute CandidateBInteger.step(k).",
+    "Extract frozen 32 DN outputs as DNFrame[k].",
+    "FrozenPreprocessorV1_0 + FinalDNMotorMapperV1_0 produce MotorDrive[k].",
+    "Frozen BodyRuntime.step(MotorDrive[k],B[k]) produces B[k+1].",
+    "Queue SourceDrive[k+1] for next tick."
+  ],
+  "reset_semantics": "LEFT and RIGHT are independent fresh runs: new CandidateBInteger, BodyRuntime, BodyState.zero, preprocessor reset, SourceDrive[0]=neutral, and RNG reinitialized to the same common seed.",
+  "trace_requirement": "Record per tick B[k],W[k],FeedbackFrame[k],SourceDrive[k],SourceDrive[k+1],DNFrame[k],preprocessor values,MotorDrive[k],B[k+1],noise mask SHA256.",
+  "acceptance_logic": {
+    "PIPELINE_CAUSALITY_PASS": "For every tick source_drive_applied[k] equals encoder output stored at tick k-1 (or neutral at k=0); source_drive_next[k] is not applied until k+1; trace lineage hashes and frame IDs consistent.",
+    "NEURAL_EXECUTION_PASS": "All frozen hashes match; authoritative CandidateBInteger executes all 300 ticks per run with no replacement/approximation.",
+    "DN_INTERFACE_PASS": "Exactly 32 DN slots each tick in frozen order, extracted only from Candidate-B fired local indices.",
+    "MAPPING_EQUIVALENCE_PASS": "For every tick independently recompute frozen preprocessing and final mapping formula; exact/1e-15 numerical agreement; non-yaw channels exact zero.",
+    "BODY_RUNTIME_PASS": "BodyState.valid true and all position/orientation/velocity/angular-velocity values finite at all ticks.",
+    "VISUAL_GEOMETRY_FEEDBACK_PASS": "At least one transition has changed body orientation AND changed next azimuth; next azimuth independently recomputes from B[k+1]+same W within absolute tolerance 1e-12.",
+    "YAW_RESPONSE_PRESENT_PER_RUN": "At least one nonzero yaw_rate_ref and at least one nonzero actual body yaw rate during the 300-tick run; no amplitude threshold.",
+    "MIRRORED_OPPOSITE_YAW_PASS": "Signed integral of yaw_rate_ref over 300 ticks is nonzero and opposite between LEFT/RIGHT AND signed integral of actual body yaw rate is nonzero and opposite between LEFT/RIGHT.",
+    "BODY_ORIENTATION_CHANGED": "At least one BodyState orientation differs from identity in each run.",
+    "NO_TARGET_CENTERING_OR_LATENCY_GATE": true
+  },
+  "renderer": "VISUALIZATION_ONLY; scientific loop host-side only",
+  "demo0_preservation": "MODE_REPLAY remains DEMO-0; DEMO-0 acceptance must be rerun after integration.",
+  "forbidden": [
+    "encoder change",
+    "q/FOV/epsilon/population change",
+    "network change",
+    "mapping change",
+    "body change",
+    "outcome-dependent retuning",
+    "renderer scientific feedback"
+  ]
+}

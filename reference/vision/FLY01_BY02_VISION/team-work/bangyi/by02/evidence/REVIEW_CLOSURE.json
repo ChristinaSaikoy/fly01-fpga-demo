@@ -1,0 +1,17 @@
+{
+  "scope": "Independent read-only code review and targeted repair verification, not hardware acceptance",
+  "findings": [
+    {
+      "finding": "RGB/K230 exceptions could retain a prior target",
+      "status": "FIXED",
+      "check": "test_bad_rgb_or_k230_cannot_leave_previous_target_valid"
+    },
+    {
+      "finding": "ended before first frame lacked stop-required fields",
+      "status": "FIXED",
+      "check": "test_eof_invalidation"
+    }
+  ],
+  "targeted_review_checks": 2,
+  "targeted_review_status": "PASS"
+}

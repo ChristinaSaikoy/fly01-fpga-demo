@@ -1,0 +1,53 @@
+{
+  "baseline_repository_commit": "edebc9768346023ba02fa9cdf285472724ebf87d",
+  "old_detector": {
+    "path": "provenance/BY01_detector_original.py",
+    "sha256": "58b7df5226eac69cc39308d0844c6b1133c3cd5c6ea144a9fd9cb4bae3fa80c9",
+    "reuse": "RGB thresholds, 4-neighbor components, centroid and half-open bbox; refactored for ndarray input"
+  },
+  "fixtures": [
+    {
+      "path": "samples/images/01_left.png",
+      "source_sha256": "d8bd681b99623510989f080fa83278a205f12d6beb6cd5650d64a5239f1f46c2",
+      "packaged_sha256": "d8bd681b99623510989f080fa83278a205f12d6beb6cd5650d64a5239f1f46c2"
+    },
+    {
+      "path": "samples/images/02_right.png",
+      "source_sha256": "61f671b5a2157e4dfab764033b512df45309776978ec5f87bf67272618af93f5",
+      "packaged_sha256": "61f671b5a2157e4dfab764033b512df45309776978ec5f87bf67272618af93f5"
+    },
+    {
+      "path": "samples/images/03_center.png",
+      "source_sha256": "c21f0a05df0b6fb24017f32712d8a2fdcf459baf2ecc15a09c4081fbf68e7d8b",
+      "packaged_sha256": "c21f0a05df0b6fb24017f32712d8a2fdcf459baf2ecc15a09c4081fbf68e7d8b"
+    },
+    {
+      "path": "samples/images/04_none.png",
+      "source_sha256": "276c334406e1d6aab51397543003df2c4a88199d31e95ab92a2cc9cbaa159705",
+      "packaged_sha256": "276c334406e1d6aab51397543003df2c4a88199d31e95ab92a2cc9cbaa159705"
+    },
+    {
+      "path": "samples/images/05_before_loss.png",
+      "source_sha256": "d8bd681b99623510989f080fa83278a205f12d6beb6cd5650d64a5239f1f46c2",
+      "packaged_sha256": "d8bd681b99623510989f080fa83278a205f12d6beb6cd5650d64a5239f1f46c2"
+    },
+    {
+      "path": "samples/images/06_lost.png",
+      "source_sha256": "276c334406e1d6aab51397543003df2c4a88199d31e95ab92a2cc9cbaa159705",
+      "packaged_sha256": "276c334406e1d6aab51397543003df2c4a88199d31e95ab92a2cc9cbaa159705"
+    },
+    {
+      "path": "samples/images/07_reappear.png",
+      "source_sha256": "61f671b5a2157e4dfab764033b512df45309776978ec5f87bf67272618af93f5",
+      "packaged_sha256": "61f671b5a2157e4dfab764033b512df45309776978ec5f87bf67272618af93f5"
+    },
+    {
+      "path": "samples/images/08_multiple.png",
+      "source_sha256": "bddd623d6628d62b86372e337a0c7ae07deecce937591a8170447611b4021f85",
+      "packaged_sha256": "bddd623d6628d62b86372e337a0c7ae07deecce937591a8170447611b4021f85"
+    }
+  ],
+  "gif": "Lossless-palette container for unchanged BY01 synthetic scenes, not a recording",
+  "k230_jsonl": "Generated from PC pixel detections, never from actual K230 or expected labels",
+  "hardware_tested": false
+}

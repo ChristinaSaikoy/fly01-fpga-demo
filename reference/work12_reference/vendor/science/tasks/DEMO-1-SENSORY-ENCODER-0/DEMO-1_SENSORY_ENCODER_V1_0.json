@@ -1,0 +1,150 @@
+{
+  "task_id": "DEMO-1-SENSORY-ENCODER-0",
+  "encoder_version": "DEMO-1_SENSORY_ENCODER_V1_0",
+  "status": "FROZEN_BEFORE_DEMO1_IMPLEMENTATION",
+  "scientific_identity": "C_ENGINEERING_VIRTUAL_VISUAL_ENCODER",
+  "claim_boundary": {
+    "biological_compound_eye_model": false,
+    "biologically_grounded_spatial_encoder": false,
+    "per_neuron_receptive_field_model": false,
+    "description": "Engineering geometry-to-source-drive abstraction constrained by frozen Candidate-B population identity and source-drive primitives."
+  },
+  "input": {
+    "schema": "BODY-0A2D FeedbackFrame v0.1",
+    "source_contract_sha256": "515ce7d41df4849e930efa1b6a9b7990ed56ed2d0d6194f467b1ac4ecc208ccc",
+    "max_object_records": 1
+  },
+  "output": {
+    "canonical_representation": "311-element source-drive q vector in exact B_visual_relay128_top32_inputs order",
+    "sparse_equivalent": "list of active input_ordinal/candidate_local_index pairs with q=2458",
+    "vector_length": 311,
+    "allowed_q_values": [
+      0,
+      2458
+    ],
+    "roster_path": "D:\\FPGA-AUTO\\tasks\\DEMO-1-SENSORY-ENCODER-0\\SENSORY_INPUT_POPULATION_311.csv",
+    "roster_sha256": "f78c69ffb005b9a4e1d8771fa8fa60d9d68a578cd8d997583ac9b5613220fcc7"
+  },
+  "field_of_view": {
+    "identity": "ENGINEERING_FRONT_HEMISPHERE",
+    "eligibility": "geometry_status == VALID AND environment_visible == true AND in_front == true",
+    "front_boundary": "in_front uses BODY-0A2D r_body.x > 0",
+    "side_plane_and_behind": "r_body.x <= 0 -> ineligible neutral drive",
+    "elevation_clipping": "NOT_MODELED",
+    "biological_fov_claim": false
+  },
+  "object_selection": {
+    "zero_objects": "NEUTRAL",
+    "one_object": "evaluate eligibility",
+    "more_than_one_object": "PROTOCOL_INVALID",
+    "attention_or_pooling": "NOT_MODELED"
+  },
+  "geometry_rules": {
+    "azimuth": {
+      "threshold_rad": 1e-06,
+      "LEFT": "azimuth_rad > +1e-6",
+      "RIGHT": "azimuth_rad < -1e-6",
+      "CENTER": "otherwise",
+      "weighting": "BINARY_CATEGORY_ONLY; no graded azimuth weighting"
+    },
+    "elevation": "NOT_MODELED_FOR_DRIVE",
+    "angular_size": "NOT_MODELED_FOR_DRIVE",
+    "looming_expansion": "NOT_MODELED_FOR_DRIVE",
+    "distance": "NOT_MODELED_FOR_DRIVE except inherited geometry validity",
+    "note": "These variables may be logged diagnostically but cannot alter source drive in V1_0."
+  },
+  "population_assignment": {
+    "LEFT": {
+      "side": "L",
+      "count": 165,
+      "composition": {
+        "LC4": 71,
+        "LPLC2": 94
+      },
+      "q_per_active_neuron": 2458
+    },
+    "RIGHT": {
+      "side": "R",
+      "count": 146,
+      "composition": {
+        "LC4": 55,
+        "LPLC2": 91
+      },
+      "q_per_active_neuron": 2458
+    },
+    "CENTER": {
+      "active_populations": [
+        "LEFT",
+        "RIGHT"
+      ],
+      "count": 311,
+      "q_per_active_neuron": 2458,
+      "provenance": "ENGINEERING_DEFINED symmetry + existing frozen bilateral source-drive primitive"
+    }
+  },
+  "within_population_weighting": "UNIFORM_BINARY; every active population member gets identical q=2458; no per-neuron RF or gain.",
+  "drive_intensity": {
+    "nominal_q": 2458,
+    "float_equivalent_descriptive": 0.300048828125,
+    "semantic": "fixed-point source-state increment per active neuron before target neural step",
+    "event_probability": false,
+    "state_format": "S18/F13 signed",
+    "source_addition": "saturating, never wrapping, identical to CandidateBInteger source_drive/apply_drive_q semantics",
+    "geometry_dependent_grading": "FORBIDDEN_IN_V1_0"
+  },
+  "quantization": {
+    "geometry_to_drive": "categorical only; no numeric geometry quantization into q",
+    "q": "exact integer 2458",
+    "rounding": "NONE in encoder; q is already frozen",
+    "state_saturation": "inherited CandidateBInteger saturating S18 state addition"
+  },
+  "neutral_drive": "all 311 entries exactly 0",
+  "no_object_rule": "all-zero neutral drive",
+  "invalid_geometry_rule": {
+    "malformed_feedback_frame": "PROTOCOL_INVALID",
+    "BODY-0A2D_INVALID_OVERLAP_OBJECT": "exclude object; with V1_0 max-one-object this yields neutral drive",
+    "nan_inf_or_timestamp_invalid": "PROTOCOL_INVALID at feedback-contract layer; encoder must not coerce"
+  },
+  "behind_body_rule": "neutral drive; no wrapping to opposite side",
+  "visibility_false_rule": "neutral drive",
+  "temporal": {
+    "stateful_encoder": false,
+    "persistence": "NONE",
+    "hysteresis": "NONE",
+    "causal_contract": "FeedbackFrame[k] -> SourceDriveFrame[target_neural_timestep_id=k+1]; geometry[k] MUST NOT affect neural step[k]",
+    "application": "At target neural step k+1, add q to each active Candidate-B source state immediately before CandidateBInteger.step(k+1)."
+  },
+  "forbidden": [
+    "direct write to any DN slot",
+    "direct MotorDrive command",
+    "preset animation/behavior",
+    "graded azimuth/elevation/size/looming weighting",
+    "per-neuron receptive-field inference from connectome positions",
+    "post-DEMO1-outcome FOV/threshold/weight/q changes"
+  ],
+  "evidence": {
+    "audit_path": "D:\\FPGA-AUTO\\tasks\\DEMO-1-SENSORY-ENCODER-0\\SENSORY_EVIDENCE_AUDIT.json",
+    "audit_sha256": "97dc71a48ec4e77b29b19dab146791cf91a53c646b7758b8a20c8d10f9c1b105",
+    "provenance_path": "D:\\FPGA-AUTO\\tasks\\DEMO-1-SENSORY-ENCODER-0\\SENSORY_ENCODER_PROVENANCE.csv",
+    "provenance_sha256": "eb2fd432b1ca54ec6de303c2e08371d30c374da71b03c5fa8828c150e1ffa339",
+    "test_vectors_path": "D:\\FPGA-AUTO\\tasks\\DEMO-1-SENSORY-ENCODER-0\\SENSORY_ENCODER_TEST_VECTORS.json",
+    "test_vectors_sha256": "fefed61ffea598a89e37ee7bbfac39fb9fe6ebba4519b6e2128eeb9f72d0387b",
+    "candidate_graph_sha256": "5dd46c3adafd128a67c407c82e0f2636d5bfc640286b6234879e681c7336e9a6",
+    "brain_sha256": "cc9bd1ecd00bd703a6fa648bc6ad145c93c7c1ee53debdcc9ce0d1f4305e6aca",
+    "integer_model_sha256": "6d68f34c963fbe79de38403a2a0203c2e7afa11f2e82385cd2c815baa6493ca0",
+    "integer_spec_sha256": "61c9f53e64a2e5fc878c55f533da46955eb5f36ce2e36f9d537cf4c1d57ee1e9",
+    "data1_generation_plan_sha256": "4d7803d1acc5e5b3ed91c07cd1a48f67234edafeebe941901e83fe8a9471c5d2",
+    "data1_generator_sha256": "56184e6ef01eb99ab5f0b835b75d4bd5c910b5537e334c14c38a4a3d8dc688e9",
+    "stress_manifest_sha256": "567fb87f97bebf53c93f9cfedf2125e14840412885027720cddfe08f03a0935e",
+    "final_mapping_sha256": "6ebe682548634e4fb2563336059f8563430df201f1954ae3ef1fa34806c4275f"
+  },
+  "outcome_independence": {
+    "demo1_closed_loop_run": false,
+    "demo1_outcome_inspected": false,
+    "parameter_selected_from_demo1_behavior": false,
+    "fov_adjusted_from_demo1_behavior": false,
+    "drive_adjusted_from_demo1_behavior": false
+  },
+  "freeze_ready": true,
+  "ready_for_demo1_implementation": true
+}

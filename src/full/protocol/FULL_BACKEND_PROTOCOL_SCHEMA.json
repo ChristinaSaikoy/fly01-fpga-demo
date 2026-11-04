@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fly01.full.backend.protocol.v1",
+  "protocol_version": "FLY01_FULL_BACKEND_PROTOCOL_V1",
+  "step_request": {
+    "type": "object",
+    "required": [
+      "protocol_version",
+      "session_id",
+      "reset_generation",
+      "frame_id",
+      "target_neural_timestep_id",
+      "source_feedback_frame_id",
+      "q_vector",
+      "q_vector_sha256"
+    ],
+    "properties": {
+      "protocol_version": {
+        "const": "FLY01_FULL_BACKEND_PROTOCOL_V1"
+      },
+      "session_id": {
+        "type": "string"
+      },
+      "reset_generation": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "frame_id": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "target_neural_timestep_id": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "source_feedback_frame_id": {
+        "type": [
+          "integer",
+          "null"
+        ]
+      },
+      "q_vector": {
+        "type": "array",
+        "minItems": 311,
+        "maxItems": 311,
+        "items": {
+          "type": "integer"
+        }
+      },
+      "q_vector_sha256": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "dnframe_replay_id": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "dnframe_stimulus_state": {
+        "type": "string"
+      },
+      "dnframe_source_id": {
+        "type": "string"
+      }
+    }
+  },
+  "step_response_minimum": [
+    "protocol_version",
+    "session_id",
+    "reset_generation",
+    "frame_id",
+    "full_tick_start",
+    "full_tick_end",
+    "dn_slots",
+    "dn_spike_counts",
+    "dnframe_sha256",
+    "state_digest",
+    "compute_wall_ms",
+    "status",
+    "error_code"
+  ],
+  "reset_request": {
+    "required": [
+      "protocol_version",
+      "session_id"
+    ]
+  },
+  "status_response_minimum": [
+    "service_ready",
+    "backend_id",
+    "pack_sha256",
+    "runtime_version",
+    "input_adapter_version",
+    "dn_adapter_version",
+    "current_session",
+    "reset_generation",
+    "expected_frame_id",
+    "full_tick_counter",
+    "busy",
+    "last_error"
+  ]
+}

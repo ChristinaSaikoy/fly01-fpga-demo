@@ -1,0 +1,36 @@
+{
+  "task": "FULL-4G-RTX4080-GPU-BACKEND",
+  "formal_backend": "GPU_FP64_CUPY_2KERNEL_CUDAGRAPH_V1",
+  "precision": "float64",
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "implementation": [
+    "CuPy RawKernel",
+    "source-major CSR",
+    "2 kernels/tick",
+    "CUDA Graph replay",
+    "persistent device state",
+    "int64 deterministic contact accumulation"
+  ],
+  "pack_sha256": "b9a9168a653a90fd0c4405a78473a5f562ce55116361ca4f3e8781bef038e4a7",
+  "reference": "FULL_REFERENCE_RUNTIME_V1 / float64 CPU",
+  "api_protocol": "FLY01_FULL_BACKEND_PROTOCOL_V1",
+  "fp32_candidate": "DO_NOT_PROMOTE",
+  "gates": {
+    "GPU_BACKEND_CREATED": "PASS",
+    "PACK_COMPATIBILITY": "PASS",
+    "TICK_SEMANTICS": "PASS",
+    "SUBNET_REFERENCE_PARITY": "PASS",
+    "FULL_NETWORK_EXECUTION": "PASS",
+    "DN32_OUTPUT": "PASS",
+    "DETERMINISM": "PASS",
+    "FULL3_SCENARIO_PARITY": "PASS",
+    "GPU_STATE_RESIDENCY": "PASS",
+    "RESOURCE_PROFILE": "PASS",
+    "API_COMPATIBILITY": "PASS",
+    "FROZEN_BASELINE_INTEGRITY": "PASS",
+    "SCOPE_BOUNDARY": "PASS",
+    "20MS_NEURAL_GATE": "PASS"
+  },
+  "scientific_chain_change": "NONE",
+  "full5_status": "HOLD"
+}

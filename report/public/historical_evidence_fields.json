@@ -1,0 +1,31 @@
+{
+  "scope": "SELECTED_FIELDS_FROM_HISTORICAL_FILES_NOT_NEW_TEST",
+  "supervisor": {
+    "status": "SUBMITTED_FOR_REVIEW",
+    "backend_origin": "ACTUAL_FPGA",
+    "whole_wall_seconds": 205.79856329999984,
+    "limit_seconds": 1800
+  },
+  "formal": {
+    "origin": "ACTUAL_FPGA",
+    "exact": "PASS",
+    "prefix_steps": 21,
+    "formal_steps": 5400,
+    "full_state_words": 471,
+    "view_words": 530,
+    "wall_seconds": 103.24359530000038
+  },
+  "suite": {
+    "status": "SUBMITTED_FOR_REVIEW",
+    "hardware_50Hz": "FAIL",
+    "controller_acceptance": "PENDING",
+    "paired_benchmark": {
+      "status": "PASS",
+      "frames": 300,
+      "input_noise_schedule": "IDENTICAL_ARCHIVED_O6_LEFT_AUDIT",
+      "limitation": "Different bits and historical host load, O7 reads530 vs O6 528; not controlled simultaneous A/B, not pure encoding causal proof",
+      "evidence": "PAIRED_TRANSPORT_BENCHMARK.jsonl",
+      "does_not_replace_live_trials": true
+    }
+  }
+}

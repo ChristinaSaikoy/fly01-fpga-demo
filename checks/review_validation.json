@@ -1,0 +1,21 @@
+{
+  "r13_source_inputs_verified": 82,
+  "r13_input_mismatches": 0,
+  "r13_simulation": "PASS",
+  "r13_marker": "WORK28_R13_SENSITIVE_PASS",
+  "r13_simulated_finish_time_ps": 11171425000,
+  "simulation_wrapper_repairs": [
+    "raised wall timeout from 120 to 300 seconds",
+    "read native simulator log tolerantly; ASCII pass marker is unchanged"
+  ],
+  "historical_python_tests": {
+    "passed": 64,
+    "skipped": 2
+  },
+  "current_panel_node_tests": {
+    "passed": 25,
+    "failed": 0
+  },
+  "physical_device_operations": "NONE",
+  "note": "new full synthesis/implementation and physical motor/Flash operations were not performed"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS_ZERO_PWM_I2C_ACK_ONLY",
+  "recorded_at": "2026-11-02T20:41:19.702264+08:00",
+  "bit_sha256": "03b2a42e60d61a1b7017c89da9e7572edcde620b48693401ef6aab8c4b4df4d4",
+  "status_rows": 51,
+  "all_last_acks": 10,
+  "zero_ack": true,
+  "fault": false,
+  "fault_code": 0,
+  "uart_crc_errors": 0,
+  "status_log": "D:\\FPGA-AUTO\\tasks\\WORK-18-I2C-OFFLINE-20261102\\field_r4_20261102\\board_runs\\20261102_203636_153848\\events.jsonl",
+  "raw_uart_sha256": "177be20ab2ad69418dbd2988e5a48f881ad7b6e6ba3757afc75883542d884159",
+  "motion_command_sent": false,
+  "actual_motor_motion_proven": false,
+  "wheel_raised_source": "user confirmed after zero ACK test",
+  "driver_voltage_source": "user corrected SCL/SDA=3.28V",
+  "pins_source": "V2.1 PDF page9 R17=J2-3 N15=J2-5",
+  "release_scope": "build manually triggered 750ms bench capability, no automatic motion or Flash"
+}

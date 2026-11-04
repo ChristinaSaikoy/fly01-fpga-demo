@@ -1,0 +1,118 @@
+{
+  "schema_version": "0.1",
+  "parameter_status": "FROZEN_FOR_GAIN_CALIBRATION",
+  "dt": {
+    "nominal_s": 0.02,
+    "min_s": 0.0001,
+    "max_s": 0.05,
+    "semantics": "caller-supplied model dt; fixed within a deterministic replay",
+    "gain_calibration_required_s": 0.02,
+    "sensitivity_validation_s": [
+      0.01,
+      0.02,
+      0.04
+    ]
+  },
+  "gravity_world_mps2": [
+    0,
+    0,
+    -9.80665
+  ],
+  "body_metadata": {
+    "engineering_mass_kg": 1,
+    "engineering_inertia_diag_kgm2": [
+      1,
+      1,
+      1
+    ],
+    "causal_use": "diagnostic force/torque equivalence only; v0.1 plant remains acceleration-command per frozen contract",
+    "mass_inertia_role": "NON_CAUSAL_METADATA_IN_V0_1",
+    "biological_claim": false
+  },
+  "controller": {
+    "linear_velocity_kp_per_s": [
+      4,
+      4,
+      5
+    ],
+    "angular_rate_kp_per_s": [
+      12,
+      12,
+      10
+    ],
+    "roll_pitch_level_kp_radps2_per_rad": [
+      18,
+      18
+    ],
+    "leveling_activation_rule": "EXACT_ZERO_ROLL_OR_PITCH_RATE_REFERENCE_ONLY"
+  },
+  "limits": {
+    "control_accel_world_abs_mps2": [
+      8,
+      8,
+      15
+    ],
+    "angular_accel_body_abs_radps2": [
+      100,
+      100,
+      80
+    ],
+    "equivalent_force_abs_N": [
+      8,
+      8,
+      15
+    ],
+    "equivalent_torque_abs_Nm": [
+      100,
+      100,
+      80
+    ]
+  },
+  "damping": {
+    "implementation": "implicit proportional velocity/rate error damping in stabilizer",
+    "neutral_linear_rates_per_s": [
+      4,
+      4,
+      5
+    ],
+    "neutral_angular_rates_per_s": [
+      12,
+      12,
+      10
+    ]
+  },
+  "integration": {
+    "method": "semi-implicit Euler for velocities/position; first-order quaternion derivative then normalize",
+    "quaternion_normalize_each_step": true
+  },
+  "motor_drive_ranges": {
+    "v_forward_ref_mps": [
+      -1,
+      1
+    ],
+    "v_lateral_ref_mps": [
+      -1,
+      1
+    ],
+    "v_vertical_ref_mps": [
+      -1,
+      1
+    ],
+    "roll_rate_ref_radps": [
+      -20,
+      20
+    ],
+    "pitch_rate_ref_radps": [
+      -20,
+      20
+    ],
+    "yaw_rate_ref_radps": [
+      -20,
+      20
+    ]
+  },
+  "runtime_versions": {
+    "body": "SIMPLE_6DOF_HOVER_FLIGHT_V0_1",
+    "stabilizer": "VELOCITY_RATE_HOVER_STABILIZER_V0_1"
+  }
+}

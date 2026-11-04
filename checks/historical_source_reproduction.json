@@ -1,0 +1,103 @@
+{
+  "source_head": "87ff02280d2aa6d3c2d5e9f33fc0b8ac7445419e",
+  "source_status": "?? docs/controller/2026-10-25/EXECUTION_SUPERVISOR_INCREMENT.md\n?? team-work/controller/execution_supervisor/\n",
+  "hardware": "NONE",
+  "final_submission_snapshot": false,
+  "scope": "INDEPENDENT_TEMPORARY_COPY_OF_HISTORICAL_SOFTWARE_PLUS_OFFLINE_INCREMENT",
+  "independent_copy_manifest_check": {
+    "exit": 0,
+    "seconds": 16.759,
+    "stdout": "{\"status\": \"MANIFEST_MATCH\", \"files\": 1889, \"hardware\": \"NONE\", \"authenticity\": \"NOT_PROVEN\"}\n",
+    "stderr": ""
+  },
+  "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+  "node": "v24.14.1",
+  "portable_check_exit": 0,
+  "portable_check_seconds": 7.03,
+  "portable_check_summaries": [
+    {
+      "status": "READY_FOR_BOARD_OFFLINE_CHECK_ONLY",
+      "candidate_sha256": "f5716a1e9b3fca43920cc82c2696035871cf36e5126f28926e9e2bf466e161ac",
+      "hardware": "NONE"
+    },
+    {
+      "status": "PASS",
+      "candidate_sha256": "f5716a1e9b3fca43920cc82c2696035871cf36e5126f28926e9e2bf466e161ac",
+      "jobs": [
+        {
+          "module": "test_work13",
+          "run": 21,
+          "passed": 21,
+          "skipped": 0,
+          "failures": 0,
+          "errors": 0,
+          "successful": true
+        },
+        {
+          "module": "test_start_stop_boundary",
+          "run": 8,
+          "passed": 8,
+          "skipped": 0,
+          "failures": 0,
+          "errors": 0,
+          "successful": true
+        },
+        {
+          "module": "test_targeted",
+          "run": 3,
+          "passed": 3,
+          "skipped": 0,
+          "failures": 0,
+          "errors": 0,
+          "successful": true
+        },
+        {
+          "module": "test_mvp",
+          "run": 20,
+          "passed": 20,
+          "skipped": 0,
+          "failures": 0,
+          "errors": 0,
+          "successful": true
+        },
+        {
+          "module": "test_host",
+          "run": 14,
+          "passed": 12,
+          "skipped": 2,
+          "failures": 0,
+          "errors": 0,
+          "successful": true
+        }
+      ],
+      "old_camera_replay": null,
+      "unchanged_frozen_and_transport_files": 48,
+      "neural_class_ast": "IDENTICAL",
+      "ui_javascript_syntax": "PASS",
+      "hardware_operations": "NONE",
+      "actual_fpga_test": "NOT_RUN",
+      "strict_50hz": "OLD_FAIL_NOT_RETESTED"
+    },
+    {
+      "status": "CHECKOUT_INPUTS_PASS",
+      "imported_files": 1545,
+      "hardware": "NONE"
+    }
+  ],
+  "offline_supervisor_exit": 0,
+  "offline_supervisor_summary": {
+    "status": "OFFLINE_REFERENCE_PASS",
+    "hardware": "NONE",
+    "unit_tests": 46,
+    "scenarios": 7,
+    "timeline_events": 222,
+    "neural_recomputed": false,
+    "physical_output": false
+  },
+  "copied_inputs_unchanged": true,
+  "status": "PASS",
+  "source_inputs_unchanged": true,
+  "source_git_status_unchanged": true,
+  "temporary_copy_removed": true,
+  "copied_file_count": 1889
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "status",
+  "connected": false,
+  "port": "COM8",
+  "retrying": false,
+  "chassis_check": {
+    "ok": true,
+    "port": "COM11",
+    "battery_v": 5.8,
+    "motor_type": 4,
+    "dead_zone": 1600,
+    "firmware": "1.7.3",
+    "measured_at": 1793754979.8381033,
+    "physical_motion_confirmed": false
+  },
+  "chassis_test": {
+    "level": 1800,
+    "duration_ms": 750,
+    "acked": true,
+    "left": -1800,
+    "right": 1800,
+    "observation": "moved_stopped"
+  },
+  "chassis_testing": false,
+  "fpga_armed": false,
+  "wheel_left": 0,
+  "wheel_right": 0,
+  "usb_stop_result": {
+    "ok": true,
+    "port": "COM11",
+    "zero_writes": 3,
+    "physical_stop_confirmed": false
+  },
+  "configuring_pwm": false,
+  "right_trim": null,
+  "right_cap": null,
+  "manual_retry_supported": false,
+  "pwm_adjust_supported": false,
+  "fresh": false,
+  "can_arm": false,
+  "pending": false,
+  "enabled": false,
+  "window_remaining": 0,
+  "message": "设备已断开；请现场确认停稳",
+  "i2c_fault": false,
+  "zero_confirmed": false,
+  "crc_errors": 0,
+  "log": null
+}

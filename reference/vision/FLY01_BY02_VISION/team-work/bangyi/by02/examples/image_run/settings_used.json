@@ -1,0 +1,46 @@
+{
+  "detector": {
+    "red_min": 150,
+    "green_max": 110,
+    "blue_max": 110,
+    "red_margin": 70,
+    "minimum_area_px": 64,
+    "image_center_deadband_px": 2.0
+  },
+  "input": {
+    "rotation_deg": 0,
+    "sensor_mirror_x": false,
+    "preview_mirror_x": false,
+    "max_image_pixels": 2073600
+  },
+  "camera": {
+    "index": 0,
+    "requested_width": 640,
+    "requested_height": 480,
+    "requested_fps": 20.0,
+    "max_frames": 100
+  },
+  "freshness": {
+    "max_processing_age_ms": 250.0
+  },
+  "calibration": {
+    "intrinsics_verified": false,
+    "width_px": null,
+    "height_px": null,
+    "fx_px": null,
+    "fy_px": null,
+    "cx_px": null,
+    "cy_px": null,
+    "rectified_input_verified": false,
+    "level_mount_verified": false,
+    "mount_yaw_rad": null,
+    "mounting_verified": false
+  },
+  "k230": {
+    "board_hint": "Yahboom K230 / YB-KA02 family; verify PCB label",
+    "firmware": "UNCONFIRMED",
+    "camera_model": "UNCONFIRMED",
+    "usb_application_mode": "UNCONFIRMED",
+    "transport": "JSONL_FILE_REPLAY"
+  }
+}

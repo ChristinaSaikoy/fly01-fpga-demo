@@ -1,0 +1,102 @@
+{
+  "SPEC_VERSION": "FULL_LIF_PARAMETERS_V1_0",
+  "MODEL_IDENTITY": "MaleCNS v1.0 structural connectome + Shiu-derived engineering LIF dynamics",
+  "PRIMARY_DYNAMICS_REFERENCE": {
+    "repository": "philshiu/Drosophila_brain_model",
+    "commit": "91bdd1e7dcf193f3e7ca5a8933497fcef63b7960",
+    "file": "model.py",
+    "upstream_environment": {
+      "python": "3.10.11",
+      "brian2": "2.5.1",
+      "numpy": "1.22.3"
+    },
+    "parameter_refit_to_malecns": "NO"
+  },
+  "THIRD_PARTY_ENGINEERING_REFERENCE": {
+    "repository": "Kisame76/drosophila-brain-mlx",
+    "commit": "e417b33616513ef350b1b1c3cdf2b5b7a1799c8e",
+    "role": "INDEPENDENT_ENGINEERING_REFERENCE_ONLY"
+  },
+  "parameters": {
+    "simulation_dt_ms": {
+      "value": 0.1,
+      "source": "Brian2 2.5.1 defaultclock under upstream-compatible environment; model.py does not override dt"
+    },
+    "v_rest_mV": {
+      "value": -52,
+      "source": "upstream default_params.v_0"
+    },
+    "v_reset_mV": {
+      "value": -52,
+      "source": "upstream default_params.v_rst"
+    },
+    "v_threshold_mV": {
+      "value": -45,
+      "source": "upstream default_params.v_th",
+      "comparison": "strict v > v_th"
+    },
+    "tau_membrane_ms": {
+      "value": 20,
+      "source": "upstream default_params.t_mbr"
+    },
+    "tau_synaptic_ms": {
+      "value": 5,
+      "source": "upstream default_params.tau"
+    },
+    "refractory_ms": {
+      "value": 2.2,
+      "source": "upstream default_params.t_rfc",
+      "ticks_at_dt": 22
+    },
+    "synaptic_delay_ms": {
+      "value": 1.8,
+      "source": "upstream default_params.t_dly",
+      "ticks_at_dt": 18
+    },
+    "w_syn_mV_per_contact": {
+      "value": 0.275,
+      "source": "upstream default_params.w_syn",
+      "status": "FREE_PARAMETER_IN_SHIU_IMPLEMENTATION"
+    },
+    "external_poisson_rate_hz": {
+      "value": 150,
+      "source": "upstream default_params.r_poi"
+    },
+    "external_poisson_rate2_hz": {
+      "value": 0,
+      "source": "upstream default_params.r_poi2"
+    },
+    "external_scaling_factor": {
+      "value": 250,
+      "source": "upstream default_params.f_poi"
+    },
+    "external_weight_mV_per_event": {
+      "value": 68.75,
+      "derivation": "w_syn * f_poi"
+    }
+  },
+  "equations": {
+    "membrane": "dv/dt = (v_0 - v + g) / t_mbr : volt (unless refractory)",
+    "synaptic_state": "dg/dt = -g / tau : volt (unless refractory)",
+    "threshold": "v > v_th",
+    "upstream_reset_string": "v = v_rst; w = 0; g = 0 * mV",
+    "effective_persistent_reset": "v = v_rst; g = 0 mV",
+    "reset_note": "Brian2 introspection shows 'w' is not a NeuronGroup persistent variable; a real Synapses.w remained unchanged after neuron reset."
+  },
+  "external_input_semantics": {
+    "primitive": "Brian2 PoissonInput",
+    "target_variable": "v",
+    "N_per_target": 1,
+    "weight": "w_syn * f_poi = 68.75 mV",
+    "target_refractory": "upstream poi() sets neu[i].rfc = 0 ms for each driven target",
+    "scheduling": "synapses slot; therefore same-tick input occurs after threshold and before reset"
+  },
+  "refractory_semantics": {
+    "v_and_g_flag": "unless refractory",
+    "writes_during_refractory": "DROPPED",
+    "release_observed": "A neuron spiking at t=0 with rfc=2.2 ms is not_refractory=True at t=2.2 ms under dt=0.1 ms",
+    "evidence": "BRIAN2_SEMANTICS_PROBE.json"
+  },
+  "biological_ground_truth_claim": "NO",
+  "parameter_refit_to_malecns": "NO"
+}

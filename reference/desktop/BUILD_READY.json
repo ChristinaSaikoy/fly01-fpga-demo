@@ -1,0 +1,12 @@
+{
+  "manifest": "native/run_manifest.json",
+  "bit": "O8_UART_2025_2_CANDIDATE_NOT_PROGRAMMED.bit",
+  "bit_sha256": "93399a70892ece88300af96cd2dd27566b683f9eeecc41f394465182b5786eb4",
+  "part": "xc7a35tfgg484-2",
+  "uart_baud": 2000000,
+  "programming": "EXACT_ARTIFACT_APPROVAL_REQUIRED",
+  "package_status": "BUILD_ONLY_WINDOWS_CANDIDATE_EXACT_APPROVAL_AND_UART_IDENTITY_PENDING",
+  "runtime_entry": "host/run_windows_suite.py",
+  "execution_host": "Christina",
+  "host_platform": "windows-native"
+}

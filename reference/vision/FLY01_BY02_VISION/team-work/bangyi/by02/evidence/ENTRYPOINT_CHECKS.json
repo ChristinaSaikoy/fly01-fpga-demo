@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "images",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS"
+    },
+    {
+      "case": "gif",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS"
+    },
+    {
+      "case": "k230-jsonl",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "status": "PASS"
+    },
+    {
+      "case": "existing_output_protection",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "status": "PASS"
+    },
+    {
+      "case": "missing_optional_opencv",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "status": "PASS"
+    }
+  ],
+  "source_truth": "8 unchanged BY01 synthetic images: 5 VALID / 2 NO_TARGET / 1 AMBIGUOUS",
+  "expected_negative_cases_are_not_hardware_results": true,
+  "python": "3.13.9",
+  "numpy": "2.3.5",
+  "Pillow": "12.0.0",
+  "fpga_uart_motor_camera_access": false
+}

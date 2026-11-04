@@ -1,0 +1,22 @@
+{
+  "origin": "OFFLINE_SOFTWARE_ONLY",
+  "tests": 28,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "status": "PASS",
+  "source_sha256": {
+    "run_vision.py": "fc782f3f475fd190bf5a722d2729eec6ca10a6622a9ef414741eea49afd04fa4",
+    "verify_delivery.py": "5838ca8de8cbf7432ba8df4accc9e2fb127d5f3577f3f78f8872123a7556e748",
+    "fly01_vision/annotate.py": "0c9ab026212bab014311c9d666c1253d61ade85ecec52ddb6a33587b50db1d8d",
+    "fly01_vision/detector.py": "df59cc92aef432836c23d1b6e1348a463c6bf6808d862b289a773eaa80db90fd",
+    "fly01_vision/k230_protocol.py": "150ffef86cb1cba6a71fa6959272404daa1ef5ba50299043c1300e42ca0f3c77",
+    "fly01_vision/pipeline.py": "31e2825e0effde2c6ff93dd6a58523070747004e2e8841f93272f831b3d4bcd1",
+    "fly01_vision/project_adapter.py": "a37c7f532b3eb8fedb4f655fe10dcc5a4bff8a2d06d84ab7ea2561b318e31686",
+    "fly01_vision/settings.py": "ac31a1e259ee25baa6bb4432d3781b8bc94e607bff9613e2f21ffd30f3fa6638",
+    "fly01_vision/sources.py": "4a4b857131d7cbf52e5fdacf98064c73939d16396d6878d0dc238b173da326da",
+    "fly01_vision/__init__.py": "13bfa4b75c68050288a0fbd76e8700d13fe702a43ab182ef1866f94fe3204bdc",
+    "tests/test_project_adapter.py": "998c6e2e1944681b060fbbede4c288df452bcd9a604845f98e71e11b29f60693",
+    "tests/test_vision.py": "d64e0dd9f177c7bb63b0c60b8be44fc2c375ec2ed7f92968e9c51eb158c9bb25"
+  }
+}

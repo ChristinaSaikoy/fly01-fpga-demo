@@ -1,0 +1,6 @@
+{
+  "candidate_sha256": "d02776d3d5faa354b7720de60a69e05ff4c9c79b2e4aba400e70e31bc2b1cd12",
+  "previously_consumed_suite_ids": [],
+  "origin": "WORK12_NEW_HOST_CANDIDATE_NOT_HARDWARE_ACCEPTANCE",
+  "requires_new_mvp_scope": true
+}

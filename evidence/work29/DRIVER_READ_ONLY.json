@@ -1,0 +1,14 @@
+{
+  "port": "COM11",
+  "queries": {
+    "$read_vol#": {
+      "text": "$Battery:5.8V#\r\n",
+      "hex": "24426174746572793a352e3856230d0a"
+    },
+    "$read_flash#": {
+      "text": "read_flash:OK!\r\nMotor_Version:1.7.3\r\nMotor_type:4\r\nDead_Zone:1600\r\nPulse_Line:11\r\nPulse_Phase:1792\r\nwheel_diameter:67.000\r\nP:0.800\t I:0.060\t D:0.500\t \r\n",
+      "hex": "726561645f666c6173683a4f4b210d0a4d6f746f725f56657273696f6e3a312e372e330d0a4d6f746f725f747970653a340d0a446561645f5a6f6e653a313630300d0a50756c73655f4c696e653a31310d0a50756c73655f50686173653a313739320d0a776865656c5f6469616d657465723a36372e3030300d0a503a302e3830300920493a302e3036300920443a302e35303009200d0a"
+    }
+  },
+  "nonzero_sent": false
+}

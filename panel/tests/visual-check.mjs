@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';import path from 'node:path';import {chromium} from '../scripts/browser-runtime.mjs';
+const output=path.resolve(process.env.VISUAL_OUTPUT||'exports/2026-10-31');fs.mkdirSync(output,{recursive:true});
+const browser=await chromium.launch({channel:process.env.BROWSER_CHANNEL||'msedge',headless:true});
+const checks=[],errors=[];
+try{
+ const page=await browser.newPage({viewport:{width:1440,height:960}});page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(process.env.TEST_URL||'http://127.0.0.1:8765');await page.getByText('合成视野内 · 目标可见',{exact:true}).waitFor();
+ const pose=()=>page.locator('#scene').evaluate(e=>({angle:e.dataset.angle,travel:e.dataset.travel,look:e.dataset.look}));
+ const seek=async ms=>{await page.locator('#seek').evaluate((el,value)=>{el.value=value;el.dispatchEvent(new Event('input'));},ms);await page.waitForTimeout(100);};
+ await page.waitForTimeout(500);await page.screenshot({path:path.join(output,'01-ready.png')});checks.push('default sample / target visible');
+ await seek(4500);const at4500=await pose();assert.notEqual(at4500.angle,'0.000000000000');
+ await page.waitForTimeout(350);assert.deepEqual(await pose(),at4500);checks.push('paused body / stride / head stable');
+ await seek(12000);await seek(4500);assert.deepEqual(await pose(),at4500);checks.push('random seek deterministic');
+ await page.getByRole('button',{name:'前方物体',exact:true}).click();await page.getByText('合成视野内 · 目标可见',{exact:true}).waitFor();
+ await page.locator('#distance').evaluate(e=>{e.value=8;e.dispatchEvent(new Event('input'));});await page.getByText('合成视野外 · 未看见',{exact:true}).waitFor();
+ await page.locator('#distance').evaluate(e=>{e.value=3;e.dispatchEvent(new Event('input'));});await page.getByText('合成视野内 · 目标可见',{exact:true}).waitFor();checks.push('near/far target range gate');
+ await page.waitForTimeout(1800);await page.screenshot({path:path.join(output,'02-turning.png')});
+ await page.locator('#camera').click();await page.locator('#camera').click();await page.waitForTimeout(2100);assert.equal((await pose()).angle,at4500.angle);await page.screenshot({path:path.join(output,'03-top-view.png')});checks.push('camera modes do not change body angle');
+ await seek(22300);const outage=await pose();assert.match(await page.locator('#state').innerText(),/冻结/);await seek(23999);assert.deepEqual(await pose(),outage);checks.push('outage freezes body and joints');
+ await seek(28000);const stopped=await pose();await seek(29000);assert.deepEqual(await pose(),stopped);checks.push('explicit final stop');
+ await page.locator('#reset').click();await page.locator('#speed').selectOption('2');await page.locator('#play').click();await page.waitForTimeout(1200);await page.locator('#play').click();
+ const elapsed=Number((await page.locator('#time').innerText()).split(' / ')[0]);assert.ok(elapsed>=1.8&&elapsed<=3.1,`2x clock was ${elapsed}`);checks.push('2x playback clock');
+ await page.locator('#live').click();await page.getByText('真实视觉未接入',{exact:true}).waitFor();await page.getByText('未配置日志源；不会自动切换演示',{exact:true}).waitFor();
+ assert.equal(await page.locator('#play').isDisabled(),true);assert.equal(await page.getByRole('button',{name:'前方物体',exact:true}).isDisabled(),true);checks.push('unconfigured live source never substitutes synthetic scene');
+ await page.locator('#demo').click();await page.locator('#chapters').waitFor({state:'visible'});await page.getByText('合成视野内 · 目标可见',{exact:true}).waitFor();
+ await page.setViewportSize({width:768,height:900});await page.waitForTimeout(500);await page.screenshot({path:path.join(output,'04-tablet.png')});
+ const bounds=await page.locator('footer').boundingBox();assert.ok(bounds.x>=0&&bounds.x+bounds.width<=769);checks.push('tablet footer fits');
+ assert.deepEqual(errors,[]);const result={checkedAt:new Date().toISOString(),browser:'Microsoft Edge headless',checks,errors};fs.writeFileSync(path.join(output,'browser-checks.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));
+}finally{await browser.close();}

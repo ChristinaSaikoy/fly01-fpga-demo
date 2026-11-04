@@ -1,0 +1,295 @@
+{
+  "package_id": "FLY01-BY02-VISION-WORK-PROGRESS-20261015",
+  "code_version": "BY-02-VISION-PREINTEGRATION-V1",
+  "controller_review_status": "SUBMITTED_FOR_REVIEW",
+  "excludes": [
+    "PACKAGE_CONTENTS.json itself"
+  ],
+  "files": [
+    {
+      "path": "PACKAGING_CHECKS.json",
+      "size_bytes": 643,
+      "sha256": "6bd6998c664015203363e6a00c7859f19824a3a66efaa138fd80465decd51875"
+    },
+    {
+      "path": "team-work/bangyi/by02/.gitignore",
+      "size_bytes": 32,
+      "sha256": "303ed86cc12af012c25ede8a394b2bf9986559445a5f8938558a5ea4208df5e8"
+    },
+    {
+      "path": "team-work/bangyi/by02/ASSEMBLY_TUNING.md",
+      "size_bytes": 8285,
+      "sha256": "b7f1e05c156c70982e8b997225958fd13e24a638d5b7d09a371250a1661c3828"
+    },
+    {
+      "path": "team-work/bangyi/by02/config/assembly_override.example.json",
+      "size_bytes": 1006,
+      "sha256": "a6f032377d6b8dba7747abdff19818d8266f4f9e39f76cf880e7965948d5e7e9"
+    },
+    {
+      "path": "team-work/bangyi/by02/evidence/ENCODER_COMPATIBILITY.json",
+      "size_bytes": 554,
+      "sha256": "f2fc4930934aae73e9c739a84d16be8b4d87a5bf216fc2e03e14cb23e501936c"
+    },
+    {
+      "path": "team-work/bangyi/by02/evidence/ENTRYPOINT_CHECKS.json",
+      "size_bytes": 925,
+      "sha256": "fc863576b857dfa3b7190a860de8af79cf4c569958c175505afbe9d95e57a033"
+    },
+    {
+      "path": "team-work/bangyi/by02/evidence/REVIEW_CLOSURE.json",
+      "size_bytes": 540,
+      "sha256": "2321c81459af7d1ccb759f58051cb2a6f7825c17f45c86523e6324308773828a"
+    },
+    {
+      "path": "team-work/bangyi/by02/evidence/UNIT_TESTS.json",
+      "size_bytes": 1366,
+      "sha256": "7d9e4dd4c9105a309211c437c5a1ec3db9901cc36e58506d218787310ca1367b"
+    },
+    {
+      "path": "team-work/bangyi/by02/evidence/UNIT_TESTS.txt",
+      "size_bytes": 3715,
+      "sha256": "dba449b4bbf645885910b0522834621138f66540cada92fb4aacb3d88c00c0d5"
+    },
+    {
+      "path": "team-work/bangyi/by02/examples/image_run/annotated/frame_000000.png",
+      "size_bytes": 4883,
+      "sha256": "a213b8e6048400ea5580c0928c611cd03a22a3d6a551cf6b0327d4d772ec9920"
+    },
+    {
+      "path": "team-work/bangyi/by02/examples/image_run/annotated/frame_000001.png",
+      "size_bytes": 4932,
+      "sha256": "335cdb526c6f1813584de9752b04204c2972a874b14dcb29d1d6e18ccbec558c"
+    },
+    {
+      "path": "team-work/bangyi/by02/examples/image_run/annotated/frame_000002.png",
+      "size_bytes": 5136,
+      "sha256": "1ae69bf03d295fd93d95e54e3ef4766aa9f5d5709702a8c2695fd30de263e188"
+    },
+    {
+      "path": "team-work/bangyi/by02/examples/image_run/annotated/frame_000003.png",
+      "size_bytes": 4813,
+      "sha256": "423c1d2657389c1f7507628bc7bfef51eb2ae0dbc1a70b36577baabd19aa749b"
+    },
+    {
+      "path": "team-work/bangyi/by02/examples/image_run/annotated/frame_000004.png",
+      "size_bytes": 4883,
+      "sha256": "a213b8e6048400ea5580c0928c611cd03a22a3d6a551cf6b0327d4d772ec9920"
+    },
+    {
+      "path": "team-work/bangyi/by02/examples/image_run/annotated/frame_000005.png",
+      "size_bytes": 4813,
+      "sha256": "423c1d2657389c1f7507628bc7bfef51eb2ae0dbc1a70b36577baabd19aa749b"
+    },
+    {
+      "path": "team-work/bangyi/by02/examples/image_run/annotated/frame_000006.png",
+      "size_bytes": 4932,
+      "sha256": "335cdb526c6f1813584de9752b04204c2972a874b14dcb29d1d6e18ccbec558c"
+    },
+    {
+      "path": "team-work/bangyi/by02/examples/image_run/annotated/frame_000007.png",
+      "size_bytes": 5055,
+      "sha256": "121b21afa1e28629a888afe2dadcdf10475206455c1effd0e9a23d916a5796dd"
+    },
+    {
+      "path": "team-work/bangyi/by02/examples/image_run/observations.jsonl",
+      "size_bytes": 14815,
+      "sha256": "1c117322867da10be2766ba91c990de4b7349c62e63b048966597f5be11ec6cc"
+    },
+    {
+      "path": "team-work/bangyi/by02/examples/image_run/preview.html",
+      "size_bytes": 1799,
+      "sha256": "426353c8af2ca155ccb3a50f581f9d8c5d63c3879ea085b5a2fac14a64345318"
+    },
+    {
+      "path": "team-work/bangyi/by02/examples/image_run/project_proposals.jsonl",
+      "size_bytes": 16121,
+      "sha256": "7e407815e54c29d5085c6c3bdaf13f15ba094eb49f72306d4a1d133f8ad4b778"
+    },
+    {
+      "path": "team-work/bangyi/by02/examples/image_run/settings_used.json",
+      "size_bytes": 1091,
+      "sha256": "8889f99819b754c82c521d9ed33187439be71b11284e808b808edda83b695ea0"
+    },
+    {
+      "path": "team-work/bangyi/by02/examples/image_run/summary.json",
+      "size_bytes": 787,
+      "sha256": "cea6c3cbc21baf5eab5b70aca92b014f973efcce2cecfdae237983cda47b75d1"
+    },
+    {
+      "path": "team-work/bangyi/by02/fly01_vision/__init__.py",
+      "size_bytes": 93,
+      "sha256": "13bfa4b75c68050288a0fbd76e8700d13fe702a43ab182ef1866f94fe3204bdc"
+    },
+    {
+      "path": "team-work/bangyi/by02/fly01_vision/annotate.py",
+      "size_bytes": 1450,
+      "sha256": "0c9ab026212bab014311c9d666c1253d61ade85ecec52ddb6a33587b50db1d8d"
+    },
+    {
+      "path": "team-work/bangyi/by02/fly01_vision/detector.py",
+      "size_bytes": 3179,
+      "sha256": "df59cc92aef432836c23d1b6e1348a463c6bf6808d862b289a773eaa80db90fd"
+    },
+    {
+      "path": "team-work/bangyi/by02/fly01_vision/k230_protocol.py",
+      "size_bytes": 4187,
+      "sha256": "150ffef86cb1cba6a71fa6959272404daa1ef5ba50299043c1300e42ca0f3c77"
+    },
+    {
+      "path": "team-work/bangyi/by02/fly01_vision/pipeline.py",
+      "size_bytes": 9186,
+      "sha256": "31e2825e0effde2c6ff93dd6a58523070747004e2e8841f93272f831b3d4bcd1"
+    },
+    {
+      "path": "team-work/bangyi/by02/fly01_vision/project_adapter.py",
+      "size_bytes": 8604,
+      "sha256": "a37c7f532b3eb8fedb4f655fe10dcc5a4bff8a2d06d84ab7ea2561b318e31686"
+    },
+    {
+      "path": "team-work/bangyi/by02/fly01_vision/settings.py",
+      "size_bytes": 6407,
+      "sha256": "ac31a1e259ee25baa6bb4432d3781b8bc94e607bff9613e2f21ffd30f3fa6638"
+    },
+    {
+      "path": "team-work/bangyi/by02/fly01_vision/sources.py",
+      "size_bytes": 5580,
+      "sha256": "4a4b857131d7cbf52e5fdacf98064c73939d16396d6878d0dc238b173da326da"
+    },
+    {
+      "path": "team-work/bangyi/by02/HANDOFF.md",
+      "size_bytes": 4262,
+      "sha256": "5c00ed111d4406729f4e1c4f1ea3b880fd166e038fb9ce0ee2a88a50b420f560"
+    },
+    {
+      "path": "team-work/bangyi/by02/HARDWARE_PRESET.md",
+      "size_bytes": 8446,
+      "sha256": "e539c81b8e0d17c2aa7a2225b16e09f34fb65d8cee79346c4df76ea36c40440f"
+    },
+    {
+      "path": "team-work/bangyi/by02/PACKAGE_MANIFEST.json",
+      "size_bytes": 9736,
+      "sha256": "6c80f57fd5742e453959b17d5e345709dc68b652e28ca324dffdd16000dd9b1b"
+    },
+    {
+      "path": "team-work/bangyi/by02/provenance/BY01_detector_original.py",
+      "size_bytes": 8407,
+      "sha256": "58b7df5226eac69cc39308d0844c6b1133c3cd5c6ea144a9fd9cb4bae3fa80c9"
+    },
+    {
+      "path": "team-work/bangyi/by02/provenance/CONTRACT_REFERENCE.json",
+      "size_bytes": 1596,
+      "sha256": "354ac7ad149491ec1458a7e3163997628f654fa5e2eb98528778b57a259d873d"
+    },
+    {
+      "path": "team-work/bangyi/by02/provenance/SOURCES.json",
+      "size_bytes": 2576,
+      "sha256": "e26771a010fb7f184c77f5cc4011ce2f4e2f0f5572341b58f8216c5236ae7f63"
+    },
+    {
+      "path": "team-work/bangyi/by02/README.md",
+      "size_bytes": 2469,
+      "sha256": "ec8d45b32772304bb2609762eba69a28840ee9231bbeb3c62d981878c4c60896"
+    },
+    {
+      "path": "team-work/bangyi/by02/requirements.txt",
+      "size_bytes": 110,
+      "sha256": "a5587c26a7c472e0999646fcf5b6b791172cb1472be837d36ce283ccb8817308"
+    },
+    {
+      "path": "team-work/bangyi/by02/run_images.cmd",
+      "size_bytes": 327,
+      "sha256": "01a1dab2be8c38c90cfbc5404f5c658b249da5485ad1762e74a159238ed1db4b"
+    },
+    {
+      "path": "team-work/bangyi/by02/run_vision.py",
+      "size_bytes": 7485,
+      "sha256": "fc782f3f475fd190bf5a722d2729eec6ca10a6622a9ef414741eea49afd04fa4"
+    },
+    {
+      "path": "team-work/bangyi/by02/samples/BY01_expected_manifest.json",
+      "size_bytes": 6962,
+      "sha256": "291ba8afccff28af0971e219bd4a73c48d819b82fa42ccf9d6776b81de3862a0"
+    },
+    {
+      "path": "team-work/bangyi/by02/samples/images/01_left.png",
+      "size_bytes": 1969,
+      "sha256": "d8bd681b99623510989f080fa83278a205f12d6beb6cd5650d64a5239f1f46c2"
+    },
+    {
+      "path": "team-work/bangyi/by02/samples/images/02_right.png",
+      "size_bytes": 1969,
+      "sha256": "61f671b5a2157e4dfab764033b512df45309776978ec5f87bf67272618af93f5"
+    },
+    {
+      "path": "team-work/bangyi/by02/samples/images/03_center.png",
+      "size_bytes": 1969,
+      "sha256": "c21f0a05df0b6fb24017f32712d8a2fdcf459baf2ecc15a09c4081fbf68e7d8b"
+    },
+    {
+      "path": "team-work/bangyi/by02/samples/images/04_none.png",
+      "size_bytes": 1947,
+      "sha256": "276c334406e1d6aab51397543003df2c4a88199d31e95ab92a2cc9cbaa159705"
+    },
+    {
+      "path": "team-work/bangyi/by02/samples/images/05_before_loss.png",
+      "size_bytes": 1969,
+      "sha256": "d8bd681b99623510989f080fa83278a205f12d6beb6cd5650d64a5239f1f46c2"
+    },
+    {
+      "path": "team-work/bangyi/by02/samples/images/06_lost.png",
+      "size_bytes": 1947,
+      "sha256": "276c334406e1d6aab51397543003df2c4a88199d31e95ab92a2cc9cbaa159705"
+    },
+    {
+      "path": "team-work/bangyi/by02/samples/images/07_reappear.png",
+      "size_bytes": 1969,
+      "sha256": "61f671b5a2157e4dfab764033b512df45309776978ec5f87bf67272618af93f5"
+    },
+    {
+      "path": "team-work/bangyi/by02/samples/images/08_multiple.png",
+      "size_bytes": 1976,
+      "sha256": "bddd623d6628d62b86372e337a0c7ae07deecce937591a8170447611b4021f85"
+    },
+    {
+      "path": "team-work/bangyi/by02/samples/k230_messages.jsonl",
+      "size_bytes": 2530,
+      "sha256": "079f5128d6f6c1d3957b4596ada79ee93dfe4df7c4e6c6c8960d233057d33795"
+    },
+    {
+      "path": "team-work/bangyi/by02/samples/sequence.gif",
+      "size_bytes": 9846,
+      "sha256": "33387cf4cc7074c73d30a6b394a77e4cd354102876a90ed16536e5481a0d2ff6"
+    },
+    {
+      "path": "team-work/bangyi/by02/tests/test_project_adapter.py",
+      "size_bytes": 5317,
+      "sha256": "998c6e2e1944681b060fbbede4c288df452bcd9a604845f98e71e11b29f60693"
+    },
+    {
+      "path": "team-work/bangyi/by02/tests/test_vision.py",
+      "size_bytes": 11737,
+      "sha256": "d64e0dd9f177c7bb63b0c60b8be44fc2c375ec2ed7f92968e9c51eb158c9bb25"
+    },
+    {
+      "path": "team-work/bangyi/by02/verify_delivery.py",
+      "size_bytes": 1729,
+      "sha256": "5838ca8de8cbf7432ba8df4accc9e2fb127d5f3577f3f78f8872123a7556e748"
+    },
+    {
+      "path": "team-work/bangyi/by02/VISION_OUTPUT_PROPOSAL.md",
+      "size_bytes": 6360,
+      "sha256": "6d21678181c2889c0f237e81527d621ceac5571e8f41b87930470c869a854dcc"
+    },
+    {
+      "path": "team-work/bangyi/by02/VISION_USAGE.md",
+      "size_bytes": 4669,
+      "sha256": "9009db6d27ffc36e2d8a12995251d9e37a5313dbcb58bf47627572aca58c77a2"
+    },
+    {
+      "path": "工作进程_2026-10-15.md",
+      "size_bytes": 8631,
+      "sha256": "327300d4f6e21e1c2a90845cab7b098174906da73d1ff7561ffd441122c9eb2e"
+    }
+  ]
+}
